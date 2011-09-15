@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58E2D8D31420D2C000CD02D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E2D8D21420D2C000CD02D2 /* UIKit.framework */; };
+		58E2D8D51420D2C000CD02D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E2D8D41420D2C000CD02D2 /* Foundation.framework */; };
+		58E2D8D71420D2C000CD02D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E2D8D61420D2C000CD02D2 /* CoreGraphics.framework */; };
+		58E2D8DD1420D2C000CD02D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58E2D8DB1420D2C000CD02D2 /* InfoPlist.strings */; };
+		58E2D8DF1420D2C000CD02D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E2D8DE1420D2C000CD02D2 /* main.m */; };
+		58E2D8E31420D2C000CD02D2 /* PickerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E2D8E21420D2C000CD02D2 /* PickerAppDelegate.m */; };
+		58E2D8E61420D2C000CD02D2 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E2D8E41420D2C000CD02D2 /* MainWindow.xib */; };
+		58E2D8EF1420D2FC00CD02D2 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E2D8ED1420D2FC00CD02D2 /* DatePickerViewController.m */; };
+		58E2D8F01420D2FC00CD02D2 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E2D8EE1420D2FC00CD02D2 /* DatePickerViewController.xib */; };
+		58E2D8F41420D33000CD02D2 /* SingleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E2D8F21420D33000CD02D2 /* SingleComponentPickerViewController.m */; };
+		58E2D8F51420D33000CD02D2 /* SingleComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E2D8F31420D33000CD02D2 /* SingleComponentPickerViewController.xib */; };
+		58E2D8F91420D35400CD02D2 /* DoubleComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E2D8F71420D35400CD02D2 /* DoubleComponentViewController.m */; };
+		58E2D8FA1420D35400CD02D2 /* DoubleComponentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E2D8F81420D35400CD02D2 /* DoubleComponentViewController.xib */; };
+		58E2D8FE1420D37B00CD02D2 /* DependentComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E2D8FC1420D37B00CD02D2 /* DependentComponentViewController.m */; };
+		58E2D8FF1420D37B00CD02D2 /* DependentComponentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E2D8FD1420D37B00CD02D2 /* DependentComponentViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58E2D8CE1420D2C000CD02D2 /* Picker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E2D8D21420D2C000CD02D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58E2D8D41420D2C000CD02D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58E2D8D61420D2C000CD02D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58E2D8DA1420D2C000CD02D2 /* Picker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Picker-Info.plist"; sourceTree = "<group>"; };
+		58E2D8DC1420D2C000CD02D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58E2D8DE1420D2C000CD02D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58E2D8E01420D2C000CD02D2 /* Picker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Picker-Prefix.pch"; sourceTree = "<group>"; };
+		58E2D8E11420D2C000CD02D2 /* PickerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerAppDelegate.h; sourceTree = "<group>"; };
+		58E2D8E21420D2C000CD02D2 /* PickerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerAppDelegate.m; sourceTree = "<group>"; };
+		58E2D8E51420D2C000CD02D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58E2D8EC1420D2FC00CD02D2 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		58E2D8ED1420D2FC00CD02D2 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		58E2D8EE1420D2FC00CD02D2 /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		58E2D8F11420D33000CD02D2 /* SingleComponentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleComponentPickerViewController.h; sourceTree = "<group>"; };
+		58E2D8F21420D33000CD02D2 /* SingleComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleComponentPickerViewController.m; sourceTree = "<group>"; };
+		58E2D8F31420D33000CD02D2 /* SingleComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleComponentPickerViewController.xib; sourceTree = "<group>"; };
+		58E2D8F61420D35400CD02D2 /* DoubleComponentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoubleComponentViewController.h; sourceTree = "<group>"; };
+		58E2D8F71420D35400CD02D2 /* DoubleComponentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoubleComponentViewController.m; sourceTree = "<group>"; };
+		58E2D8F81420D35400CD02D2 /* DoubleComponentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DoubleComponentViewController.xib; sourceTree = "<group>"; };
+		58E2D8FB1420D37B00CD02D2 /* DependentComponentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DependentComponentViewController.h; sourceTree = "<group>"; };
+		58E2D8FC1420D37B00CD02D2 /* DependentComponentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DependentComponentViewController.m; sourceTree = "<group>"; };
+		58E2D8FD1420D37B00CD02D2 /* DependentComponentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DependentComponentViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58E2D8CB1420D2C000CD02D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E2D8D31420D2C000CD02D2 /* UIKit.framework in Frameworks */,
+				58E2D8D51420D2C000CD02D2 /* Foundation.framework in Frameworks */,
+				58E2D8D71420D2C000CD02D2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58E2D8C31420D2BF00CD02D2 = {
+			isa = PBXGroup;
+			children = (
+				58E2D8D81420D2C000CD02D2 /* Picker */,
+				58E2D8D11420D2C000CD02D2 /* Frameworks */,
+				58E2D8CF1420D2C000CD02D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58E2D8CF1420D2C000CD02D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58E2D8CE1420D2C000CD02D2 /* Picker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58E2D8D11420D2C000CD02D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58E2D8D21420D2C000CD02D2 /* UIKit.framework */,
+				58E2D8D41420D2C000CD02D2 /* Foundation.framework */,
+				58E2D8D61420D2C000CD02D2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58E2D8D81420D2C000CD02D2 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				58E2D8E11420D2C000CD02D2 /* PickerAppDelegate.h */,
+				58E2D8E21420D2C000CD02D2 /* PickerAppDelegate.m */,
+				58E2D8E41420D2C000CD02D2 /* MainWindow.xib */,
+				58E2D8D91420D2C000CD02D2 /* Supporting Files */,
+				58E2D8EC1420D2FC00CD02D2 /* DatePickerViewController.h */,
+				58E2D8F11420D33000CD02D2 /* SingleComponentPickerViewController.h */,
+				58E2D8F61420D35400CD02D2 /* DoubleComponentViewController.h */,
+				58E2D8FB1420D37B00CD02D2 /* DependentComponentViewController.h */,
+				58E2D8FC1420D37B00CD02D2 /* DependentComponentViewController.m */,
+				58E2D8FD1420D37B00CD02D2 /* DependentComponentViewController.xib */,
+				58E2D8F71420D35400CD02D2 /* DoubleComponentViewController.m */,
+				58E2D8F81420D35400CD02D2 /* DoubleComponentViewController.xib */,
+				58E2D8F21420D33000CD02D2 /* SingleComponentPickerViewController.m */,
+				58E2D8F31420D33000CD02D2 /* SingleComponentPickerViewController.xib */,
+				58E2D8ED1420D2FC00CD02D2 /* DatePickerViewController.m */,
+				58E2D8EE1420D2FC00CD02D2 /* DatePickerViewController.xib */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		58E2D8D91420D2C000CD02D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58E2D8DA1420D2C000CD02D2 /* Picker-Info.plist */,
+				58E2D8DB1420D2C000CD02D2 /* InfoPlist.strings */,
+				58E2D8DE1420D2C000CD02D2 /* main.m */,
+				58E2D8E01420D2C000CD02D2 /* Picker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58E2D8CD1420D2C000CD02D2 /* Picker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58E2D8E91420D2C000CD02D2 /* Build configuration list for PBXNativeTarget "Picker" */;
+			buildPhases = (
+				58E2D8CA1420D2C000CD02D2 /* Sources */,
+				58E2D8CB1420D2C000CD02D2 /* Frameworks */,
+				58E2D8CC1420D2C000CD02D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Picker;
+			productName = Picker;
+			productReference = 58E2D8CE1420D2C000CD02D2 /* Picker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58E2D8C51420D2BF00CD02D2 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58E2D8C81420D2BF00CD02D2 /* Build configuration list for PBXProject "Picker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58E2D8C31420D2BF00CD02D2;
+			productRefGroup = 58E2D8CF1420D2C000CD02D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58E2D8CD1420D2C000CD02D2 /* Picker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58E2D8CC1420D2C000CD02D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E2D8DD1420D2C000CD02D2 /* InfoPlist.strings in Resources */,
+				58E2D8E61420D2C000CD02D2 /* MainWindow.xib in Resources */,
+				58E2D8F01420D2FC00CD02D2 /* DatePickerViewController.xib in Resources */,
+				58E2D8F51420D33000CD02D2 /* SingleComponentPickerViewController.xib in Resources */,
+				58E2D8FA1420D35400CD02D2 /* DoubleComponentViewController.xib in Resources */,
+				58E2D8FF1420D37B00CD02D2 /* DependentComponentViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58E2D8CA1420D2C000CD02D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E2D8DF1420D2C000CD02D2 /* main.m in Sources */,
+				58E2D8E31420D2C000CD02D2 /* PickerAppDelegate.m in Sources */,
+				58E2D8EF1420D2FC00CD02D2 /* DatePickerViewController.m in Sources */,
+				58E2D8F41420D33000CD02D2 /* SingleComponentPickerViewController.m in Sources */,
+				58E2D8F91420D35400CD02D2 /* DoubleComponentViewController.m in Sources */,
+				58E2D8FE1420D37B00CD02D2 /* DependentComponentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58E2D8DB1420D2C000CD02D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58E2D8DC1420D2C000CD02D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58E2D8E41420D2C000CD02D2 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58E2D8E51420D2C000CD02D2 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58E2D8E71420D2C000CD02D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58E2D8E81420D2C000CD02D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58E2D8EA1420D2C000CD02D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Picker/Picker-Prefix.pch";
+				INFOPLIST_FILE = "Picker/Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58E2D8EB1420D2C000CD02D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Picker/Picker-Prefix.pch";
+				INFOPLIST_FILE = "Picker/Picker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58E2D8C81420D2BF00CD02D2 /* Build configuration list for PBXProject "Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E2D8E71420D2C000CD02D2 /* Debug */,
+				58E2D8E81420D2C000CD02D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58E2D8E91420D2C000CD02D2 /* Build configuration list for PBXNativeTarget "Picker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E2D8EA1420D2C000CD02D2 /* Debug */,
+				58E2D8EB1420D2C000CD02D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58E2D8C51420D2BF00CD02D2 /* Project object */;
+}

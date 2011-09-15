@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58157E7B141F93D200060C59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58157E7A141F93D200060C59 /* UIKit.framework */; };
+		58157E7D141F93D200060C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58157E7C141F93D200060C59 /* Foundation.framework */; };
+		58157E7F141F93D200060C59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58157E7E141F93D200060C59 /* CoreGraphics.framework */; };
+		58157E85141F93D200060C59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58157E83141F93D200060C59 /* InfoPlist.strings */; };
+		58157E87141F93D200060C59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58157E86141F93D200060C59 /* main.m */; };
+		58157E8B141F93D200060C59 /* control_FunAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58157E8A141F93D200060C59 /* control_FunAppDelegate.m */; };
+		58157E8E141F93D200060C59 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58157E8C141F93D200060C59 /* MainWindow.xib */; };
+		58157E91141F93D200060C59 /* control_FunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58157E90141F93D200060C59 /* control_FunViewController.m */; };
+		58157E94141F93D200060C59 /* control_FunViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58157E92141F93D200060C59 /* control_FunViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58157E76141F93D200060C59 /* control Fun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "control Fun.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58157E7A141F93D200060C59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58157E7C141F93D200060C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58157E7E141F93D200060C59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58157E82141F93D200060C59 /* control Fun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "control Fun-Info.plist"; sourceTree = "<group>"; };
+		58157E84141F93D200060C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58157E86141F93D200060C59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58157E88141F93D200060C59 /* control Fun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "control Fun-Prefix.pch"; sourceTree = "<group>"; };
+		58157E89141F93D200060C59 /* control_FunAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = control_FunAppDelegate.h; sourceTree = "<group>"; };
+		58157E8A141F93D200060C59 /* control_FunAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = control_FunAppDelegate.m; sourceTree = "<group>"; };
+		58157E8D141F93D200060C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58157E8F141F93D200060C59 /* control_FunViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = control_FunViewController.h; sourceTree = "<group>"; };
+		58157E90141F93D200060C59 /* control_FunViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = control_FunViewController.m; sourceTree = "<group>"; };
+		58157E93141F93D200060C59 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/control_FunViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58157E73141F93D200060C59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58157E7B141F93D200060C59 /* UIKit.framework in Frameworks */,
+				58157E7D141F93D200060C59 /* Foundation.framework in Frameworks */,
+				58157E7F141F93D200060C59 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58157E6B141F93D200060C59 = {
+			isa = PBXGroup;
+			children = (
+				58157E80141F93D200060C59 /* control Fun */,
+				58157E79141F93D200060C59 /* Frameworks */,
+				58157E77141F93D200060C59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58157E77141F93D200060C59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58157E76141F93D200060C59 /* control Fun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58157E79141F93D200060C59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58157E7A141F93D200060C59 /* UIKit.framework */,
+				58157E7C141F93D200060C59 /* Foundation.framework */,
+				58157E7E141F93D200060C59 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58157E80141F93D200060C59 /* control Fun */ = {
+			isa = PBXGroup;
+			children = (
+				58157E89141F93D200060C59 /* control_FunAppDelegate.h */,
+				58157E8A141F93D200060C59 /* control_FunAppDelegate.m */,
+				58157E8C141F93D200060C59 /* MainWindow.xib */,
+				58157E8F141F93D200060C59 /* control_FunViewController.h */,
+				58157E90141F93D200060C59 /* control_FunViewController.m */,
+				58157E92141F93D200060C59 /* control_FunViewController.xib */,
+				58157E81141F93D200060C59 /* Supporting Files */,
+			);
+			path = "control Fun";
+			sourceTree = "<group>";
+		};
+		58157E81141F93D200060C59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58157E82141F93D200060C59 /* control Fun-Info.plist */,
+				58157E83141F93D200060C59 /* InfoPlist.strings */,
+				58157E86141F93D200060C59 /* main.m */,
+				58157E88141F93D200060C59 /* control Fun-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58157E75141F93D200060C59 /* control Fun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58157E97141F93D200060C59 /* Build configuration list for PBXNativeTarget "control Fun" */;
+			buildPhases = (
+				58157E72141F93D200060C59 /* Sources */,
+				58157E73141F93D200060C59 /* Frameworks */,
+				58157E74141F93D200060C59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "control Fun";
+			productName = "control Fun";
+			productReference = 58157E76141F93D200060C59 /* control Fun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58157E6D141F93D200060C59 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58157E70141F93D200060C59 /* Build configuration list for PBXProject "control Fun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58157E6B141F93D200060C59;
+			productRefGroup = 58157E77141F93D200060C59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58157E75141F93D200060C59 /* control Fun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58157E74141F93D200060C59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58157E85141F93D200060C59 /* InfoPlist.strings in Resources */,
+				58157E8E141F93D200060C59 /* MainWindow.xib in Resources */,
+				58157E94141F93D200060C59 /* control_FunViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58157E72141F93D200060C59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58157E87141F93D200060C59 /* main.m in Sources */,
+				58157E8B141F93D200060C59 /* control_FunAppDelegate.m in Sources */,
+				58157E91141F93D200060C59 /* control_FunViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58157E83141F93D200060C59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58157E84141F93D200060C59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58157E8C141F93D200060C59 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58157E8D141F93D200060C59 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		58157E92141F93D200060C59 /* control_FunViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58157E93141F93D200060C59 /* en */,
+			);
+			name = control_FunViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58157E95141F93D200060C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58157E96141F93D200060C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58157E98141F93D200060C59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "control Fun/control Fun-Prefix.pch";
+				INFOPLIST_FILE = "control Fun/control Fun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58157E99141F93D200060C59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "control Fun/control Fun-Prefix.pch";
+				INFOPLIST_FILE = "control Fun/control Fun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58157E70141F93D200060C59 /* Build configuration list for PBXProject "control Fun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58157E95141F93D200060C59 /* Debug */,
+				58157E96141F93D200060C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58157E97141F93D200060C59 /* Build configuration list for PBXNativeTarget "control Fun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58157E98141F93D200060C59 /* Debug */,
+				58157E99141F93D200060C59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58157E6D141F93D200060C59 /* Project object */;
+}
