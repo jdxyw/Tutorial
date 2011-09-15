@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58AE6826142246FD008CC828 /* RowControlsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AE6824142246FD008CC828 /* RowControlsController.m */; };
+		58AE6827142246FD008CC828 /* RowControlsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AE6825142246FD008CC828 /* RowControlsController.xib */; };
+		58AE682C14224CEF008CC828 /* MoveMeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AE682A14224CEF008CC828 /* MoveMeController.m */; };
+		58AE682D14224CEF008CC828 /* MoveMeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AE682B14224CEF008CC828 /* MoveMeController.xib */; };
+		58DEB08B1422156A00361B2D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DEB08A1422156A00361B2D /* UIKit.framework */; };
+		58DEB08D1422156A00361B2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DEB08C1422156A00361B2D /* Foundation.framework */; };
+		58DEB08F1422156A00361B2D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DEB08E1422156A00361B2D /* CoreGraphics.framework */; };
+		58DEB0951422156A00361B2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58DEB0931422156A00361B2D /* InfoPlist.strings */; };
+		58DEB0971422156A00361B2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEB0961422156A00361B2D /* main.m */; };
+		58DEB09B1422156A00361B2D /* NavAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEB09A1422156A00361B2D /* NavAppDelegate.m */; };
+		58DEB09E1422156A00361B2D /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DEB09C1422156A00361B2D /* MainWindow.xib */; };
+		58DEB0A7142215B400361B2D /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEB0A5142215B400361B2D /* RootViewController.m */; };
+		58DEB0AB142217F200361B2D /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEB0AA142217F200361B2D /* SecondLevelViewController.m */; };
+		58DEB0AF14221CDC00361B2D /* DisclosureButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEB0AD14221CDC00361B2D /* DisclosureButtonController.m */; };
+		58DEB0B014221CDC00361B2D /* DisclosureButtonController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DEB0AE14221CDC00361B2D /* DisclosureButtonController.xib */; };
+		58DEB0B914221D3500361B2D /* DisclosureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEB0B714221D3400361B2D /* DisclosureDetailController.m */; };
+		58DEB0BA14221D3500361B2D /* DisclosureDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DEB0B814221D3400361B2D /* DisclosureDetailController.xib */; };
+		58DEB0BE142235BE00361B2D /* CheckListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58DEB0BC142235BE00361B2D /* CheckListController.m */; };
+		58DEB0BF142235BE00361B2D /* CheckListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58DEB0BD142235BE00361B2D /* CheckListController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58AE6823142246FD008CC828 /* RowControlsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowControlsController.h; sourceTree = "<group>"; };
+		58AE6824142246FD008CC828 /* RowControlsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowControlsController.m; sourceTree = "<group>"; };
+		58AE6825142246FD008CC828 /* RowControlsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowControlsController.xib; sourceTree = "<group>"; };
+		58AE682914224CEF008CC828 /* MoveMeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMeController.h; sourceTree = "<group>"; };
+		58AE682A14224CEF008CC828 /* MoveMeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveMeController.m; sourceTree = "<group>"; };
+		58AE682B14224CEF008CC828 /* MoveMeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoveMeController.xib; sourceTree = "<group>"; };
+		58DEB0861422156A00361B2D /* Nav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nav.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58DEB08A1422156A00361B2D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58DEB08C1422156A00361B2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58DEB08E1422156A00361B2D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58DEB0921422156A00361B2D /* Nav-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Nav-Info.plist"; sourceTree = "<group>"; };
+		58DEB0941422156A00361B2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58DEB0961422156A00361B2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58DEB0981422156A00361B2D /* Nav-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nav-Prefix.pch"; sourceTree = "<group>"; };
+		58DEB0991422156A00361B2D /* NavAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavAppDelegate.h; sourceTree = "<group>"; };
+		58DEB09A1422156A00361B2D /* NavAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavAppDelegate.m; sourceTree = "<group>"; };
+		58DEB09D1422156A00361B2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58DEB0A4142215B400361B2D /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		58DEB0A5142215B400361B2D /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		58DEB0A9142217F200361B2D /* SecondLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondLevelViewController.h; sourceTree = "<group>"; };
+		58DEB0AA142217F200361B2D /* SecondLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevelViewController.m; sourceTree = "<group>"; };
+		58DEB0AC14221CDC00361B2D /* DisclosureButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureButtonController.h; sourceTree = "<group>"; };
+		58DEB0AD14221CDC00361B2D /* DisclosureButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclosureButtonController.m; sourceTree = "<group>"; };
+		58DEB0AE14221CDC00361B2D /* DisclosureButtonController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisclosureButtonController.xib; sourceTree = "<group>"; };
+		58DEB0B614221D3400361B2D /* DisclosureDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureDetailController.h; sourceTree = "<group>"; };
+		58DEB0B714221D3400361B2D /* DisclosureDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclosureDetailController.m; sourceTree = "<group>"; };
+		58DEB0B814221D3400361B2D /* DisclosureDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisclosureDetailController.xib; sourceTree = "<group>"; };
+		58DEB0BB142235BE00361B2D /* CheckListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckListController.h; sourceTree = "<group>"; };
+		58DEB0BC142235BE00361B2D /* CheckListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckListController.m; sourceTree = "<group>"; };
+		58DEB0BD142235BE00361B2D /* CheckListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckListController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58DEB0831422156A00361B2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DEB08B1422156A00361B2D /* UIKit.framework in Frameworks */,
+				58DEB08D1422156A00361B2D /* Foundation.framework in Frameworks */,
+				58DEB08F1422156A00361B2D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58DEB07B1422156A00361B2D = {
+			isa = PBXGroup;
+			children = (
+				58DEB0B614221D3400361B2D /* DisclosureDetailController.h */,
+				58DEB0BB142235BE00361B2D /* CheckListController.h */,
+				58DEB0BC142235BE00361B2D /* CheckListController.m */,
+				58DEB0BD142235BE00361B2D /* CheckListController.xib */,
+				58DEB0B714221D3400361B2D /* DisclosureDetailController.m */,
+				58DEB0B814221D3400361B2D /* DisclosureDetailController.xib */,
+				58DEB0A4142215B400361B2D /* RootViewController.h */,
+				58AE6823142246FD008CC828 /* RowControlsController.h */,
+				58AE6824142246FD008CC828 /* RowControlsController.m */,
+				58AE6825142246FD008CC828 /* RowControlsController.xib */,
+				58DEB0A5142215B400361B2D /* RootViewController.m */,
+				58AE682914224CEF008CC828 /* MoveMeController.h */,
+				58AE682A14224CEF008CC828 /* MoveMeController.m */,
+				58AE682B14224CEF008CC828 /* MoveMeController.xib */,
+				58DEB0AC14221CDC00361B2D /* DisclosureButtonController.h */,
+				58DEB0AD14221CDC00361B2D /* DisclosureButtonController.m */,
+				58DEB0AE14221CDC00361B2D /* DisclosureButtonController.xib */,
+				58DEB0901422156A00361B2D /* Nav */,
+				58DEB0891422156A00361B2D /* Frameworks */,
+				58DEB0871422156A00361B2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58DEB0871422156A00361B2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58DEB0861422156A00361B2D /* Nav.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58DEB0891422156A00361B2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58DEB08A1422156A00361B2D /* UIKit.framework */,
+				58DEB08C1422156A00361B2D /* Foundation.framework */,
+				58DEB08E1422156A00361B2D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58DEB0901422156A00361B2D /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				58DEB0991422156A00361B2D /* NavAppDelegate.h */,
+				58DEB09A1422156A00361B2D /* NavAppDelegate.m */,
+				58DEB09C1422156A00361B2D /* MainWindow.xib */,
+				58DEB0A9142217F200361B2D /* SecondLevelViewController.h */,
+				58DEB0AA142217F200361B2D /* SecondLevelViewController.m */,
+				58DEB0911422156A00361B2D /* Supporting Files */,
+			);
+			path = Nav;
+			sourceTree = "<group>";
+		};
+		58DEB0911422156A00361B2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58DEB0921422156A00361B2D /* Nav-Info.plist */,
+				58DEB0931422156A00361B2D /* InfoPlist.strings */,
+				58DEB0961422156A00361B2D /* main.m */,
+				58DEB0981422156A00361B2D /* Nav-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58DEB0851422156A00361B2D /* Nav */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DEB0A11422156A00361B2D /* Build configuration list for PBXNativeTarget "Nav" */;
+			buildPhases = (
+				58DEB0821422156A00361B2D /* Sources */,
+				58DEB0831422156A00361B2D /* Frameworks */,
+				58DEB0841422156A00361B2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nav;
+			productName = Nav;
+			productReference = 58DEB0861422156A00361B2D /* Nav.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58DEB07D1422156A00361B2D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58DEB0801422156A00361B2D /* Build configuration list for PBXProject "Nav" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58DEB07B1422156A00361B2D;
+			productRefGroup = 58DEB0871422156A00361B2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58DEB0851422156A00361B2D /* Nav */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58DEB0841422156A00361B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DEB0951422156A00361B2D /* InfoPlist.strings in Resources */,
+				58DEB09E1422156A00361B2D /* MainWindow.xib in Resources */,
+				58DEB0B014221CDC00361B2D /* DisclosureButtonController.xib in Resources */,
+				58DEB0BA14221D3500361B2D /* DisclosureDetailController.xib in Resources */,
+				58DEB0BF142235BE00361B2D /* CheckListController.xib in Resources */,
+				58AE6827142246FD008CC828 /* RowControlsController.xib in Resources */,
+				58AE682D14224CEF008CC828 /* MoveMeController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58DEB0821422156A00361B2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58DEB0971422156A00361B2D /* main.m in Sources */,
+				58DEB09B1422156A00361B2D /* NavAppDelegate.m in Sources */,
+				58DEB0A7142215B400361B2D /* RootViewController.m in Sources */,
+				58DEB0AB142217F200361B2D /* SecondLevelViewController.m in Sources */,
+				58DEB0AF14221CDC00361B2D /* DisclosureButtonController.m in Sources */,
+				58DEB0B914221D3500361B2D /* DisclosureDetailController.m in Sources */,
+				58DEB0BE142235BE00361B2D /* CheckListController.m in Sources */,
+				58AE6826142246FD008CC828 /* RowControlsController.m in Sources */,
+				58AE682C14224CEF008CC828 /* MoveMeController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58DEB0931422156A00361B2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58DEB0941422156A00361B2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58DEB09C1422156A00361B2D /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58DEB09D1422156A00361B2D /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58DEB09F1422156A00361B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58DEB0A01422156A00361B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58DEB0A21422156A00361B2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nav/Nav-Prefix.pch";
+				INFOPLIST_FILE = "Nav/Nav-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58DEB0A31422156A00361B2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Nav/Nav-Prefix.pch";
+				INFOPLIST_FILE = "Nav/Nav-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58DEB0801422156A00361B2D /* Build configuration list for PBXProject "Nav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DEB09F1422156A00361B2D /* Debug */,
+				58DEB0A01422156A00361B2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58DEB0A11422156A00361B2D /* Build configuration list for PBXNativeTarget "Nav" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DEB0A21422156A00361B2D /* Debug */,
+				58DEB0A31422156A00361B2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58DEB07D1422156A00361B2D /* Project object */;
+}
