@@ -10,7 +10,19 @@
 #import "cocos2d.h"
 
 @interface GameScene : CCLayer {
-    
+    CCSprite *player;
+    CGPoint playerVelocity;
+    CCArray *spiders;
+    float spiderMoveDuration;
+    int numSpiderMoved;
 }
+
++(id)scene;
+-(void)initSpider;
+-(void)resetSpider;
+-(void)spiderUpdate:(ccTime)delta;
+-(void)runSpiderMoveSequence:(CCSprite *)spider;
+-(void)spiderBelowScreen:(id)sender;
+-(void)checkforCollision;
 
 @end
