@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58D070E41427640E006C6AF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D070E31427640E006C6AF9 /* UIKit.framework */; };
+		58D070E61427640E006C6AF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D070E51427640E006C6AF9 /* Foundation.framework */; };
+		58D070E81427640E006C6AF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D070E71427640E006C6AF9 /* CoreGraphics.framework */; };
+		58D070EE1427640E006C6AF9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58D070EC1427640E006C6AF9 /* InfoPlist.strings */; };
+		58D070F01427640E006C6AF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D070EF1427640E006C6AF9 /* main.m */; };
+		58D070F41427640E006C6AF9 /* NavexAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D070F31427640E006C6AF9 /* NavexAppDelegate.m */; };
+		58D070F71427640E006C6AF9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D070F51427640E006C6AF9 /* MainWindow.xib */; };
+		58D070FA1427640E006C6AF9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D070F91427640E006C6AF9 /* RootViewController.m */; };
+		58D070FD1427640E006C6AF9 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58D070FB1427640E006C6AF9 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58D070DF1427640E006C6AF9 /* Navex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navex.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D070E31427640E006C6AF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58D070E51427640E006C6AF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58D070E71427640E006C6AF9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58D070EB1427640E006C6AF9 /* Navex-Info.plist */ = {isa = PBXFileReference; path = "Navex-Info.plist"; sourceTree = "<group>"; };
+		58D070ED1427640E006C6AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58D070EF1427640E006C6AF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58D070F11427640E006C6AF9 /* Navex-Prefix.pch */ = {isa = PBXFileReference; path = "Navex-Prefix.pch"; sourceTree = "<group>"; };
+		58D070F21427640E006C6AF9 /* NavexAppDelegate.h */ = {isa = PBXFileReference; path = NavexAppDelegate.h; sourceTree = "<group>"; };
+		58D070F31427640E006C6AF9 /* NavexAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavexAppDelegate.m; sourceTree = "<group>"; };
+		58D070F61427640E006C6AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58D070F81427640E006C6AF9 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		58D070F91427640E006C6AF9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		58D070FC1427640E006C6AF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58D070DC1427640E006C6AF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D070E41427640E006C6AF9 /* UIKit.framework in Frameworks */,
+				58D070E61427640E006C6AF9 /* Foundation.framework in Frameworks */,
+				58D070E81427640E006C6AF9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58D070D41427640E006C6AF9 = {
+			isa = PBXGroup;
+			children = (
+				58D070E91427640E006C6AF9 /* Navex */,
+				58D070E21427640E006C6AF9 /* Frameworks */,
+				58D070E01427640E006C6AF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58D070E01427640E006C6AF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58D070DF1427640E006C6AF9 /* Navex.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58D070E21427640E006C6AF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58D070E31427640E006C6AF9 /* UIKit.framework */,
+				58D070E51427640E006C6AF9 /* Foundation.framework */,
+				58D070E71427640E006C6AF9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58D070E91427640E006C6AF9 /* Navex */ = {
+			isa = PBXGroup;
+			children = (
+				58D070F21427640E006C6AF9 /* NavexAppDelegate.h */,
+				58D070F31427640E006C6AF9 /* NavexAppDelegate.m */,
+				58D070F51427640E006C6AF9 /* MainWindow.xib */,
+				58D070F81427640E006C6AF9 /* RootViewController.h */,
+				58D070F91427640E006C6AF9 /* RootViewController.m */,
+				58D070FB1427640E006C6AF9 /* RootViewController.xib */,
+				58D070EA1427640E006C6AF9 /* Supporting Files */,
+			);
+			path = Navex;
+			sourceTree = "<group>";
+		};
+		58D070EA1427640E006C6AF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58D070EB1427640E006C6AF9 /* Navex-Info.plist */,
+				58D070EC1427640E006C6AF9 /* InfoPlist.strings */,
+				58D070EF1427640E006C6AF9 /* main.m */,
+				58D070F11427640E006C6AF9 /* Navex-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58D070DE1427640E006C6AF9 /* Navex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58D071001427640E006C6AF9 /* Build configuration list for PBXNativeTarget "Navex" */;
+			buildPhases = (
+				58D070DB1427640E006C6AF9 /* Sources */,
+				58D070DC1427640E006C6AF9 /* Frameworks */,
+				58D070DD1427640E006C6AF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Navex;
+			productName = Navex;
+			productReference = 58D070DF1427640E006C6AF9 /* Navex.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58D070D61427640E006C6AF9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58D070D91427640E006C6AF9 /* Build configuration list for PBXProject "Navex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58D070D41427640E006C6AF9;
+			productRefGroup = 58D070E01427640E006C6AF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58D070DE1427640E006C6AF9 /* Navex */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58D070DD1427640E006C6AF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D070EE1427640E006C6AF9 /* InfoPlist.strings in Resources */,
+				58D070F71427640E006C6AF9 /* MainWindow.xib in Resources */,
+				58D070FD1427640E006C6AF9 /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58D070DB1427640E006C6AF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58D070F01427640E006C6AF9 /* main.m in Sources */,
+				58D070F41427640E006C6AF9 /* NavexAppDelegate.m in Sources */,
+				58D070FA1427640E006C6AF9 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58D070EC1427640E006C6AF9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58D070ED1427640E006C6AF9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58D070F51427640E006C6AF9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58D070F61427640E006C6AF9 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		58D070FB1427640E006C6AF9 /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58D070FC1427640E006C6AF9 /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58D070FE1427640E006C6AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58D070FF1427640E006C6AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58D071011427640E006C6AF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Navex/Navex-Prefix.pch";
+				INFOPLIST_FILE = "Navex/Navex-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58D071021427640E006C6AF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Navex/Navex-Prefix.pch";
+				INFOPLIST_FILE = "Navex/Navex-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58D070D91427640E006C6AF9 /* Build configuration list for PBXProject "Navex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D070FE1427640E006C6AF9 /* Debug */,
+				58D070FF1427640E006C6AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58D071001427640E006C6AF9 /* Build configuration list for PBXNativeTarget "Navex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D071011427640E006C6AF9 /* Debug */,
+				58D071021427640E006C6AF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58D070D61427640E006C6AF9 /* Project object */;
+}
