@@ -160,6 +160,7 @@
 		5830684E142B54A000DCCF60 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5830684D142B54A000DCCF60 /* GLES-Render.mm */; };
 		58306851142B54A000DCCF60 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = 58306850142B54A000DCCF60 /* blocks.png */; };
 		58306858142B551F00DCCF60 /* Noise.png in Resources */ = {isa = PBXBuildFile; fileRef = 58306857142B551F00DCCF60 /* Noise.png */; };
+		58306867142B6F0B00DCCF60 /* Terrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 58306866142B6F0B00DCCF60 /* Terrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -475,6 +476,8 @@
 		5830684F142B54A000DCCF60 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		58306850142B54A000DCCF60 /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		58306857142B551F00DCCF60 /* Noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Noise.png; sourceTree = "<group>"; };
+		58306865142B6F0B00DCCF60 /* Terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terrain.h; sourceTree = "<group>"; };
+		58306866142B6F0B00DCCF60 /* Terrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -537,6 +540,8 @@
 				58306847142B54A000DCCF60 /* RootViewController.m */,
 				58306849142B54A000DCCF60 /* HelloWorldLayer.h */,
 				5830684A142B54A000DCCF60 /* HelloWorldLayer.mm */,
+				58306865142B6F0B00DCCF60 /* Terrain.h */,
+				58306866142B6F0B00DCCF60 /* Terrain.m */,
 				5830684C142B54A000DCCF60 /* GLES-Render.h */,
 				5830684D142B54A000DCCF60 /* GLES-Render.mm */,
 				5830684F142B54A000DCCF60 /* GameConfig.h */,
@@ -1208,6 +1213,7 @@
 				58306848142B54A000DCCF60 /* RootViewController.m in Sources */,
 				5830684B142B54A000DCCF60 /* HelloWorldLayer.mm in Sources */,
 				5830684E142B54A000DCCF60 /* GLES-Render.mm in Sources */,
+				58306867142B6F0B00DCCF60 /* Terrain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1303,6 +1309,7 @@
 				58306856142B54A000DCCF60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

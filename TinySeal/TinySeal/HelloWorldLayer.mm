@@ -169,28 +169,53 @@
     }
 }
 
+
 -(void)genBackground{
     [_background removeFromParentAndCleanup:YES];
     ccColor4F bgColor=[self randomBrightColor];
-    ccColor4F color2=[self randomBrightColor];
-    int nStripes = ((arc4random() % 4) + 1) * 2;
-    //_background=[self spiriteWithColor:bgColor textureSize:512];
-    _background=[self strippedSpriteWithColor:bgColor color2:color2 textureSize:512 stripes:nStripes];
-    self.scale=0.5;
+    _background=[self spiriteWithColor:bgColor textureSize:512];
+    
     CGSize size=[[CCDirector sharedDirector] winSize];
     _background.position=CGPointMake(size.width/2, size.height/2);
-    
-    ccTexParams tp={GL_LINEAR,GL_LINEAR,GL_REPEAT,GL_REPEAT};
+    ccTexParams tp = {GL_LINEAR, GL_LINEAR, GL_REPEAT, GL_REPEAT};
     [_background.texture setTexParameters:&tp];
+    [self addChild:_background];
     
-    [self addChild:_background z:-1];
+    ccColor4F color3 = [self randomBrightColor];
+    ccColor4F color4 = [self randomBrightColor];
+    CCSprite *stripes = [self strippedSpriteWithColor:color3 color2:color4 textureSize:512 stripes:4];
+    ccTexParams tp2 = {GL_LINEAR, GL_LINEAR, GL_REPEAT, GL_CLAMP_TO_EDGE};
+    [stripes.texture setTexParameters:&tp2];
+    _terrain._stripes = stripes;
+    //[self addChild:_terrain z:1];
 }
+
+
+//-(void)genBackground{
+//    [_background removeFromParentAndCleanup:YES];
+//    ccColor4F bgColor=[self randomBrightColor];
+//    ccColor4F color2=[self randomBrightColor];
+//    int nStripes = ((arc4random() % 4) + 1) * 2;
+//    //_background=[self spiriteWithColor:bgColor textureSize:512];
+//    _background=[self strippedSpriteWithColor:bgColor color2:color2 textureSize:512 stripes:nStripes];
+//    self.scale=0.5;
+//    CGSize size=[[CCDirector sharedDirector] winSize];
+//    _background.position=CGPointMake(size.width/2, size.height/2);
+//    
+//    ccTexParams tp={GL_LINEAR,GL_LINEAR,GL_REPEAT,GL_REPEAT};
+//    [_background.texture setTexParameters:&tp];
+//    
+//    [self addChild:_background z:-1];
+//}
 
 // on "init" you need to initialize your instance
 -(id) init
 {
     if(self=[super init])
     {
+        
+        _terrain=[Terrain node];
+        [self addChild:_terrain z:1];
         [self genBackground];
         self.isTouchEnabled=YES;
         [self scheduleUpdate];
@@ -205,6 +230,7 @@
     
     CGSize textureSize = _background.textureRect.size;
     [_background setTextureRect:CGRectMake(offset, 0, textureSize.width, textureSize.height)];
+    [_terrain setOffsetX:offset];
 }
 
 -(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
