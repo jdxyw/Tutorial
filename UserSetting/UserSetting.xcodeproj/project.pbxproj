@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5896C71C1430B13200753428 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5896C71B1430B13200753428 /* UIKit.framework */; };
+		5896C71E1430B13200753428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5896C71D1430B13200753428 /* Foundation.framework */; };
+		5896C7201430B13200753428 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5896C71F1430B13200753428 /* CoreGraphics.framework */; };
+		5896C7261430B13300753428 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5896C7241430B13300753428 /* InfoPlist.strings */; };
+		5896C7281430B13300753428 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5896C7271430B13300753428 /* main.m */; };
+		5896C72C1430B13300753428 /* UserSettingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5896C72B1430B13300753428 /* UserSettingAppDelegate.m */; };
+		5896C72F1430B13300753428 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5896C72D1430B13300753428 /* MainWindow.xib */; };
+		5896C7321430B13300753428 /* UserSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5896C7311430B13300753428 /* UserSettingViewController.m */; };
+		5896C7351430B13300753428 /* UserSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5896C7331430B13300753428 /* UserSettingViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5896C7171430B13200753428 /* UserSetting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserSetting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5896C71B1430B13200753428 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5896C71D1430B13200753428 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5896C71F1430B13200753428 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5896C7231430B13300753428 /* UserSetting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UserSetting-Info.plist"; sourceTree = "<group>"; };
+		5896C7251430B13300753428 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5896C7271430B13300753428 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5896C7291430B13300753428 /* UserSetting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UserSetting-Prefix.pch"; sourceTree = "<group>"; };
+		5896C72A1430B13300753428 /* UserSettingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSettingAppDelegate.h; sourceTree = "<group>"; };
+		5896C72B1430B13300753428 /* UserSettingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSettingAppDelegate.m; sourceTree = "<group>"; };
+		5896C72E1430B13300753428 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5896C7301430B13300753428 /* UserSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSettingViewController.h; sourceTree = "<group>"; };
+		5896C7311430B13300753428 /* UserSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSettingViewController.m; sourceTree = "<group>"; };
+		5896C7341430B13300753428 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/UserSettingViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5896C7141430B13200753428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5896C71C1430B13200753428 /* UIKit.framework in Frameworks */,
+				5896C71E1430B13200753428 /* Foundation.framework in Frameworks */,
+				5896C7201430B13200753428 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5896C70C1430B13200753428 = {
+			isa = PBXGroup;
+			children = (
+				5896C7211430B13200753428 /* UserSetting */,
+				5896C71A1430B13200753428 /* Frameworks */,
+				5896C7181430B13200753428 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5896C7181430B13200753428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5896C7171430B13200753428 /* UserSetting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5896C71A1430B13200753428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5896C71B1430B13200753428 /* UIKit.framework */,
+				5896C71D1430B13200753428 /* Foundation.framework */,
+				5896C71F1430B13200753428 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5896C7211430B13200753428 /* UserSetting */ = {
+			isa = PBXGroup;
+			children = (
+				5896C72A1430B13300753428 /* UserSettingAppDelegate.h */,
+				5896C72B1430B13300753428 /* UserSettingAppDelegate.m */,
+				5896C72D1430B13300753428 /* MainWindow.xib */,
+				5896C7301430B13300753428 /* UserSettingViewController.h */,
+				5896C7311430B13300753428 /* UserSettingViewController.m */,
+				5896C7331430B13300753428 /* UserSettingViewController.xib */,
+				5896C7221430B13300753428 /* Supporting Files */,
+			);
+			path = UserSetting;
+			sourceTree = "<group>";
+		};
+		5896C7221430B13300753428 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5896C7231430B13300753428 /* UserSetting-Info.plist */,
+				5896C7241430B13300753428 /* InfoPlist.strings */,
+				5896C7271430B13300753428 /* main.m */,
+				5896C7291430B13300753428 /* UserSetting-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5896C7161430B13200753428 /* UserSetting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5896C7381430B13300753428 /* Build configuration list for PBXNativeTarget "UserSetting" */;
+			buildPhases = (
+				5896C7131430B13200753428 /* Sources */,
+				5896C7141430B13200753428 /* Frameworks */,
+				5896C7151430B13200753428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UserSetting;
+			productName = UserSetting;
+			productReference = 5896C7171430B13200753428 /* UserSetting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5896C70E1430B13200753428 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5896C7111430B13200753428 /* Build configuration list for PBXProject "UserSetting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5896C70C1430B13200753428;
+			productRefGroup = 5896C7181430B13200753428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5896C7161430B13200753428 /* UserSetting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5896C7151430B13200753428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5896C7261430B13300753428 /* InfoPlist.strings in Resources */,
+				5896C72F1430B13300753428 /* MainWindow.xib in Resources */,
+				5896C7351430B13300753428 /* UserSettingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5896C7131430B13200753428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5896C7281430B13300753428 /* main.m in Sources */,
+				5896C72C1430B13300753428 /* UserSettingAppDelegate.m in Sources */,
+				5896C7321430B13300753428 /* UserSettingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5896C7241430B13300753428 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5896C7251430B13300753428 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5896C72D1430B13300753428 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5896C72E1430B13300753428 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5896C7331430B13300753428 /* UserSettingViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5896C7341430B13300753428 /* en */,
+			);
+			name = UserSettingViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5896C7361430B13300753428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5896C7371430B13300753428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5896C7391430B13300753428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UserSetting/UserSetting-Prefix.pch";
+				INFOPLIST_FILE = "UserSetting/UserSetting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5896C73A1430B13300753428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UserSetting/UserSetting-Prefix.pch";
+				INFOPLIST_FILE = "UserSetting/UserSetting-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5896C7111430B13200753428 /* Build configuration list for PBXProject "UserSetting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5896C7361430B13300753428 /* Debug */,
+				5896C7371430B13300753428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5896C7381430B13300753428 /* Build configuration list for PBXNativeTarget "UserSetting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5896C7391430B13300753428 /* Debug */,
+				5896C73A1430B13300753428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5896C70E1430B13200753428 /* Project object */;
+}
