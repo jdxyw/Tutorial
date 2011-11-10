@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58BD900B145AD523007252AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BD900A145AD523007252AB /* UIKit.framework */; };
+		58BD900D145AD523007252AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BD900C145AD523007252AB /* Foundation.framework */; };
+		58BD900F145AD523007252AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BD900E145AD523007252AB /* CoreGraphics.framework */; };
+		58BD9015145AD523007252AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58BD9013145AD523007252AB /* InfoPlist.strings */; };
+		58BD9017145AD523007252AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BD9016145AD523007252AB /* main.m */; };
+		58BD901B145AD523007252AB /* ViewAnimationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BD901A145AD523007252AB /* ViewAnimationAppDelegate.m */; };
+		58BD901E145AD523007252AB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BD901C145AD523007252AB /* MainWindow.xib */; };
+		58BD9021145AD523007252AB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BD9020145AD523007252AB /* FirstViewController.m */; };
+		58BD9024145AD523007252AB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BD9023145AD523007252AB /* SecondViewController.m */; };
+		58BD9027145AD523007252AB /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BD9025145AD523007252AB /* FirstView.xib */; };
+		58BD902A145AD523007252AB /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BD9028145AD523007252AB /* SecondView.xib */; };
+		58BD9033145AD7AE007252AB /* ThirdViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 58BD9031145AD7AE007252AB /* ThirdViewcontroller.m */; };
+		58BD9034145AD7AE007252AB /* ThirdViewcontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58BD9032145AD7AE007252AB /* ThirdViewcontroller.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58BD9006145AD523007252AB /* ViewAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BD900A145AD523007252AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58BD900C145AD523007252AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58BD900E145AD523007252AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58BD9012145AD523007252AB /* ViewAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ViewAnimation-Info.plist"; sourceTree = "<group>"; };
+		58BD9014145AD523007252AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58BD9016145AD523007252AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58BD9018145AD523007252AB /* ViewAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		58BD9019145AD523007252AB /* ViewAnimationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewAnimationAppDelegate.h; sourceTree = "<group>"; };
+		58BD901A145AD523007252AB /* ViewAnimationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewAnimationAppDelegate.m; sourceTree = "<group>"; };
+		58BD901D145AD523007252AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58BD901F145AD523007252AB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		58BD9020145AD523007252AB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		58BD9022145AD523007252AB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		58BD9023145AD523007252AB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		58BD9026145AD523007252AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		58BD9029145AD523007252AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+		58BD9030145AD7AE007252AB /* ThirdViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewcontroller.h; sourceTree = "<group>"; };
+		58BD9031145AD7AE007252AB /* ThirdViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewcontroller.m; sourceTree = "<group>"; };
+		58BD9032145AD7AE007252AB /* ThirdViewcontroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdViewcontroller.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58BD9003145AD523007252AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BD900B145AD523007252AB /* UIKit.framework in Frameworks */,
+				58BD900D145AD523007252AB /* Foundation.framework in Frameworks */,
+				58BD900F145AD523007252AB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58BD8FFB145AD523007252AB = {
+			isa = PBXGroup;
+			children = (
+				58BD9010145AD523007252AB /* ViewAnimation */,
+				58BD9009145AD523007252AB /* Frameworks */,
+				58BD9007145AD523007252AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58BD9007145AD523007252AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58BD9006145AD523007252AB /* ViewAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58BD9009145AD523007252AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58BD900A145AD523007252AB /* UIKit.framework */,
+				58BD900C145AD523007252AB /* Foundation.framework */,
+				58BD900E145AD523007252AB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58BD9010145AD523007252AB /* ViewAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				58BD9019145AD523007252AB /* ViewAnimationAppDelegate.h */,
+				58BD901A145AD523007252AB /* ViewAnimationAppDelegate.m */,
+				58BD901C145AD523007252AB /* MainWindow.xib */,
+				58BD9030145AD7AE007252AB /* ThirdViewcontroller.h */,
+				58BD9031145AD7AE007252AB /* ThirdViewcontroller.m */,
+				58BD9032145AD7AE007252AB /* ThirdViewcontroller.xib */,
+				58BD901F145AD523007252AB /* FirstViewController.h */,
+				58BD9020145AD523007252AB /* FirstViewController.m */,
+				58BD9022145AD523007252AB /* SecondViewController.h */,
+				58BD9023145AD523007252AB /* SecondViewController.m */,
+				58BD9025145AD523007252AB /* FirstView.xib */,
+				58BD9028145AD523007252AB /* SecondView.xib */,
+				58BD9011145AD523007252AB /* Supporting Files */,
+			);
+			path = ViewAnimation;
+			sourceTree = "<group>";
+		};
+		58BD9011145AD523007252AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58BD9012145AD523007252AB /* ViewAnimation-Info.plist */,
+				58BD9013145AD523007252AB /* InfoPlist.strings */,
+				58BD9016145AD523007252AB /* main.m */,
+				58BD9018145AD523007252AB /* ViewAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58BD9005145AD523007252AB /* ViewAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58BD902D145AD523007252AB /* Build configuration list for PBXNativeTarget "ViewAnimation" */;
+			buildPhases = (
+				58BD9002145AD523007252AB /* Sources */,
+				58BD9003145AD523007252AB /* Frameworks */,
+				58BD9004145AD523007252AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewAnimation;
+			productName = ViewAnimation;
+			productReference = 58BD9006145AD523007252AB /* ViewAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58BD8FFD145AD523007252AB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58BD9000145AD523007252AB /* Build configuration list for PBXProject "ViewAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58BD8FFB145AD523007252AB;
+			productRefGroup = 58BD9007145AD523007252AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58BD9005145AD523007252AB /* ViewAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58BD9004145AD523007252AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BD9015145AD523007252AB /* InfoPlist.strings in Resources */,
+				58BD901E145AD523007252AB /* MainWindow.xib in Resources */,
+				58BD9027145AD523007252AB /* FirstView.xib in Resources */,
+				58BD902A145AD523007252AB /* SecondView.xib in Resources */,
+				58BD9034145AD7AE007252AB /* ThirdViewcontroller.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58BD9002145AD523007252AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BD9017145AD523007252AB /* main.m in Sources */,
+				58BD901B145AD523007252AB /* ViewAnimationAppDelegate.m in Sources */,
+				58BD9021145AD523007252AB /* FirstViewController.m in Sources */,
+				58BD9024145AD523007252AB /* SecondViewController.m in Sources */,
+				58BD9033145AD7AE007252AB /* ThirdViewcontroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58BD9013145AD523007252AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BD9014145AD523007252AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58BD901C145AD523007252AB /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BD901D145AD523007252AB /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		58BD9025145AD523007252AB /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BD9026145AD523007252AB /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		58BD9028145AD523007252AB /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58BD9029145AD523007252AB /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58BD902B145AD523007252AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58BD902C145AD523007252AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58BD902E145AD523007252AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ViewAnimation/ViewAnimation-Prefix.pch";
+				INFOPLIST_FILE = "ViewAnimation/ViewAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58BD902F145AD523007252AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ViewAnimation/ViewAnimation-Prefix.pch";
+				INFOPLIST_FILE = "ViewAnimation/ViewAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58BD9000145AD523007252AB /* Build configuration list for PBXProject "ViewAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BD902B145AD523007252AB /* Debug */,
+				58BD902C145AD523007252AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58BD902D145AD523007252AB /* Build configuration list for PBXNativeTarget "ViewAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58BD902E145AD523007252AB /* Debug */,
+				58BD902F145AD523007252AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58BD8FFD145AD523007252AB /* Project object */;
+}

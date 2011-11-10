@@ -1,0 +1,294 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		581D0EDF1433550000CB25AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581D0EDE1433550000CB25AE /* UIKit.framework */; };
+		581D0EE11433550000CB25AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581D0EE01433550000CB25AE /* Foundation.framework */; };
+		581D0EE31433550000CB25AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 581D0EE21433550000CB25AE /* CoreGraphics.framework */; };
+		581D0EE91433550000CB25AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 581D0EE71433550000CB25AE /* InfoPlist.strings */; };
+		581D0EEB1433550000CB25AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D0EEA1433550000CB25AE /* main.m */; };
+		581D0EEF1433550000CB25AE /* DrawArbitaryPathAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D0EEE1433550000CB25AE /* DrawArbitaryPathAppDelegate.m */; };
+		581D0EF21433550000CB25AE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581D0EF01433550000CB25AE /* MainWindow.xib */; };
+		581D0EF51433550000CB25AE /* DrawArbitaryPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D0EF41433550000CB25AE /* DrawArbitaryPathViewController.m */; };
+		581D0EF81433550000CB25AE /* DrawArbitaryPathViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581D0EF61433550000CB25AE /* DrawArbitaryPathViewController.xib */; };
+		581D0F001433552200CB25AE /* DrawPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581D0EFF1433552200CB25AE /* DrawPathView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		581D0EDA1433550000CB25AE /* DrawArbitaryPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawArbitaryPath.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		581D0EDE1433550000CB25AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		581D0EE01433550000CB25AE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		581D0EE21433550000CB25AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		581D0EE61433550000CB25AE /* DrawArbitaryPath-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DrawArbitaryPath-Info.plist"; sourceTree = "<group>"; };
+		581D0EE81433550000CB25AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		581D0EEA1433550000CB25AE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		581D0EEC1433550000CB25AE /* DrawArbitaryPath-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawArbitaryPath-Prefix.pch"; sourceTree = "<group>"; };
+		581D0EED1433550000CB25AE /* DrawArbitaryPathAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawArbitaryPathAppDelegate.h; sourceTree = "<group>"; };
+		581D0EEE1433550000CB25AE /* DrawArbitaryPathAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawArbitaryPathAppDelegate.m; sourceTree = "<group>"; };
+		581D0EF11433550000CB25AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		581D0EF31433550000CB25AE /* DrawArbitaryPathViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawArbitaryPathViewController.h; sourceTree = "<group>"; };
+		581D0EF41433550000CB25AE /* DrawArbitaryPathViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawArbitaryPathViewController.m; sourceTree = "<group>"; };
+		581D0EF71433550000CB25AE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DrawArbitaryPathViewController.xib; sourceTree = "<group>"; };
+		581D0EFE1433552200CB25AE /* DrawPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawPathView.h; sourceTree = "<group>"; };
+		581D0EFF1433552200CB25AE /* DrawPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawPathView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		581D0ED71433550000CB25AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581D0EDF1433550000CB25AE /* UIKit.framework in Frameworks */,
+				581D0EE11433550000CB25AE /* Foundation.framework in Frameworks */,
+				581D0EE31433550000CB25AE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		581D0ECF1433550000CB25AE = {
+			isa = PBXGroup;
+			children = (
+				581D0EE41433550000CB25AE /* DrawArbitaryPath */,
+				581D0EDD1433550000CB25AE /* Frameworks */,
+				581D0EDB1433550000CB25AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		581D0EDB1433550000CB25AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				581D0EDA1433550000CB25AE /* DrawArbitaryPath.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		581D0EDD1433550000CB25AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				581D0EDE1433550000CB25AE /* UIKit.framework */,
+				581D0EE01433550000CB25AE /* Foundation.framework */,
+				581D0EE21433550000CB25AE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		581D0EE41433550000CB25AE /* DrawArbitaryPath */ = {
+			isa = PBXGroup;
+			children = (
+				581D0EED1433550000CB25AE /* DrawArbitaryPathAppDelegate.h */,
+				581D0EEE1433550000CB25AE /* DrawArbitaryPathAppDelegate.m */,
+				581D0EF01433550000CB25AE /* MainWindow.xib */,
+				581D0EF31433550000CB25AE /* DrawArbitaryPathViewController.h */,
+				581D0EF41433550000CB25AE /* DrawArbitaryPathViewController.m */,
+				581D0EF61433550000CB25AE /* DrawArbitaryPathViewController.xib */,
+				581D0EFE1433552200CB25AE /* DrawPathView.h */,
+				581D0EFF1433552200CB25AE /* DrawPathView.m */,
+				581D0EE51433550000CB25AE /* Supporting Files */,
+			);
+			path = DrawArbitaryPath;
+			sourceTree = "<group>";
+		};
+		581D0EE51433550000CB25AE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				581D0EE61433550000CB25AE /* DrawArbitaryPath-Info.plist */,
+				581D0EE71433550000CB25AE /* InfoPlist.strings */,
+				581D0EEA1433550000CB25AE /* main.m */,
+				581D0EEC1433550000CB25AE /* DrawArbitaryPath-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		581D0ED91433550000CB25AE /* DrawArbitaryPath */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581D0EFB1433550000CB25AE /* Build configuration list for PBXNativeTarget "DrawArbitaryPath" */;
+			buildPhases = (
+				581D0ED61433550000CB25AE /* Sources */,
+				581D0ED71433550000CB25AE /* Frameworks */,
+				581D0ED81433550000CB25AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawArbitaryPath;
+			productName = DrawArbitaryPath;
+			productReference = 581D0EDA1433550000CB25AE /* DrawArbitaryPath.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		581D0ED11433550000CB25AE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 581D0ED41433550000CB25AE /* Build configuration list for PBXProject "DrawArbitaryPath" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 581D0ECF1433550000CB25AE;
+			productRefGroup = 581D0EDB1433550000CB25AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				581D0ED91433550000CB25AE /* DrawArbitaryPath */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		581D0ED81433550000CB25AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581D0EE91433550000CB25AE /* InfoPlist.strings in Resources */,
+				581D0EF21433550000CB25AE /* MainWindow.xib in Resources */,
+				581D0EF81433550000CB25AE /* DrawArbitaryPathViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		581D0ED61433550000CB25AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581D0EEB1433550000CB25AE /* main.m in Sources */,
+				581D0EEF1433550000CB25AE /* DrawArbitaryPathAppDelegate.m in Sources */,
+				581D0EF51433550000CB25AE /* DrawArbitaryPathViewController.m in Sources */,
+				581D0F001433552200CB25AE /* DrawPathView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		581D0EE71433550000CB25AE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				581D0EE81433550000CB25AE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		581D0EF01433550000CB25AE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				581D0EF11433550000CB25AE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		581D0EF61433550000CB25AE /* DrawArbitaryPathViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				581D0EF71433550000CB25AE /* en */,
+			);
+			name = DrawArbitaryPathViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		581D0EF91433550000CB25AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		581D0EFA1433550000CB25AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		581D0EFC1433550000CB25AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawArbitaryPath/DrawArbitaryPath-Prefix.pch";
+				INFOPLIST_FILE = "DrawArbitaryPath/DrawArbitaryPath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		581D0EFD1433550000CB25AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DrawArbitaryPath/DrawArbitaryPath-Prefix.pch";
+				INFOPLIST_FILE = "DrawArbitaryPath/DrawArbitaryPath-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		581D0ED41433550000CB25AE /* Build configuration list for PBXProject "DrawArbitaryPath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581D0EF91433550000CB25AE /* Debug */,
+				581D0EFA1433550000CB25AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		581D0EFB1433550000CB25AE /* Build configuration list for PBXNativeTarget "DrawArbitaryPath" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581D0EFC1433550000CB25AE /* Debug */,
+				581D0EFD1433550000CB25AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 581D0ED11433550000CB25AE /* Project object */;
+}

@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58F0E0FD146961FE009338D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0E0FC146961FE009338D1 /* UIKit.framework */; };
+		58F0E0FF146961FE009338D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0E0FE146961FE009338D1 /* Foundation.framework */; };
+		58F0E101146961FE009338D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0E100146961FE009338D1 /* CoreGraphics.framework */; };
+		58F0E107146961FE009338D1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58F0E105146961FE009338D1 /* InfoPlist.strings */; };
+		58F0E109146961FE009338D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0E108146961FE009338D1 /* main.m */; };
+		58F0E10D146961FE009338D1 /* AddSubViewWithAnimationAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0E10C146961FE009338D1 /* AddSubViewWithAnimationAppDelegate.m */; };
+		58F0E110146961FE009338D1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F0E10E146961FE009338D1 /* MainWindow.xib */; };
+		58F0E113146961FE009338D1 /* AddSubViewWithAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0E112146961FE009338D1 /* AddSubViewWithAnimationViewController.m */; };
+		58F0E116146961FE009338D1 /* AddSubViewWithAnimationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F0E114146961FE009338D1 /* AddSubViewWithAnimationViewController.xib */; };
+		58F0E11F1469644C009338D1 /* SecondView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0E11D1469644C009338D1 /* SecondView.m */; };
+		58F0E1201469644C009338D1 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58F0E11E1469644C009338D1 /* SecondView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58F0E0F8146961FE009338D1 /* AddSubViewWithAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddSubViewWithAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F0E0FC146961FE009338D1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58F0E0FE146961FE009338D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58F0E100146961FE009338D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58F0E104146961FE009338D1 /* AddSubViewWithAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AddSubViewWithAnimation-Info.plist"; sourceTree = "<group>"; };
+		58F0E106146961FE009338D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58F0E108146961FE009338D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58F0E10A146961FE009338D1 /* AddSubViewWithAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AddSubViewWithAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		58F0E10B146961FE009338D1 /* AddSubViewWithAnimationAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddSubViewWithAnimationAppDelegate.h; sourceTree = "<group>"; };
+		58F0E10C146961FE009338D1 /* AddSubViewWithAnimationAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddSubViewWithAnimationAppDelegate.m; sourceTree = "<group>"; };
+		58F0E10F146961FE009338D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58F0E111146961FE009338D1 /* AddSubViewWithAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddSubViewWithAnimationViewController.h; sourceTree = "<group>"; };
+		58F0E112146961FE009338D1 /* AddSubViewWithAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddSubViewWithAnimationViewController.m; sourceTree = "<group>"; };
+		58F0E115146961FE009338D1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AddSubViewWithAnimationViewController.xib; sourceTree = "<group>"; };
+		58F0E11C1469644C009338D1 /* SecondView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondView.h; sourceTree = "<group>"; };
+		58F0E11D1469644C009338D1 /* SecondView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondView.m; sourceTree = "<group>"; };
+		58F0E11E1469644C009338D1 /* SecondView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58F0E0F5146961FE009338D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F0E0FD146961FE009338D1 /* UIKit.framework in Frameworks */,
+				58F0E0FF146961FE009338D1 /* Foundation.framework in Frameworks */,
+				58F0E101146961FE009338D1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58F0E0ED146961FE009338D1 = {
+			isa = PBXGroup;
+			children = (
+				58F0E102146961FE009338D1 /* AddSubViewWithAnimation */,
+				58F0E0FB146961FE009338D1 /* Frameworks */,
+				58F0E0F9146961FE009338D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58F0E0F9146961FE009338D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58F0E0F8146961FE009338D1 /* AddSubViewWithAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58F0E0FB146961FE009338D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58F0E0FC146961FE009338D1 /* UIKit.framework */,
+				58F0E0FE146961FE009338D1 /* Foundation.framework */,
+				58F0E100146961FE009338D1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58F0E102146961FE009338D1 /* AddSubViewWithAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				58F0E10B146961FE009338D1 /* AddSubViewWithAnimationAppDelegate.h */,
+				58F0E10C146961FE009338D1 /* AddSubViewWithAnimationAppDelegate.m */,
+				58F0E10E146961FE009338D1 /* MainWindow.xib */,
+				58F0E111146961FE009338D1 /* AddSubViewWithAnimationViewController.h */,
+				58F0E112146961FE009338D1 /* AddSubViewWithAnimationViewController.m */,
+				58F0E114146961FE009338D1 /* AddSubViewWithAnimationViewController.xib */,
+				58F0E11C1469644C009338D1 /* SecondView.h */,
+				58F0E11D1469644C009338D1 /* SecondView.m */,
+				58F0E11E1469644C009338D1 /* SecondView.xib */,
+				58F0E103146961FE009338D1 /* Supporting Files */,
+			);
+			path = AddSubViewWithAnimation;
+			sourceTree = "<group>";
+		};
+		58F0E103146961FE009338D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58F0E104146961FE009338D1 /* AddSubViewWithAnimation-Info.plist */,
+				58F0E105146961FE009338D1 /* InfoPlist.strings */,
+				58F0E108146961FE009338D1 /* main.m */,
+				58F0E10A146961FE009338D1 /* AddSubViewWithAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58F0E0F7146961FE009338D1 /* AddSubViewWithAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58F0E119146961FE009338D1 /* Build configuration list for PBXNativeTarget "AddSubViewWithAnimation" */;
+			buildPhases = (
+				58F0E0F4146961FE009338D1 /* Sources */,
+				58F0E0F5146961FE009338D1 /* Frameworks */,
+				58F0E0F6146961FE009338D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AddSubViewWithAnimation;
+			productName = AddSubViewWithAnimation;
+			productReference = 58F0E0F8146961FE009338D1 /* AddSubViewWithAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58F0E0EF146961FE009338D1 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58F0E0F2146961FE009338D1 /* Build configuration list for PBXProject "AddSubViewWithAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58F0E0ED146961FE009338D1;
+			productRefGroup = 58F0E0F9146961FE009338D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58F0E0F7146961FE009338D1 /* AddSubViewWithAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58F0E0F6146961FE009338D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F0E107146961FE009338D1 /* InfoPlist.strings in Resources */,
+				58F0E110146961FE009338D1 /* MainWindow.xib in Resources */,
+				58F0E116146961FE009338D1 /* AddSubViewWithAnimationViewController.xib in Resources */,
+				58F0E1201469644C009338D1 /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58F0E0F4146961FE009338D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58F0E109146961FE009338D1 /* main.m in Sources */,
+				58F0E10D146961FE009338D1 /* AddSubViewWithAnimationAppDelegate.m in Sources */,
+				58F0E113146961FE009338D1 /* AddSubViewWithAnimationViewController.m in Sources */,
+				58F0E11F1469644C009338D1 /* SecondView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58F0E105146961FE009338D1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F0E106146961FE009338D1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58F0E10E146961FE009338D1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F0E10F146961FE009338D1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		58F0E114146961FE009338D1 /* AddSubViewWithAnimationViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58F0E115146961FE009338D1 /* en */,
+			);
+			name = AddSubViewWithAnimationViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58F0E117146961FE009338D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58F0E118146961FE009338D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58F0E11A146961FE009338D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AddSubViewWithAnimation/AddSubViewWithAnimation-Prefix.pch";
+				INFOPLIST_FILE = "AddSubViewWithAnimation/AddSubViewWithAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58F0E11B146961FE009338D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AddSubViewWithAnimation/AddSubViewWithAnimation-Prefix.pch";
+				INFOPLIST_FILE = "AddSubViewWithAnimation/AddSubViewWithAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58F0E0F2146961FE009338D1 /* Build configuration list for PBXProject "AddSubViewWithAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F0E117146961FE009338D1 /* Debug */,
+				58F0E118146961FE009338D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58F0E119146961FE009338D1 /* Build configuration list for PBXNativeTarget "AddSubViewWithAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58F0E11A146961FE009338D1 /* Debug */,
+				58F0E11B146961FE009338D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58F0E0EF146961FE009338D1 /* Project object */;
+}

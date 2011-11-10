@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5862C4FD146C21AE008C8173 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5862C4FC146C21AE008C8173 /* UIKit.framework */; };
+		5862C4FF146C21AE008C8173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5862C4FE146C21AE008C8173 /* Foundation.framework */; };
+		5862C501146C21AE008C8173 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5862C500146C21AE008C8173 /* CoreGraphics.framework */; };
+		5862C507146C21AE008C8173 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5862C505146C21AE008C8173 /* InfoPlist.strings */; };
+		5862C509146C21AE008C8173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862C508146C21AE008C8173 /* main.m */; };
+		5862C50D146C21AE008C8173 /* CircularScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862C50C146C21AE008C8173 /* CircularScrollViewAppDelegate.m */; };
+		5862C510146C21AF008C8173 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5862C50E146C21AF008C8173 /* MainWindow.xib */; };
+		5862C513146C21AF008C8173 /* CircularScrollViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862C512146C21AF008C8173 /* CircularScrollViewViewController.m */; };
+		5862C516146C21AF008C8173 /* CircularScrollViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5862C514146C21AF008C8173 /* CircularScrollViewViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5862C4F8146C21AE008C8173 /* CircularScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5862C4FC146C21AE008C8173 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5862C4FE146C21AE008C8173 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5862C500146C21AE008C8173 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5862C504146C21AE008C8173 /* CircularScrollView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CircularScrollView-Info.plist"; sourceTree = "<group>"; };
+		5862C506146C21AE008C8173 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5862C508146C21AE008C8173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5862C50A146C21AE008C8173 /* CircularScrollView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CircularScrollView-Prefix.pch"; sourceTree = "<group>"; };
+		5862C50B146C21AE008C8173 /* CircularScrollViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularScrollViewAppDelegate.h; sourceTree = "<group>"; };
+		5862C50C146C21AE008C8173 /* CircularScrollViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularScrollViewAppDelegate.m; sourceTree = "<group>"; };
+		5862C50F146C21AF008C8173 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5862C511146C21AF008C8173 /* CircularScrollViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularScrollViewViewController.h; sourceTree = "<group>"; };
+		5862C512146C21AF008C8173 /* CircularScrollViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularScrollViewViewController.m; sourceTree = "<group>"; };
+		5862C515146C21AF008C8173 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CircularScrollViewViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5862C4F5146C21AE008C8173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5862C4FD146C21AE008C8173 /* UIKit.framework in Frameworks */,
+				5862C4FF146C21AE008C8173 /* Foundation.framework in Frameworks */,
+				5862C501146C21AE008C8173 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5862C4ED146C21AE008C8173 = {
+			isa = PBXGroup;
+			children = (
+				5862C502146C21AE008C8173 /* CircularScrollView */,
+				5862C4FB146C21AE008C8173 /* Frameworks */,
+				5862C4F9146C21AE008C8173 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5862C4F9146C21AE008C8173 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5862C4F8146C21AE008C8173 /* CircularScrollView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5862C4FB146C21AE008C8173 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5862C4FC146C21AE008C8173 /* UIKit.framework */,
+				5862C4FE146C21AE008C8173 /* Foundation.framework */,
+				5862C500146C21AE008C8173 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5862C502146C21AE008C8173 /* CircularScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				5862C50B146C21AE008C8173 /* CircularScrollViewAppDelegate.h */,
+				5862C50C146C21AE008C8173 /* CircularScrollViewAppDelegate.m */,
+				5862C50E146C21AF008C8173 /* MainWindow.xib */,
+				5862C511146C21AF008C8173 /* CircularScrollViewViewController.h */,
+				5862C512146C21AF008C8173 /* CircularScrollViewViewController.m */,
+				5862C514146C21AF008C8173 /* CircularScrollViewViewController.xib */,
+				5862C503146C21AE008C8173 /* Supporting Files */,
+			);
+			path = CircularScrollView;
+			sourceTree = "<group>";
+		};
+		5862C503146C21AE008C8173 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5862C504146C21AE008C8173 /* CircularScrollView-Info.plist */,
+				5862C505146C21AE008C8173 /* InfoPlist.strings */,
+				5862C508146C21AE008C8173 /* main.m */,
+				5862C50A146C21AE008C8173 /* CircularScrollView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5862C4F7146C21AE008C8173 /* CircularScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5862C519146C21AF008C8173 /* Build configuration list for PBXNativeTarget "CircularScrollView" */;
+			buildPhases = (
+				5862C4F4146C21AE008C8173 /* Sources */,
+				5862C4F5146C21AE008C8173 /* Frameworks */,
+				5862C4F6146C21AE008C8173 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircularScrollView;
+			productName = CircularScrollView;
+			productReference = 5862C4F8146C21AE008C8173 /* CircularScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5862C4EF146C21AE008C8173 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5862C4F2146C21AE008C8173 /* Build configuration list for PBXProject "CircularScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5862C4ED146C21AE008C8173;
+			productRefGroup = 5862C4F9146C21AE008C8173 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5862C4F7146C21AE008C8173 /* CircularScrollView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5862C4F6146C21AE008C8173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5862C507146C21AE008C8173 /* InfoPlist.strings in Resources */,
+				5862C510146C21AF008C8173 /* MainWindow.xib in Resources */,
+				5862C516146C21AF008C8173 /* CircularScrollViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5862C4F4146C21AE008C8173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5862C509146C21AE008C8173 /* main.m in Sources */,
+				5862C50D146C21AE008C8173 /* CircularScrollViewAppDelegate.m in Sources */,
+				5862C513146C21AF008C8173 /* CircularScrollViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5862C505146C21AE008C8173 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5862C506146C21AE008C8173 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5862C50E146C21AF008C8173 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5862C50F146C21AF008C8173 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5862C514146C21AF008C8173 /* CircularScrollViewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5862C515146C21AF008C8173 /* en */,
+			);
+			name = CircularScrollViewViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5862C517146C21AF008C8173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5862C518146C21AF008C8173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5862C51A146C21AF008C8173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CircularScrollView/CircularScrollView-Prefix.pch";
+				INFOPLIST_FILE = "CircularScrollView/CircularScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5862C51B146C21AF008C8173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CircularScrollView/CircularScrollView-Prefix.pch";
+				INFOPLIST_FILE = "CircularScrollView/CircularScrollView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5862C4F2146C21AE008C8173 /* Build configuration list for PBXProject "CircularScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5862C517146C21AF008C8173 /* Debug */,
+				5862C518146C21AF008C8173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5862C519146C21AF008C8173 /* Build configuration list for PBXNativeTarget "CircularScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5862C51A146C21AF008C8173 /* Debug */,
+				5862C51B146C21AF008C8173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5862C4EF146C21AE008C8173 /* Project object */;
+}
