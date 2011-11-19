@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		582F217E1475530D0095069E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582F217D1475530D0095069E /* UIKit.framework */; };
+		582F21801475530D0095069E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582F217F1475530D0095069E /* Foundation.framework */; };
+		582F21821475530D0095069E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582F21811475530D0095069E /* CoreGraphics.framework */; };
+		582F21841475530D0095069E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582F21831475530D0095069E /* QuartzCore.framework */; };
+		582F21861475530D0095069E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582F21851475530D0095069E /* OpenGLES.framework */; };
+		582F218C1475530D0095069E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 582F218A1475530D0095069E /* InfoPlist.strings */; };
+		582F218E1475530D0095069E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 582F218D1475530D0095069E /* main.m */; };
+		582F21921475530D0095069E /* PlaneDeformAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 582F21911475530D0095069E /* PlaneDeformAppDelegate.m */; };
+		582F21951475530D0095069E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582F21931475530D0095069E /* MainWindow.xib */; };
+		582F21971475530D0095069E /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 582F21961475530D0095069E /* Shader.fsh */; };
+		582F21991475530D0095069E /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 582F21981475530D0095069E /* Shader.vsh */; };
+		582F219C1475530D0095069E /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 582F219B1475530D0095069E /* EAGLView.m */; };
+		582F219F1475530E0095069E /* PlaneDeformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582F219E1475530E0095069E /* PlaneDeformViewController.m */; };
+		582F21A21475530E0095069E /* PlaneDeformViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582F21A01475530E0095069E /* PlaneDeformViewController.xib */; };
+		582F21A9147553620095069E /* tex3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 582F21A8147553620095069E /* tex3.jpg */; };
+		58DE550D147689590085A45F /* tex1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58DE550B147689590085A45F /* tex1.jpg */; };
+		58DE550E147689590085A45F /* tex2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58DE550C147689590085A45F /* tex2.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		582F21791475530D0095069E /* PlaneDeform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaneDeform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		582F217D1475530D0095069E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		582F217F1475530D0095069E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		582F21811475530D0095069E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		582F21831475530D0095069E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		582F21851475530D0095069E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		582F21891475530D0095069E /* PlaneDeform-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PlaneDeform-Info.plist"; sourceTree = "<group>"; };
+		582F218B1475530D0095069E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		582F218D1475530D0095069E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		582F218F1475530D0095069E /* PlaneDeform-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlaneDeform-Prefix.pch"; sourceTree = "<group>"; };
+		582F21901475530D0095069E /* PlaneDeformAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaneDeformAppDelegate.h; sourceTree = "<group>"; };
+		582F21911475530D0095069E /* PlaneDeformAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaneDeformAppDelegate.m; sourceTree = "<group>"; };
+		582F21941475530D0095069E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		582F21961475530D0095069E /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		582F21981475530D0095069E /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		582F219A1475530D0095069E /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		582F219B1475530D0095069E /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		582F219D1475530D0095069E /* PlaneDeformViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaneDeformViewController.h; sourceTree = "<group>"; };
+		582F219E1475530E0095069E /* PlaneDeformViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaneDeformViewController.m; sourceTree = "<group>"; };
+		582F21A11475530E0095069E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PlaneDeformViewController.xib; sourceTree = "<group>"; };
+		582F21A8147553620095069E /* tex3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex3.jpg; sourceTree = "<group>"; };
+		58DE550B147689590085A45F /* tex1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex1.jpg; sourceTree = "<group>"; };
+		58DE550C147689590085A45F /* tex2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex2.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		582F21761475530D0095069E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582F217E1475530D0095069E /* UIKit.framework in Frameworks */,
+				582F21801475530D0095069E /* Foundation.framework in Frameworks */,
+				582F21821475530D0095069E /* CoreGraphics.framework in Frameworks */,
+				582F21841475530D0095069E /* QuartzCore.framework in Frameworks */,
+				582F21861475530D0095069E /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		582F216E1475530D0095069E = {
+			isa = PBXGroup;
+			children = (
+				582F21871475530D0095069E /* PlaneDeform */,
+				582F217C1475530D0095069E /* Frameworks */,
+				582F217A1475530D0095069E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		582F217A1475530D0095069E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				582F21791475530D0095069E /* PlaneDeform.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		582F217C1475530D0095069E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582F217D1475530D0095069E /* UIKit.framework */,
+				582F217F1475530D0095069E /* Foundation.framework */,
+				582F21811475530D0095069E /* CoreGraphics.framework */,
+				582F21831475530D0095069E /* QuartzCore.framework */,
+				582F21851475530D0095069E /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		582F21871475530D0095069E /* PlaneDeform */ = {
+			isa = PBXGroup;
+			children = (
+				58DE550B147689590085A45F /* tex1.jpg */,
+				58DE550C147689590085A45F /* tex2.jpg */,
+				582F21A8147553620095069E /* tex3.jpg */,
+				582F21901475530D0095069E /* PlaneDeformAppDelegate.h */,
+				582F21911475530D0095069E /* PlaneDeformAppDelegate.m */,
+				582F21931475530D0095069E /* MainWindow.xib */,
+				582F21961475530D0095069E /* Shader.fsh */,
+				582F21981475530D0095069E /* Shader.vsh */,
+				582F219A1475530D0095069E /* EAGLView.h */,
+				582F219B1475530D0095069E /* EAGLView.m */,
+				582F219D1475530D0095069E /* PlaneDeformViewController.h */,
+				582F219E1475530E0095069E /* PlaneDeformViewController.m */,
+				582F21A01475530E0095069E /* PlaneDeformViewController.xib */,
+				582F21881475530D0095069E /* Supporting Files */,
+			);
+			path = PlaneDeform;
+			sourceTree = "<group>";
+		};
+		582F21881475530D0095069E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				582F21891475530D0095069E /* PlaneDeform-Info.plist */,
+				582F218A1475530D0095069E /* InfoPlist.strings */,
+				582F218D1475530D0095069E /* main.m */,
+				582F218F1475530D0095069E /* PlaneDeform-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		582F21781475530D0095069E /* PlaneDeform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582F21A51475530E0095069E /* Build configuration list for PBXNativeTarget "PlaneDeform" */;
+			buildPhases = (
+				582F21751475530D0095069E /* Sources */,
+				582F21761475530D0095069E /* Frameworks */,
+				582F21771475530D0095069E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaneDeform;
+			productName = PlaneDeform;
+			productReference = 582F21791475530D0095069E /* PlaneDeform.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		582F21701475530D0095069E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 582F21731475530D0095069E /* Build configuration list for PBXProject "PlaneDeform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 582F216E1475530D0095069E;
+			productRefGroup = 582F217A1475530D0095069E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				582F21781475530D0095069E /* PlaneDeform */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		582F21771475530D0095069E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582F218C1475530D0095069E /* InfoPlist.strings in Resources */,
+				582F21951475530D0095069E /* MainWindow.xib in Resources */,
+				582F21971475530D0095069E /* Shader.fsh in Resources */,
+				582F21991475530D0095069E /* Shader.vsh in Resources */,
+				582F21A21475530E0095069E /* PlaneDeformViewController.xib in Resources */,
+				582F21A9147553620095069E /* tex3.jpg in Resources */,
+				58DE550D147689590085A45F /* tex1.jpg in Resources */,
+				58DE550E147689590085A45F /* tex2.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		582F21751475530D0095069E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582F218E1475530D0095069E /* main.m in Sources */,
+				582F21921475530D0095069E /* PlaneDeformAppDelegate.m in Sources */,
+				582F219C1475530D0095069E /* EAGLView.m in Sources */,
+				582F219F1475530E0095069E /* PlaneDeformViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		582F218A1475530D0095069E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582F218B1475530D0095069E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		582F21931475530D0095069E /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582F21941475530D0095069E /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		582F21A01475530E0095069E /* PlaneDeformViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582F21A11475530E0095069E /* en */,
+			);
+			name = PlaneDeformViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		582F21A31475530E0095069E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		582F21A41475530E0095069E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		582F21A61475530E0095069E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlaneDeform/PlaneDeform-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "PlaneDeform/PlaneDeform-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		582F21A71475530E0095069E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PlaneDeform/PlaneDeform-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "PlaneDeform/PlaneDeform-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		582F21731475530D0095069E /* Build configuration list for PBXProject "PlaneDeform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582F21A31475530E0095069E /* Debug */,
+				582F21A41475530E0095069E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582F21A51475530E0095069E /* Build configuration list for PBXNativeTarget "PlaneDeform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582F21A61475530E0095069E /* Debug */,
+				582F21A71475530E0095069E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 582F21701475530D0095069E /* Project object */;
+}

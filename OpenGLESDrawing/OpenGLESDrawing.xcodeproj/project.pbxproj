@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		582E327A14713FE8006B577B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582E327914713FE8006B577B /* UIKit.framework */; };
+		582E327C14713FE8006B577B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582E327B14713FE8006B577B /* Foundation.framework */; };
+		582E327E14713FE8006B577B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582E327D14713FE8006B577B /* CoreGraphics.framework */; };
+		582E328014713FE8006B577B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582E327F14713FE8006B577B /* QuartzCore.framework */; };
+		582E328214713FE8006B577B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582E328114713FE8006B577B /* OpenGLES.framework */; };
+		582E328814713FE8006B577B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 582E328614713FE8006B577B /* InfoPlist.strings */; };
+		582E328A14713FE8006B577B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 582E328914713FE8006B577B /* main.m */; };
+		582E328E14713FE8006B577B /* OpenGLESDrawingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 582E328D14713FE8006B577B /* OpenGLESDrawingAppDelegate.m */; };
+		582E329114713FE8006B577B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582E328F14713FE8006B577B /* MainWindow.xib */; };
+		582E329314713FE8006B577B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 582E329214713FE8006B577B /* Shader.fsh */; };
+		582E329514713FE8006B577B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 582E329414713FE8006B577B /* Shader.vsh */; };
+		582E329814713FE8006B577B /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 582E329714713FE8006B577B /* EAGLView.m */; };
+		582E329B14713FE8006B577B /* OpenGLESDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582E329A14713FE8006B577B /* OpenGLESDrawingViewController.m */; };
+		582E329E14713FE8006B577B /* OpenGLESDrawingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582E329C14713FE8006B577B /* OpenGLESDrawingViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		582E327514713FE8006B577B /* OpenGLESDrawing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGLESDrawing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		582E327914713FE8006B577B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		582E327B14713FE8006B577B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		582E327D14713FE8006B577B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		582E327F14713FE8006B577B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		582E328114713FE8006B577B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		582E328514713FE8006B577B /* OpenGLESDrawing-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenGLESDrawing-Info.plist"; sourceTree = "<group>"; };
+		582E328714713FE8006B577B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		582E328914713FE8006B577B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		582E328B14713FE8006B577B /* OpenGLESDrawing-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenGLESDrawing-Prefix.pch"; sourceTree = "<group>"; };
+		582E328C14713FE8006B577B /* OpenGLESDrawingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLESDrawingAppDelegate.h; sourceTree = "<group>"; };
+		582E328D14713FE8006B577B /* OpenGLESDrawingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESDrawingAppDelegate.m; sourceTree = "<group>"; };
+		582E329014713FE8006B577B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		582E329214713FE8006B577B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		582E329414713FE8006B577B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		582E329614713FE8006B577B /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		582E329714713FE8006B577B /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		582E329914713FE8006B577B /* OpenGLESDrawingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLESDrawingViewController.h; sourceTree = "<group>"; };
+		582E329A14713FE8006B577B /* OpenGLESDrawingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESDrawingViewController.m; sourceTree = "<group>"; };
+		582E329D14713FE8006B577B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/OpenGLESDrawingViewController.xib; sourceTree = "<group>"; };
+		5887F44314752D4000D51AEB /* monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = monkey.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		582E327214713FE8006B577B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582E327A14713FE8006B577B /* UIKit.framework in Frameworks */,
+				582E327C14713FE8006B577B /* Foundation.framework in Frameworks */,
+				582E327E14713FE8006B577B /* CoreGraphics.framework in Frameworks */,
+				582E328014713FE8006B577B /* QuartzCore.framework in Frameworks */,
+				582E328214713FE8006B577B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		582E326A14713FE8006B577B = {
+			isa = PBXGroup;
+			children = (
+				582E328314713FE8006B577B /* OpenGLESDrawing */,
+				582E327814713FE8006B577B /* Frameworks */,
+				582E327614713FE8006B577B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		582E327614713FE8006B577B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				582E327514713FE8006B577B /* OpenGLESDrawing.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		582E327814713FE8006B577B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582E327914713FE8006B577B /* UIKit.framework */,
+				582E327B14713FE8006B577B /* Foundation.framework */,
+				582E327D14713FE8006B577B /* CoreGraphics.framework */,
+				582E327F14713FE8006B577B /* QuartzCore.framework */,
+				582E328114713FE8006B577B /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		582E328314713FE8006B577B /* OpenGLESDrawing */ = {
+			isa = PBXGroup;
+			children = (
+				5887F44314752D4000D51AEB /* monkey.h */,
+				582E328C14713FE8006B577B /* OpenGLESDrawingAppDelegate.h */,
+				582E328D14713FE8006B577B /* OpenGLESDrawingAppDelegate.m */,
+				582E328F14713FE8006B577B /* MainWindow.xib */,
+				582E329214713FE8006B577B /* Shader.fsh */,
+				582E329414713FE8006B577B /* Shader.vsh */,
+				582E329614713FE8006B577B /* EAGLView.h */,
+				582E329714713FE8006B577B /* EAGLView.m */,
+				582E329914713FE8006B577B /* OpenGLESDrawingViewController.h */,
+				582E329A14713FE8006B577B /* OpenGLESDrawingViewController.m */,
+				582E329C14713FE8006B577B /* OpenGLESDrawingViewController.xib */,
+				582E328414713FE8006B577B /* Supporting Files */,
+			);
+			path = OpenGLESDrawing;
+			sourceTree = "<group>";
+		};
+		582E328414713FE8006B577B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				582E328514713FE8006B577B /* OpenGLESDrawing-Info.plist */,
+				582E328614713FE8006B577B /* InfoPlist.strings */,
+				582E328914713FE8006B577B /* main.m */,
+				582E328B14713FE8006B577B /* OpenGLESDrawing-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		582E327414713FE8006B577B /* OpenGLESDrawing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582E32A114713FE8006B577B /* Build configuration list for PBXNativeTarget "OpenGLESDrawing" */;
+			buildPhases = (
+				582E327114713FE8006B577B /* Sources */,
+				582E327214713FE8006B577B /* Frameworks */,
+				582E327314713FE8006B577B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLESDrawing;
+			productName = OpenGLESDrawing;
+			productReference = 582E327514713FE8006B577B /* OpenGLESDrawing.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		582E326C14713FE8006B577B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 582E326F14713FE8006B577B /* Build configuration list for PBXProject "OpenGLESDrawing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 582E326A14713FE8006B577B;
+			productRefGroup = 582E327614713FE8006B577B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				582E327414713FE8006B577B /* OpenGLESDrawing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		582E327314713FE8006B577B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582E328814713FE8006B577B /* InfoPlist.strings in Resources */,
+				582E329114713FE8006B577B /* MainWindow.xib in Resources */,
+				582E329314713FE8006B577B /* Shader.fsh in Resources */,
+				582E329514713FE8006B577B /* Shader.vsh in Resources */,
+				582E329E14713FE8006B577B /* OpenGLESDrawingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		582E327114713FE8006B577B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582E328A14713FE8006B577B /* main.m in Sources */,
+				582E328E14713FE8006B577B /* OpenGLESDrawingAppDelegate.m in Sources */,
+				582E329814713FE8006B577B /* EAGLView.m in Sources */,
+				582E329B14713FE8006B577B /* OpenGLESDrawingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		582E328614713FE8006B577B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582E328714713FE8006B577B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		582E328F14713FE8006B577B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582E329014713FE8006B577B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		582E329C14713FE8006B577B /* OpenGLESDrawingViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582E329D14713FE8006B577B /* en */,
+			);
+			name = OpenGLESDrawingViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		582E329F14713FE8006B577B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		582E32A014713FE8006B577B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		582E32A214713FE8006B577B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLESDrawing/OpenGLESDrawing-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "OpenGLESDrawing/OpenGLESDrawing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		582E32A314713FE8006B577B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenGLESDrawing/OpenGLESDrawing-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "OpenGLESDrawing/OpenGLESDrawing-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		582E326F14713FE8006B577B /* Build configuration list for PBXProject "OpenGLESDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582E329F14713FE8006B577B /* Debug */,
+				582E32A014713FE8006B577B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582E32A114713FE8006B577B /* Build configuration list for PBXNativeTarget "OpenGLESDrawing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582E32A214713FE8006B577B /* Debug */,
+				582E32A314713FE8006B577B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 582E326C14713FE8006B577B /* Project object */;
+}
