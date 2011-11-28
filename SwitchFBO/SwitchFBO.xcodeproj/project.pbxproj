@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		585127651483BEE800A043E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585127641483BEE800A043E5 /* UIKit.framework */; };
+		585127671483BEE800A043E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585127661483BEE800A043E5 /* Foundation.framework */; };
+		585127691483BEE800A043E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 585127681483BEE800A043E5 /* CoreGraphics.framework */; };
+		5851276B1483BEE800A043E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5851276A1483BEE800A043E5 /* QuartzCore.framework */; };
+		5851276D1483BEE800A043E5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5851276C1483BEE800A043E5 /* OpenGLES.framework */; };
+		585127731483BEE800A043E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 585127711483BEE800A043E5 /* InfoPlist.strings */; };
+		585127751483BEE800A043E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 585127741483BEE800A043E5 /* main.m */; };
+		585127791483BEE800A043E5 /* SwitchFBOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 585127781483BEE800A043E5 /* SwitchFBOAppDelegate.m */; };
+		5851277C1483BEE800A043E5 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5851277A1483BEE800A043E5 /* MainWindow.xib */; };
+		5851277E1483BEE800A043E5 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5851277D1483BEE800A043E5 /* Shader.fsh */; };
+		585127801483BEE800A043E5 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5851277F1483BEE800A043E5 /* Shader.vsh */; };
+		585127831483BEE800A043E5 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 585127821483BEE800A043E5 /* EAGLView.m */; };
+		585127861483BEE800A043E5 /* SwitchFBOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585127851483BEE800A043E5 /* SwitchFBOViewController.m */; };
+		585127891483BEE800A043E5 /* SwitchFBOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 585127871483BEE800A043E5 /* SwitchFBOViewController.xib */; };
+		585127991483D47900A043E5 /* automate.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 585127971483D47900A043E5 /* automate.fsh */; };
+		5851279A1483D47900A043E5 /* automate.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 585127981483D47900A043E5 /* automate.vsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		585127601483BEE800A043E5 /* SwitchFBO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchFBO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		585127641483BEE800A043E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		585127661483BEE800A043E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		585127681483BEE800A043E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5851276A1483BEE800A043E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5851276C1483BEE800A043E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		585127701483BEE800A043E5 /* SwitchFBO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwitchFBO-Info.plist"; sourceTree = "<group>"; };
+		585127721483BEE800A043E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		585127741483BEE800A043E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		585127761483BEE800A043E5 /* SwitchFBO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwitchFBO-Prefix.pch"; sourceTree = "<group>"; };
+		585127771483BEE800A043E5 /* SwitchFBOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchFBOAppDelegate.h; sourceTree = "<group>"; };
+		585127781483BEE800A043E5 /* SwitchFBOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchFBOAppDelegate.m; sourceTree = "<group>"; };
+		5851277B1483BEE800A043E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5851277D1483BEE800A043E5 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		5851277F1483BEE800A043E5 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		585127811483BEE800A043E5 /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		585127821483BEE800A043E5 /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		585127841483BEE800A043E5 /* SwitchFBOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwitchFBOViewController.h; sourceTree = "<group>"; };
+		585127851483BEE800A043E5 /* SwitchFBOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwitchFBOViewController.m; sourceTree = "<group>"; };
+		585127881483BEE800A043E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SwitchFBOViewController.xib; sourceTree = "<group>"; };
+		585127971483D47900A043E5 /* automate.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = automate.fsh; path = Shaders/automate.fsh; sourceTree = "<group>"; };
+		585127981483D47900A043E5 /* automate.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = automate.vsh; path = Shaders/automate.vsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5851275D1483BEE800A043E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585127651483BEE800A043E5 /* UIKit.framework in Frameworks */,
+				585127671483BEE800A043E5 /* Foundation.framework in Frameworks */,
+				585127691483BEE800A043E5 /* CoreGraphics.framework in Frameworks */,
+				5851276B1483BEE800A043E5 /* QuartzCore.framework in Frameworks */,
+				5851276D1483BEE800A043E5 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		585127551483BEE700A043E5 = {
+			isa = PBXGroup;
+			children = (
+				5851276E1483BEE800A043E5 /* SwitchFBO */,
+				585127631483BEE800A043E5 /* Frameworks */,
+				585127611483BEE800A043E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		585127611483BEE800A043E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				585127601483BEE800A043E5 /* SwitchFBO.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		585127631483BEE800A043E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				585127641483BEE800A043E5 /* UIKit.framework */,
+				585127661483BEE800A043E5 /* Foundation.framework */,
+				585127681483BEE800A043E5 /* CoreGraphics.framework */,
+				5851276A1483BEE800A043E5 /* QuartzCore.framework */,
+				5851276C1483BEE800A043E5 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5851276E1483BEE800A043E5 /* SwitchFBO */ = {
+			isa = PBXGroup;
+			children = (
+				585127971483D47900A043E5 /* automate.fsh */,
+				585127981483D47900A043E5 /* automate.vsh */,
+				585127771483BEE800A043E5 /* SwitchFBOAppDelegate.h */,
+				585127781483BEE800A043E5 /* SwitchFBOAppDelegate.m */,
+				5851277A1483BEE800A043E5 /* MainWindow.xib */,
+				5851277D1483BEE800A043E5 /* Shader.fsh */,
+				5851277F1483BEE800A043E5 /* Shader.vsh */,
+				585127811483BEE800A043E5 /* EAGLView.h */,
+				585127821483BEE800A043E5 /* EAGLView.m */,
+				585127841483BEE800A043E5 /* SwitchFBOViewController.h */,
+				585127851483BEE800A043E5 /* SwitchFBOViewController.m */,
+				585127871483BEE800A043E5 /* SwitchFBOViewController.xib */,
+				5851276F1483BEE800A043E5 /* Supporting Files */,
+			);
+			path = SwitchFBO;
+			sourceTree = "<group>";
+		};
+		5851276F1483BEE800A043E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				585127701483BEE800A043E5 /* SwitchFBO-Info.plist */,
+				585127711483BEE800A043E5 /* InfoPlist.strings */,
+				585127741483BEE800A043E5 /* main.m */,
+				585127761483BEE800A043E5 /* SwitchFBO-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5851275F1483BEE800A043E5 /* SwitchFBO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5851278C1483BEE800A043E5 /* Build configuration list for PBXNativeTarget "SwitchFBO" */;
+			buildPhases = (
+				5851275C1483BEE800A043E5 /* Sources */,
+				5851275D1483BEE800A043E5 /* Frameworks */,
+				5851275E1483BEE800A043E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwitchFBO;
+			productName = SwitchFBO;
+			productReference = 585127601483BEE800A043E5 /* SwitchFBO.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		585127571483BEE700A043E5 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5851275A1483BEE700A043E5 /* Build configuration list for PBXProject "SwitchFBO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 585127551483BEE700A043E5;
+			productRefGroup = 585127611483BEE800A043E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5851275F1483BEE800A043E5 /* SwitchFBO */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5851275E1483BEE800A043E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585127731483BEE800A043E5 /* InfoPlist.strings in Resources */,
+				5851277C1483BEE800A043E5 /* MainWindow.xib in Resources */,
+				5851277E1483BEE800A043E5 /* Shader.fsh in Resources */,
+				585127801483BEE800A043E5 /* Shader.vsh in Resources */,
+				585127891483BEE800A043E5 /* SwitchFBOViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5851275C1483BEE800A043E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585127751483BEE800A043E5 /* main.m in Sources */,
+				585127791483BEE800A043E5 /* SwitchFBOAppDelegate.m in Sources */,
+				585127831483BEE800A043E5 /* EAGLView.m in Sources */,
+				585127861483BEE800A043E5 /* SwitchFBOViewController.m in Sources */,
+				585127991483D47900A043E5 /* automate.fsh in Sources */,
+				5851279A1483D47900A043E5 /* automate.vsh in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		585127711483BEE800A043E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				585127721483BEE800A043E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5851277A1483BEE800A043E5 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5851277B1483BEE800A043E5 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		585127871483BEE800A043E5 /* SwitchFBOViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				585127881483BEE800A043E5 /* en */,
+			);
+			name = SwitchFBOViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5851278A1483BEE800A043E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5851278B1483BEE800A043E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5851278D1483BEE800A043E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchFBO/SwitchFBO-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "SwitchFBO/SwitchFBO-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5851278E1483BEE800A043E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SwitchFBO/SwitchFBO-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "SwitchFBO/SwitchFBO-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5851275A1483BEE700A043E5 /* Build configuration list for PBXProject "SwitchFBO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5851278A1483BEE800A043E5 /* Debug */,
+				5851278B1483BEE800A043E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5851278C1483BEE800A043E5 /* Build configuration list for PBXNativeTarget "SwitchFBO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5851278D1483BEE800A043E5 /* Debug */,
+				5851278E1483BEE800A043E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 585127571483BEE700A043E5 /* Project object */;
+}
