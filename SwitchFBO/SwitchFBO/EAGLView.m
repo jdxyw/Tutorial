@@ -112,7 +112,7 @@
         
         glBindFramebuffer(GL_FRAMEBUFFER, defaultFramebuffer);
         
-        glViewport(0, 0, 256, 256);
+        glViewport(0, 0, framebufferWidth, framebufferHeight);
     }
 }
 

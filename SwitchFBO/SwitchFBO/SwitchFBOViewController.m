@@ -89,7 +89,7 @@ enum {
     data=(GLubyte*)malloc(256*256*4*sizeof(GLubyte));
     GLubyte val;
     for (int i = 0; i < 256 * 256 * 4; i+=4) {   
-        if (rand()%10 ==1) 
+        if (rand()%2 ==1) 
             { val = 0; } 
         else 
             { val = 255; }
@@ -240,19 +240,27 @@ enum {
         
         if(counter%2==0)
         {
+            glUseProgram(0);
             glUseProgram(automateProg);
             glBindFramebuffer(GL_FRAMEBUFFER, fboA);
+            glViewport(0,0, 256, 256);
             glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, textureB);
             glUniform1i(AUTOMATE_TEXT, 0);
-            glUniform1f(DU, 1.0/256);
-            glUniform1f(DV, 1.0/256);
+            glUniform1f(DU, 1.0/256.0);
+            glUniform1f(DV, 1.0/256.0);
             // Update attribute values.
             glVertexAttribPointer(ATTRIB_VERTEX_2, 2, GL_FLOAT, 0, 0, squareVertices);
             glEnableVertexAttribArray(ATTRIB_VERTEX_2);
             
             glVertexAttribPointer(ATTRIB_TEXCOORD_2, 2, GL_FLOAT, GL_FALSE, 0, texCoord);    
-            //glEnableVertexAttribArray(ATTRIB_TEXCOORD_2);
+            glEnableVertexAttribArray(ATTRIB_TEXCOORD_2);
+            
+            GLfloat duu;
+            GLfloat dvv;
+            
+            glGetUniformfv(automateProg, DU, &duu);
+            glGetUniformfv(automateProg, DV, &dvv);
             glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
             if (![self validateProgram:automateProg]) {
                 NSLog(@"Failed to validate program: %d", automateProg);
@@ -264,18 +272,28 @@ enum {
         }
         else
         {
+            glUseProgram(0);
             glUseProgram(automateProg);            
             glBindFramebuffer(GL_FRAMEBUFFER, fboB);
+            glViewport(0,0, 256, 256);
+            
+
             glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, textureA);
             glUniform1i(AUTOMATE_TEXT, 0);
-            glUniform1f(DU, 1.0/256);
-            glUniform1f(DV, 1.0/256);
+            glUniform1f(DU, 1.0/256.0);
+            glUniform1f(DV, 1.0/256.0);
+            
+            GLfloat duu;
+            GLfloat dvv;
+            
+            glGetUniformfv(automateProg, DU, &duu);
+            glGetUniformfv(automateProg, DV, &dvv);
             // Update attribute values.
             glVertexAttribPointer(ATTRIB_VERTEX_2, 2, GL_FLOAT, 0, 0, squareVertices);
             glEnableVertexAttribArray(ATTRIB_VERTEX_2);
             glVertexAttribPointer(ATTRIB_TEXCOORD_2, 2, GL_FLOAT, GL_FALSE, 0, texCoord); 
-            //glEnableVertexAttribArray(ATTRIB_TEXCOORD_2);
+            glEnableVertexAttribArray(ATTRIB_TEXCOORD_2);
             glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
             if (![self validateProgram:automateProg]) {
                 NSLog(@"Failed to validate program: %d", automateProg);
@@ -292,6 +310,7 @@ enum {
         glClear(GL_COLOR_BUFFER_BIT);
 
         if (counter % 2 == 0) {
+            glUseProgram(0);
             glUseProgram(normalProg);
             glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, textureB);
@@ -305,9 +324,10 @@ enum {
                 NSLog(@"Failed to validate program: %d", normalProg);
                 return;
             }
-            glUseProgram(0);
+            //glUseProgram(0);
 
         } else {
+            glUseProgram(0);
             glUseProgram(normalProg);
             glActiveTexture(GL_TEXTURE0);
             glBindTexture(GL_TEXTURE_2D, textureA);
@@ -321,10 +341,11 @@ enum {
                 NSLog(@"Failed to validate program: %d", normalProg);
                 return;
             }
-            glUseProgram(0);
+            //glUseProgram(0);
         }
         counter++;
-        sleep(1);
+        
+        //sleep(1);
         // Use shader program.
        // glUseProgram(program);
         

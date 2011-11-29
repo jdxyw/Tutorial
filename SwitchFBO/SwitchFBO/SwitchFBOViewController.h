@@ -27,6 +27,7 @@
     
     GLuint textureA,textureB,fboA,fboB;
     GLubyte* data;
+    GLuint udu,udv;
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
