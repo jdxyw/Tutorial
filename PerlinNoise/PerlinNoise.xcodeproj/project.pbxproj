@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5844D3911487A53F009153B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5844D3901487A53F009153B8 /* UIKit.framework */; };
+		5844D3931487A53F009153B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5844D3921487A53F009153B8 /* Foundation.framework */; };
+		5844D3951487A53F009153B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5844D3941487A53F009153B8 /* CoreGraphics.framework */; };
+		5844D3971487A53F009153B8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5844D3961487A53F009153B8 /* QuartzCore.framework */; };
+		5844D3991487A53F009153B8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5844D3981487A53F009153B8 /* OpenGLES.framework */; };
+		5844D39F1487A53F009153B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5844D39D1487A53F009153B8 /* InfoPlist.strings */; };
+		5844D3A11487A53F009153B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5844D3A01487A53F009153B8 /* main.m */; };
+		5844D3A51487A53F009153B8 /* PerlinNoiseAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5844D3A41487A53F009153B8 /* PerlinNoiseAppDelegate.m */; };
+		5844D3A81487A53F009153B8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5844D3A61487A53F009153B8 /* MainWindow.xib */; };
+		5844D3AA1487A53F009153B8 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5844D3A91487A53F009153B8 /* Shader.fsh */; };
+		5844D3AC1487A53F009153B8 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5844D3AB1487A53F009153B8 /* Shader.vsh */; };
+		5844D3AF1487A53F009153B8 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5844D3AE1487A53F009153B8 /* EAGLView.m */; };
+		5844D3B21487A53F009153B8 /* PerlinNoiseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5844D3B11487A53F009153B8 /* PerlinNoiseViewController.m */; };
+		5844D3B51487A53F009153B8 /* PerlinNoiseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5844D3B31487A53F009153B8 /* PerlinNoiseViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5844D38C1487A53F009153B8 /* PerlinNoise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerlinNoise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5844D3901487A53F009153B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5844D3921487A53F009153B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5844D3941487A53F009153B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5844D3961487A53F009153B8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5844D3981487A53F009153B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		5844D39C1487A53F009153B8 /* PerlinNoise-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PerlinNoise-Info.plist"; sourceTree = "<group>"; };
+		5844D39E1487A53F009153B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5844D3A01487A53F009153B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5844D3A21487A53F009153B8 /* PerlinNoise-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PerlinNoise-Prefix.pch"; sourceTree = "<group>"; };
+		5844D3A31487A53F009153B8 /* PerlinNoiseAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerlinNoiseAppDelegate.h; sourceTree = "<group>"; };
+		5844D3A41487A53F009153B8 /* PerlinNoiseAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerlinNoiseAppDelegate.m; sourceTree = "<group>"; };
+		5844D3A71487A53F009153B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		5844D3A91487A53F009153B8 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		5844D3AB1487A53F009153B8 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		5844D3AD1487A53F009153B8 /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		5844D3AE1487A53F009153B8 /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		5844D3B01487A53F009153B8 /* PerlinNoiseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerlinNoiseViewController.h; sourceTree = "<group>"; };
+		5844D3B11487A53F009153B8 /* PerlinNoiseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerlinNoiseViewController.m; sourceTree = "<group>"; };
+		5844D3B41487A53F009153B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PerlinNoiseViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5844D3891487A53F009153B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5844D3911487A53F009153B8 /* UIKit.framework in Frameworks */,
+				5844D3931487A53F009153B8 /* Foundation.framework in Frameworks */,
+				5844D3951487A53F009153B8 /* CoreGraphics.framework in Frameworks */,
+				5844D3971487A53F009153B8 /* QuartzCore.framework in Frameworks */,
+				5844D3991487A53F009153B8 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5844D3811487A53F009153B8 = {
+			isa = PBXGroup;
+			children = (
+				5844D39A1487A53F009153B8 /* PerlinNoise */,
+				5844D38F1487A53F009153B8 /* Frameworks */,
+				5844D38D1487A53F009153B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5844D38D1487A53F009153B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5844D38C1487A53F009153B8 /* PerlinNoise.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5844D38F1487A53F009153B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5844D3901487A53F009153B8 /* UIKit.framework */,
+				5844D3921487A53F009153B8 /* Foundation.framework */,
+				5844D3941487A53F009153B8 /* CoreGraphics.framework */,
+				5844D3961487A53F009153B8 /* QuartzCore.framework */,
+				5844D3981487A53F009153B8 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5844D39A1487A53F009153B8 /* PerlinNoise */ = {
+			isa = PBXGroup;
+			children = (
+				5844D3A31487A53F009153B8 /* PerlinNoiseAppDelegate.h */,
+				5844D3A41487A53F009153B8 /* PerlinNoiseAppDelegate.m */,
+				5844D3A61487A53F009153B8 /* MainWindow.xib */,
+				5844D3A91487A53F009153B8 /* Shader.fsh */,
+				5844D3AB1487A53F009153B8 /* Shader.vsh */,
+				5844D3AD1487A53F009153B8 /* EAGLView.h */,
+				5844D3AE1487A53F009153B8 /* EAGLView.m */,
+				5844D3B01487A53F009153B8 /* PerlinNoiseViewController.h */,
+				5844D3B11487A53F009153B8 /* PerlinNoiseViewController.m */,
+				5844D3B31487A53F009153B8 /* PerlinNoiseViewController.xib */,
+				5844D39B1487A53F009153B8 /* Supporting Files */,
+			);
+			path = PerlinNoise;
+			sourceTree = "<group>";
+		};
+		5844D39B1487A53F009153B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5844D39C1487A53F009153B8 /* PerlinNoise-Info.plist */,
+				5844D39D1487A53F009153B8 /* InfoPlist.strings */,
+				5844D3A01487A53F009153B8 /* main.m */,
+				5844D3A21487A53F009153B8 /* PerlinNoise-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5844D38B1487A53F009153B8 /* PerlinNoise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5844D3B81487A53F009153B8 /* Build configuration list for PBXNativeTarget "PerlinNoise" */;
+			buildPhases = (
+				5844D3881487A53F009153B8 /* Sources */,
+				5844D3891487A53F009153B8 /* Frameworks */,
+				5844D38A1487A53F009153B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PerlinNoise;
+			productName = PerlinNoise;
+			productReference = 5844D38C1487A53F009153B8 /* PerlinNoise.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5844D3831487A53F009153B8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5844D3861487A53F009153B8 /* Build configuration list for PBXProject "PerlinNoise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5844D3811487A53F009153B8;
+			productRefGroup = 5844D38D1487A53F009153B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5844D38B1487A53F009153B8 /* PerlinNoise */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5844D38A1487A53F009153B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5844D39F1487A53F009153B8 /* InfoPlist.strings in Resources */,
+				5844D3A81487A53F009153B8 /* MainWindow.xib in Resources */,
+				5844D3AA1487A53F009153B8 /* Shader.fsh in Resources */,
+				5844D3AC1487A53F009153B8 /* Shader.vsh in Resources */,
+				5844D3B51487A53F009153B8 /* PerlinNoiseViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5844D3881487A53F009153B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5844D3A11487A53F009153B8 /* main.m in Sources */,
+				5844D3A51487A53F009153B8 /* PerlinNoiseAppDelegate.m in Sources */,
+				5844D3AF1487A53F009153B8 /* EAGLView.m in Sources */,
+				5844D3B21487A53F009153B8 /* PerlinNoiseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5844D39D1487A53F009153B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5844D39E1487A53F009153B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5844D3A61487A53F009153B8 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5844D3A71487A53F009153B8 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		5844D3B31487A53F009153B8 /* PerlinNoiseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5844D3B41487A53F009153B8 /* en */,
+			);
+			name = PerlinNoiseViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5844D3B61487A53F009153B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5844D3B71487A53F009153B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5844D3B91487A53F009153B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PerlinNoise/PerlinNoise-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "PerlinNoise/PerlinNoise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5844D3BA1487A53F009153B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PerlinNoise/PerlinNoise-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "PerlinNoise/PerlinNoise-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5844D3861487A53F009153B8 /* Build configuration list for PBXProject "PerlinNoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5844D3B61487A53F009153B8 /* Debug */,
+				5844D3B71487A53F009153B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5844D3B81487A53F009153B8 /* Build configuration list for PBXNativeTarget "PerlinNoise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5844D3B91487A53F009153B8 /* Debug */,
+				5844D3BA1487A53F009153B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5844D3831487A53F009153B8 /* Project object */;
+}
