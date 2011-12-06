@@ -38,6 +38,76 @@
 		5801EC0F148D208E007419F9 /* Star.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5801EC0E148D208E007419F9 /* Star.fsh */; };
 		5801EC10148D209B007419F9 /* Star.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5801EC0C148D2081007419F9 /* Star.vsh */; };
 		5801EC11148D209B007419F9 /* Star.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5801EC0E148D208E007419F9 /* Star.fsh */; };
+		582AADA0148E39A9000CCC7F /* TwistOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582AAD9E148E39A9000CCC7F /* TwistOpenGLController.m */; };
+		582AADA1148E39A9000CCC7F /* TwistOpenGLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582AAD9F148E39A9000CCC7F /* TwistOpenGLController.xib */; };
+		582AADA3148E3A7B000CCC7F /* Twist.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 582AADA2148E3A7B000CCC7F /* Twist.vsh */; };
+		582AADA5148E3A88000CCC7F /* Twist.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 582AADA4148E3A88000CCC7F /* Twist.fsh */; };
+		582AADA6148E3AC4000CCC7F /* Twist.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 582AADA2148E3A7B000CCC7F /* Twist.vsh */; };
+		582AADA7148E3AC4000CCC7F /* Twist.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 582AADA4148E3A88000CCC7F /* Twist.fsh */; };
+		582AADAB148E3DEA000CCC7F /* KaleidoscopeOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582AADA9148E3DEA000CCC7F /* KaleidoscopeOpenGLController.m */; };
+		582AADAC148E3DEA000CCC7F /* KaleidoscopeOpenGLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582AADAA148E3DEA000CCC7F /* KaleidoscopeOpenGLController.xib */; };
+		582AADAE148E3EAE000CCC7F /* Kaleidoscope.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 582AADAD148E3EAE000CCC7F /* Kaleidoscope.vsh */; };
+		582AADB0148E3EB9000CCC7F /* Kaleidoscope.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 582AADAF148E3EB9000CCC7F /* Kaleidoscope.fsh */; };
+		582AADB1148E3F5B000CCC7F /* Kaleidoscope.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 582AADAD148E3EAE000CCC7F /* Kaleidoscope.vsh */; };
+		582AADB2148E3F5B000CCC7F /* Kaleidoscope.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 582AADAF148E3EB9000CCC7F /* Kaleidoscope.fsh */; };
+		582AADB6148E403E000CCC7F /* PlaneDeformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582AADB4148E403E000CCC7F /* PlaneDeformationController.m */; };
+		582AADB7148E403E000CCC7F /* PlaneDeformationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582AADB5148E403E000CCC7F /* PlaneDeformationController.xib */; };
+		5854BBE2148E425D00AC50EF /* ZInvert.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE1148E425D00AC50EF /* ZInvert.vsh */; };
+		5854BBE4148E426800AC50EF /* ZInvert.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE3148E426800AC50EF /* ZInvert.fsh */; };
+		5854BBE5148E456A00AC50EF /* ZInvert.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBE1148E425D00AC50EF /* ZInvert.vsh */; };
+		5854BBE6148E456A00AC50EF /* ZInvert.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBE3148E426800AC50EF /* ZInvert.fsh */; };
+		5854BBE8148E45E300AC50EF /* Tunnel.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE7148E45E300AC50EF /* Tunnel.vsh */; };
+		5854BBEA148E45EF00AC50EF /* Tunnel.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE9148E45EF00AC50EF /* Tunnel.fsh */; };
+		5854BBEB148E468D00AC50EF /* Tunnel.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBE7148E45E300AC50EF /* Tunnel.vsh */; };
+		5854BBEC148E468D00AC50EF /* Tunnel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBE9148E45EF00AC50EF /* Tunnel.fsh */; };
+		5854BBEE148E47C400AC50EF /* ReliefTunnel.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBED148E47C400AC50EF /* ReliefTunnel.vsh */; };
+		5854BBF0148E47D000AC50EF /* ReliefTunnel.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBEF148E47D000AC50EF /* ReliefTunnel.fsh */; };
+		5854BBF1148E485700AC50EF /* ReliefTunnel.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBED148E47C400AC50EF /* ReliefTunnel.vsh */; };
+		5854BBF2148E485700AC50EF /* ReliefTunnel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBEF148E47D000AC50EF /* ReliefTunnel.fsh */; };
+		5854BBF4148E48FD00AC50EF /* SquareTunnel.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBF3148E48FD00AC50EF /* SquareTunnel.vsh */; };
+		5854BBF6148E490900AC50EF /* SquareTunnel.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBF5148E490900AC50EF /* SquareTunnel.fsh */; };
+		5854BBF7148E491300AC50EF /* SquareTunnel.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBF3148E48FD00AC50EF /* SquareTunnel.vsh */; };
+		5854BBF8148E491300AC50EF /* SquareTunnel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBF5148E490900AC50EF /* SquareTunnel.fsh */; };
+		5854BBFA148E4A9000AC50EF /* Fly.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBF9148E4A9000AC50EF /* Fly.vsh */; };
+		5854BBFC148E4A9D00AC50EF /* Fly.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBFB148E4A9D00AC50EF /* Fly.fsh */; };
+		5854BBFD148E4B0400AC50EF /* Fly.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBF9148E4A9000AC50EF /* Fly.vsh */; };
+		5854BBFE148E4B0400AC50EF /* Fly.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBFB148E4A9D00AC50EF /* Fly.fsh */; };
+		5854BC00148E4D5A00AC50EF /* Pulse.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBFF148E4D5A00AC50EF /* Pulse.vsh */; };
+		5854BC02148E4D6600AC50EF /* Pulse.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC01148E4D6600AC50EF /* Pulse.fsh */; };
+		5854BC03148E4D9600AC50EF /* Pulse.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBFF148E4D5A00AC50EF /* Pulse.vsh */; };
+		5854BC04148E4D9600AC50EF /* Pulse.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC01148E4D6600AC50EF /* Pulse.fsh */; };
+		5854BC06148E578D00AC50EF /* MontionBlur.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC05148E578D00AC50EF /* MontionBlur.vsh */; };
+		5854BC08148E579800AC50EF /* MontionBlur.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC07148E579800AC50EF /* MontionBlur.fsh */; };
+		5854BC09148E57CA00AC50EF /* MontionBlur.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC05148E578D00AC50EF /* MontionBlur.vsh */; };
+		5854BC0A148E57CA00AC50EF /* MontionBlur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC07148E579800AC50EF /* MontionBlur.fsh */; };
+		5854BC0C148E594100AC50EF /* PostProcessing.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC0B148E594100AC50EF /* PostProcessing.vsh */; };
+		5854BC0E148E595100AC50EF /* PostProcessing.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC0D148E595000AC50EF /* PostProcessing.fsh */; };
+		5854BC0F148E59C700AC50EF /* PostProcessing.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC0B148E594100AC50EF /* PostProcessing.vsh */; };
+		5854BC10148E59C700AC50EF /* PostProcessing.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC0D148E595000AC50EF /* PostProcessing.fsh */; };
+		5854BC12148E5A5600AC50EF /* Julia.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC11148E5A5500AC50EF /* Julia.vsh */; };
+		5854BC14148E5A5F00AC50EF /* Julia.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC13148E5A5F00AC50EF /* Julia.fsh */; };
+		5854BC15148E5B6400AC50EF /* Julia.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC11148E5A5500AC50EF /* Julia.vsh */; };
+		5854BC16148E5B6400AC50EF /* Julia.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC13148E5A5F00AC50EF /* Julia.fsh */; };
+		5854BC18148E5C7D00AC50EF /* Mandel.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC17148E5C7C00AC50EF /* Mandel.vsh */; };
+		5854BC1A148E5C8800AC50EF /* Mandel.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC19148E5C8800AC50EF /* Mandel.fsh */; };
+		5854BC1B148E5CEB00AC50EF /* Mandel.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC17148E5C7C00AC50EF /* Mandel.vsh */; };
+		5854BC1C148E5CEB00AC50EF /* Mandel.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC19148E5C8800AC50EF /* Mandel.fsh */; };
+		5854BC1E148E5DC100AC50EF /* Flower.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC1D148E5DC000AC50EF /* Flower.vsh */; };
+		5854BC20148E5DCC00AC50EF /* Flower.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC1F148E5DCC00AC50EF /* Flower.fsh */; };
+		5854BC21148E5E2300AC50EF /* Flower.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC1D148E5DC000AC50EF /* Flower.vsh */; };
+		5854BC22148E5E2300AC50EF /* Flower.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC1F148E5DCC00AC50EF /* Flower.fsh */; };
+		5854BC24148E5EA200AC50EF /* Metablob.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC23148E5EA200AC50EF /* Metablob.vsh */; };
+		5854BC26148E5EAE00AC50EF /* Metablob.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC25148E5EAE00AC50EF /* Metablob.fsh */; };
+		5854BC27148E5F0400AC50EF /* Metablob.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC23148E5EA200AC50EF /* Metablob.vsh */; };
+		5854BC28148E5F0400AC50EF /* Metablob.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC25148E5EAE00AC50EF /* Metablob.fsh */; };
+		5854BC2A148E5F5800AC50EF /* Plasma.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC29148E5F5800AC50EF /* Plasma.vsh */; };
+		5854BC2C148E5F6400AC50EF /* Plasma.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC2B148E5F6400AC50EF /* Plasma.fsh */; };
+		5854BC2D148E5FAA00AC50EF /* Plasma.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC29148E5F5800AC50EF /* Plasma.vsh */; };
+		5854BC2E148E5FAA00AC50EF /* Plasma.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC2B148E5F6400AC50EF /* Plasma.fsh */; };
+		5854BC30148E648600AC50EF /* Clod.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC2F148E648600AC50EF /* Clod.vsh */; };
+		5854BC32148E649100AC50EF /* Clod.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC31148E649100AC50EF /* Clod.fsh */; };
+		5854BC33148E64E400AC50EF /* Clod.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC2F148E648600AC50EF /* Clod.vsh */; };
+		5854BC34148E64E400AC50EF /* Clod.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC31148E649100AC50EF /* Clod.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,19 +132,60 @@
 		5801EBE4148CFE71007419F9 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
 		5801EBE6148CFEA5007419F9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5801EBE8148CFEAF007419F9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		5801EBEA148D0026007419F9 /* deform.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = deform.vsh; sourceTree = "<group>"; };
-		5801EBEC148D0039007419F9 /* deform.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = deform.fsh; sourceTree = "<group>"; };
+		5801EBEA148D0026007419F9 /* deform.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = deform.vsh; path = GPUBase/deform.vsh; sourceTree = "<group>"; };
+		5801EBEC148D0039007419F9 /* deform.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = deform.fsh; path = GPUBase/deform.fsh; sourceTree = "<group>"; };
 		5801EBEE148D02A2007419F9 /* tex3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tex3.jpg; sourceTree = "<group>"; };
 		5801EBFC148D1B35007419F9 /* MonjoriOpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonjoriOpenGLController.h; sourceTree = "<group>"; };
 		5801EBFD148D1B35007419F9 /* MonjoriOpenGLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonjoriOpenGLController.m; sourceTree = "<group>"; };
 		5801EBFE148D1B35007419F9 /* MonjoriOpenGLController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MonjoriOpenGLController.xib; sourceTree = "<group>"; };
-		5801EC01148D1BBA007419F9 /* Monjori.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Monjori.vsh; sourceTree = "<group>"; };
-		5801EC03148D1BCA007419F9 /* Monjori.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Monjori.fsh; sourceTree = "<group>"; };
+		5801EC01148D1BBA007419F9 /* Monjori.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Monjori.vsh; path = GPUBase/Monjori.vsh; sourceTree = "<group>"; };
+		5801EC03148D1BCA007419F9 /* Monjori.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Monjori.fsh; path = GPUBase/Monjori.fsh; sourceTree = "<group>"; };
 		5801EC07148D1FEA007419F9 /* StarOpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarOpenGLController.h; sourceTree = "<group>"; };
 		5801EC08148D1FEA007419F9 /* StarOpenGLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StarOpenGLController.m; sourceTree = "<group>"; };
 		5801EC09148D1FEA007419F9 /* StarOpenGLController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarOpenGLController.xib; sourceTree = "<group>"; };
-		5801EC0C148D2081007419F9 /* Star.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Star.vsh; sourceTree = "<group>"; };
-		5801EC0E148D208E007419F9 /* Star.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Star.fsh; sourceTree = "<group>"; };
+		5801EC0C148D2081007419F9 /* Star.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star.vsh; path = GPUBase/Star.vsh; sourceTree = "<group>"; };
+		5801EC0E148D208E007419F9 /* Star.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star.fsh; path = GPUBase/Star.fsh; sourceTree = "<group>"; };
+		582AAD9D148E39A9000CCC7F /* TwistOpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwistOpenGLController.h; sourceTree = "<group>"; };
+		582AAD9E148E39A9000CCC7F /* TwistOpenGLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwistOpenGLController.m; sourceTree = "<group>"; };
+		582AAD9F148E39A9000CCC7F /* TwistOpenGLController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwistOpenGLController.xib; sourceTree = "<group>"; };
+		582AADA2148E3A7B000CCC7F /* Twist.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Twist.vsh; sourceTree = "<group>"; };
+		582AADA4148E3A88000CCC7F /* Twist.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Twist.fsh; sourceTree = "<group>"; };
+		582AADA8148E3DEA000CCC7F /* KaleidoscopeOpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaleidoscopeOpenGLController.h; sourceTree = "<group>"; };
+		582AADA9148E3DEA000CCC7F /* KaleidoscopeOpenGLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaleidoscopeOpenGLController.m; sourceTree = "<group>"; };
+		582AADAA148E3DEA000CCC7F /* KaleidoscopeOpenGLController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KaleidoscopeOpenGLController.xib; sourceTree = "<group>"; };
+		582AADAD148E3EAE000CCC7F /* Kaleidoscope.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Kaleidoscope.vsh; sourceTree = "<group>"; };
+		582AADAF148E3EB9000CCC7F /* Kaleidoscope.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Kaleidoscope.fsh; sourceTree = "<group>"; };
+		582AADB3148E403E000CCC7F /* PlaneDeformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlaneDeformationController.h; path = ../PlaneDeformationController.h; sourceTree = "<group>"; };
+		582AADB4148E403E000CCC7F /* PlaneDeformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlaneDeformationController.m; path = ../PlaneDeformationController.m; sourceTree = "<group>"; };
+		582AADB5148E403E000CCC7F /* PlaneDeformationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlaneDeformationController.xib; path = ../PlaneDeformationController.xib; sourceTree = "<group>"; };
+		5854BBE1148E425D00AC50EF /* ZInvert.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ZInvert.vsh; sourceTree = "<group>"; };
+		5854BBE3148E426800AC50EF /* ZInvert.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ZInvert.fsh; sourceTree = "<group>"; };
+		5854BBE7148E45E300AC50EF /* Tunnel.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Tunnel.vsh; sourceTree = "<group>"; };
+		5854BBE9148E45EF00AC50EF /* Tunnel.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Tunnel.fsh; sourceTree = "<group>"; };
+		5854BBED148E47C400AC50EF /* ReliefTunnel.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ReliefTunnel.vsh; sourceTree = "<group>"; };
+		5854BBEF148E47D000AC50EF /* ReliefTunnel.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ReliefTunnel.fsh; sourceTree = "<group>"; };
+		5854BBF3148E48FD00AC50EF /* SquareTunnel.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SquareTunnel.vsh; sourceTree = "<group>"; };
+		5854BBF5148E490900AC50EF /* SquareTunnel.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SquareTunnel.fsh; sourceTree = "<group>"; };
+		5854BBF9148E4A9000AC50EF /* Fly.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fly.vsh; sourceTree = "<group>"; };
+		5854BBFB148E4A9D00AC50EF /* Fly.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fly.fsh; sourceTree = "<group>"; };
+		5854BBFF148E4D5A00AC50EF /* Pulse.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Pulse.vsh; sourceTree = "<group>"; };
+		5854BC01148E4D6600AC50EF /* Pulse.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Pulse.fsh; sourceTree = "<group>"; };
+		5854BC05148E578D00AC50EF /* MontionBlur.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = MontionBlur.vsh; sourceTree = "<group>"; };
+		5854BC07148E579800AC50EF /* MontionBlur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = MontionBlur.fsh; sourceTree = "<group>"; };
+		5854BC0B148E594100AC50EF /* PostProcessing.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PostProcessing.vsh; sourceTree = "<group>"; };
+		5854BC0D148E595000AC50EF /* PostProcessing.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PostProcessing.fsh; sourceTree = "<group>"; };
+		5854BC11148E5A5500AC50EF /* Julia.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Julia.vsh; sourceTree = "<group>"; };
+		5854BC13148E5A5F00AC50EF /* Julia.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Julia.fsh; sourceTree = "<group>"; };
+		5854BC17148E5C7C00AC50EF /* Mandel.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Mandel.vsh; sourceTree = "<group>"; };
+		5854BC19148E5C8800AC50EF /* Mandel.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Mandel.fsh; sourceTree = "<group>"; };
+		5854BC1D148E5DC000AC50EF /* Flower.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Flower.vsh; sourceTree = "<group>"; };
+		5854BC1F148E5DCC00AC50EF /* Flower.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Flower.fsh; sourceTree = "<group>"; };
+		5854BC23148E5EA200AC50EF /* Metablob.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Metablob.vsh; sourceTree = "<group>"; };
+		5854BC25148E5EAE00AC50EF /* Metablob.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Metablob.fsh; sourceTree = "<group>"; };
+		5854BC29148E5F5800AC50EF /* Plasma.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Plasma.vsh; sourceTree = "<group>"; };
+		5854BC2B148E5F6400AC50EF /* Plasma.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Plasma.fsh; sourceTree = "<group>"; };
+		5854BC2F148E648600AC50EF /* Clod.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Clod.vsh; sourceTree = "<group>"; };
+		5854BC31148E649100AC50EF /* Clod.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Clod.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +207,7 @@
 		5801EBAB148CF8CA007419F9 = {
 			isa = PBXGroup;
 			children = (
-				5801EBE8148CFEAF007419F9 /* OpenGLES.framework */,
-				5801EBE6148CFEA5007419F9 /* QuartzCore.framework */,
+				5801EC12148D2263007419F9 /* Shader */,
 				5801EBC0148CF8CA007419F9 /* GPUBase */,
 				5801EBB9148CF8CA007419F9 /* Frameworks */,
 				5801EBB7148CF8CA007419F9 /* Products */,
@@ -115,6 +225,8 @@
 		5801EBB9148CF8CA007419F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5801EBE6148CFEA5007419F9 /* QuartzCore.framework */,
+				5801EBE8148CFEAF007419F9 /* OpenGLES.framework */,
 				5801EBBA148CF8CA007419F9 /* UIKit.framework */,
 				5801EBBC148CF8CA007419F9 /* Foundation.framework */,
 				5801EBBE148CF8CA007419F9 /* CoreGraphics.framework */,
@@ -131,6 +243,15 @@
 				5801EBCC148CF8CA007419F9 /* MainWindow.xib */,
 				5801EBE3148CFE71007419F9 /* EAGLView.h */,
 				5801EBE4148CFE71007419F9 /* EAGLView.m */,
+				582AADB3148E403E000CCC7F /* PlaneDeformationController.h */,
+				582AADB4148E403E000CCC7F /* PlaneDeformationController.m */,
+				582AADB5148E403E000CCC7F /* PlaneDeformationController.xib */,
+				582AADA8148E3DEA000CCC7F /* KaleidoscopeOpenGLController.h */,
+				582AADA9148E3DEA000CCC7F /* KaleidoscopeOpenGLController.m */,
+				582AADAA148E3DEA000CCC7F /* KaleidoscopeOpenGLController.xib */,
+				582AAD9D148E39A9000CCC7F /* TwistOpenGLController.h */,
+				582AAD9E148E39A9000CCC7F /* TwistOpenGLController.m */,
+				582AAD9F148E39A9000CCC7F /* TwistOpenGLController.xib */,
 				5801EC07148D1FEA007419F9 /* StarOpenGLController.h */,
 				5801EC08148D1FEA007419F9 /* StarOpenGLController.m */,
 				5801EC09148D1FEA007419F9 /* StarOpenGLController.xib */,
@@ -144,12 +265,6 @@
 				5801EBD0148CF8CA007419F9 /* RootViewController.m */,
 				5801EBD2148CF8CA007419F9 /* RootViewController.xib */,
 				5801EBC1148CF8CA007419F9 /* Supporting Files */,
-				5801EBEA148D0026007419F9 /* deform.vsh */,
-				5801EBEC148D0039007419F9 /* deform.fsh */,
-				5801EC01148D1BBA007419F9 /* Monjori.vsh */,
-				5801EC03148D1BCA007419F9 /* Monjori.fsh */,
-				5801EC0C148D2081007419F9 /* Star.vsh */,
-				5801EC0E148D208E007419F9 /* Star.fsh */,
 			);
 			path = GPUBase;
 			sourceTree = "<group>";
@@ -163,6 +278,51 @@
 				5801EBC8148CF8CA007419F9 /* GPUBase-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5801EC12148D2263007419F9 /* Shader */ = {
+			isa = PBXGroup;
+			children = (
+				5801EBEA148D0026007419F9 /* deform.vsh */,
+				5801EBEC148D0039007419F9 /* deform.fsh */,
+				5801EC01148D1BBA007419F9 /* Monjori.vsh */,
+				5801EC03148D1BCA007419F9 /* Monjori.fsh */,
+				5801EC0C148D2081007419F9 /* Star.vsh */,
+				5801EC0E148D208E007419F9 /* Star.fsh */,
+				582AADA2148E3A7B000CCC7F /* Twist.vsh */,
+				582AADA4148E3A88000CCC7F /* Twist.fsh */,
+				582AADAD148E3EAE000CCC7F /* Kaleidoscope.vsh */,
+				582AADAF148E3EB9000CCC7F /* Kaleidoscope.fsh */,
+				5854BBE1148E425D00AC50EF /* ZInvert.vsh */,
+				5854BBE3148E426800AC50EF /* ZInvert.fsh */,
+				5854BBE7148E45E300AC50EF /* Tunnel.vsh */,
+				5854BBE9148E45EF00AC50EF /* Tunnel.fsh */,
+				5854BBED148E47C400AC50EF /* ReliefTunnel.vsh */,
+				5854BBEF148E47D000AC50EF /* ReliefTunnel.fsh */,
+				5854BBF3148E48FD00AC50EF /* SquareTunnel.vsh */,
+				5854BBF5148E490900AC50EF /* SquareTunnel.fsh */,
+				5854BBF9148E4A9000AC50EF /* Fly.vsh */,
+				5854BBFB148E4A9D00AC50EF /* Fly.fsh */,
+				5854BBFF148E4D5A00AC50EF /* Pulse.vsh */,
+				5854BC01148E4D6600AC50EF /* Pulse.fsh */,
+				5854BC05148E578D00AC50EF /* MontionBlur.vsh */,
+				5854BC07148E579800AC50EF /* MontionBlur.fsh */,
+				5854BC0B148E594100AC50EF /* PostProcessing.vsh */,
+				5854BC0D148E595000AC50EF /* PostProcessing.fsh */,
+				5854BC11148E5A5500AC50EF /* Julia.vsh */,
+				5854BC13148E5A5F00AC50EF /* Julia.fsh */,
+				5854BC17148E5C7C00AC50EF /* Mandel.vsh */,
+				5854BC19148E5C8800AC50EF /* Mandel.fsh */,
+				5854BC1D148E5DC000AC50EF /* Flower.vsh */,
+				5854BC1F148E5DCC00AC50EF /* Flower.fsh */,
+				5854BC23148E5EA200AC50EF /* Metablob.vsh */,
+				5854BC25148E5EAE00AC50EF /* Metablob.fsh */,
+				5854BC29148E5F5800AC50EF /* Plasma.vsh */,
+				5854BC2B148E5F6400AC50EF /* Plasma.fsh */,
+				5854BC2F148E648600AC50EF /* Clod.vsh */,
+				5854BC31148E649100AC50EF /* Clod.fsh */,
+			);
+			name = Shader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +372,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5854BC33148E64E400AC50EF /* Clod.vsh in Resources */,
+				5854BC34148E64E400AC50EF /* Clod.fsh in Resources */,
+				5854BC2D148E5FAA00AC50EF /* Plasma.vsh in Resources */,
+				5854BC2E148E5FAA00AC50EF /* Plasma.fsh in Resources */,
+				5854BC27148E5F0400AC50EF /* Metablob.vsh in Resources */,
+				5854BC28148E5F0400AC50EF /* Metablob.fsh in Resources */,
+				5854BC21148E5E2300AC50EF /* Flower.vsh in Resources */,
+				5854BC22148E5E2300AC50EF /* Flower.fsh in Resources */,
+				5854BC1B148E5CEB00AC50EF /* Mandel.vsh in Resources */,
+				5854BC1C148E5CEB00AC50EF /* Mandel.fsh in Resources */,
+				5854BC15148E5B6400AC50EF /* Julia.vsh in Resources */,
+				5854BC16148E5B6400AC50EF /* Julia.fsh in Resources */,
+				5854BC0F148E59C700AC50EF /* PostProcessing.vsh in Resources */,
+				5854BC10148E59C700AC50EF /* PostProcessing.fsh in Resources */,
+				5854BC09148E57CA00AC50EF /* MontionBlur.vsh in Resources */,
+				5854BC0A148E57CA00AC50EF /* MontionBlur.fsh in Resources */,
+				5854BC03148E4D9600AC50EF /* Pulse.vsh in Resources */,
+				5854BC04148E4D9600AC50EF /* Pulse.fsh in Resources */,
+				5854BBFD148E4B0400AC50EF /* Fly.vsh in Resources */,
+				5854BBFE148E4B0400AC50EF /* Fly.fsh in Resources */,
+				5854BBF7148E491300AC50EF /* SquareTunnel.vsh in Resources */,
+				5854BBF8148E491300AC50EF /* SquareTunnel.fsh in Resources */,
+				5854BBF1148E485700AC50EF /* ReliefTunnel.vsh in Resources */,
+				5854BBF2148E485700AC50EF /* ReliefTunnel.fsh in Resources */,
+				5854BBEB148E468D00AC50EF /* Tunnel.vsh in Resources */,
+				5854BBEC148E468D00AC50EF /* Tunnel.fsh in Resources */,
+				5854BBE5148E456A00AC50EF /* ZInvert.vsh in Resources */,
+				5854BBE6148E456A00AC50EF /* ZInvert.fsh in Resources */,
+				582AADB1148E3F5B000CCC7F /* Kaleidoscope.vsh in Resources */,
+				582AADB2148E3F5B000CCC7F /* Kaleidoscope.fsh in Resources */,
+				582AADA6148E3AC4000CCC7F /* Twist.vsh in Resources */,
+				582AADA7148E3AC4000CCC7F /* Twist.fsh in Resources */,
 				5801EC10148D209B007419F9 /* Star.vsh in Resources */,
 				5801EC11148D209B007419F9 /* Star.fsh in Resources */,
 				5801EC05148D1C5E007419F9 /* Monjori.vsh in Resources */,
@@ -225,6 +417,9 @@
 				5801EBEF148D02A2007419F9 /* tex3.jpg in Resources */,
 				5801EC00148D1B35007419F9 /* MonjoriOpenGLController.xib in Resources */,
 				5801EC0B148D1FEB007419F9 /* StarOpenGLController.xib in Resources */,
+				582AADA1148E39A9000CCC7F /* TwistOpenGLController.xib in Resources */,
+				582AADAC148E3DEA000CCC7F /* KaleidoscopeOpenGLController.xib in Resources */,
+				582AADB7148E403E000CCC7F /* PlaneDeformationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +443,41 @@
 				5801EC0A148D1FEB007419F9 /* StarOpenGLController.m in Sources */,
 				5801EC0D148D2082007419F9 /* Star.vsh in Sources */,
 				5801EC0F148D208E007419F9 /* Star.fsh in Sources */,
+				582AADA0148E39A9000CCC7F /* TwistOpenGLController.m in Sources */,
+				582AADA3148E3A7B000CCC7F /* Twist.vsh in Sources */,
+				582AADA5148E3A88000CCC7F /* Twist.fsh in Sources */,
+				582AADAB148E3DEA000CCC7F /* KaleidoscopeOpenGLController.m in Sources */,
+				582AADAE148E3EAE000CCC7F /* Kaleidoscope.vsh in Sources */,
+				582AADB0148E3EB9000CCC7F /* Kaleidoscope.fsh in Sources */,
+				582AADB6148E403E000CCC7F /* PlaneDeformationController.m in Sources */,
+				5854BBE2148E425D00AC50EF /* ZInvert.vsh in Sources */,
+				5854BBE4148E426800AC50EF /* ZInvert.fsh in Sources */,
+				5854BBE8148E45E300AC50EF /* Tunnel.vsh in Sources */,
+				5854BBEA148E45EF00AC50EF /* Tunnel.fsh in Sources */,
+				5854BBEE148E47C400AC50EF /* ReliefTunnel.vsh in Sources */,
+				5854BBF0148E47D000AC50EF /* ReliefTunnel.fsh in Sources */,
+				5854BBF4148E48FD00AC50EF /* SquareTunnel.vsh in Sources */,
+				5854BBF6148E490900AC50EF /* SquareTunnel.fsh in Sources */,
+				5854BBFA148E4A9000AC50EF /* Fly.vsh in Sources */,
+				5854BBFC148E4A9D00AC50EF /* Fly.fsh in Sources */,
+				5854BC00148E4D5A00AC50EF /* Pulse.vsh in Sources */,
+				5854BC02148E4D6600AC50EF /* Pulse.fsh in Sources */,
+				5854BC06148E578D00AC50EF /* MontionBlur.vsh in Sources */,
+				5854BC08148E579800AC50EF /* MontionBlur.fsh in Sources */,
+				5854BC0C148E594100AC50EF /* PostProcessing.vsh in Sources */,
+				5854BC0E148E595100AC50EF /* PostProcessing.fsh in Sources */,
+				5854BC12148E5A5600AC50EF /* Julia.vsh in Sources */,
+				5854BC14148E5A5F00AC50EF /* Julia.fsh in Sources */,
+				5854BC18148E5C7D00AC50EF /* Mandel.vsh in Sources */,
+				5854BC1A148E5C8800AC50EF /* Mandel.fsh in Sources */,
+				5854BC1E148E5DC100AC50EF /* Flower.vsh in Sources */,
+				5854BC20148E5DCC00AC50EF /* Flower.fsh in Sources */,
+				5854BC24148E5EA200AC50EF /* Metablob.vsh in Sources */,
+				5854BC26148E5EAE00AC50EF /* Metablob.fsh in Sources */,
+				5854BC2A148E5F5800AC50EF /* Plasma.vsh in Sources */,
+				5854BC2C148E5F6400AC50EF /* Plasma.fsh in Sources */,
+				5854BC30148E648600AC50EF /* Clod.vsh in Sources */,
+				5854BC32148E649100AC50EF /* Clod.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +595,7 @@
 				5801EBD9148CF8CA007419F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,6 +11,9 @@
 #import "DeformOpenGLController.h"
 #import "MonjoriOpenGLController.h"
 #import "StarOpenGLController.h"
+#import "TwistOpenGLController.h"
+#import "KaleidoscopeOpenGLController.h"
+#import "PlaneDeformationController.h"
 
 @implementation RootViewController
 
@@ -18,9 +21,12 @@
 
 - (void)viewDidLoad
 {
-    effects=[[NSArray alloc] initWithObjects:@"Deform", @"Monjori",@"Star",nil];
+    effects=[[NSArray alloc] initWithObjects:@"Deform", @"Monjori",@"Star",@"Twist",@"Kaleidoscope",
+             @"Z Invert",@"Tunnel",@"Relief Tunnel",@"Square Tunnel",@"Fly",@"Pluse",
+             @"Montion Blur",@"Post Processing",@"Julia",@"Mandel",@"Flower",@"Metablob",
+             @"Plasma",@"Clod",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
-    [self setTitle:@"Back"];
+    [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
 }
 
@@ -128,8 +134,7 @@
     // Pass the selected object to the new view controller.
     switch ([indexPath row]) {
         case 0:
-            detailViewController=[[DeformOpenGLController alloc] init];
-            detailViewController.title=@"Deform";
+            detailViewController=[[DeformOpenGLController alloc] init];            detailViewController.title=@"Deform";
             break;
         case 1:
             detailViewController=[[MonjoriOpenGLController alloc] init];
@@ -139,6 +144,101 @@
         case 2:
             detailViewController=[[StarOpenGLController alloc] init];
             detailViewController.title=@"Star";
+            break;
+        
+        case 3:
+            detailViewController=[[TwistOpenGLController alloc] init];
+            detailViewController.title=@"Twist";
+            break;
+        
+        case 4:
+            detailViewController=[[KaleidoscopeOpenGLController alloc] init];
+            detailViewController.title=@"Kaleidoscope";
+            break;
+            
+        case 5:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:[NSString stringWithString:@"ZInvert"] fragment:[NSString stringWithString:@"ZInvert"]];
+            detailViewController.title=@"Z Invert";
+            break;
+        
+        case 6:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Tunnel" fragment:@"Tunnel"];
+            detailViewController.title=@"Tunnel";
+            break;
+            
+        case 7:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"ReliefTunnel" fragment:@"ReliefTunnel"];
+            detailViewController.title=@"Relief Tunnel";
+            break;
+            
+        case 8:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"SquareTunnel" fragment:@"SquareTunnel"];
+            detailViewController.title=@"Square Tunnel";
+            break;
+        
+        case 9:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fly" fragment:@"Fly"];
+            detailViewController.title=@"Fly";
+            break;
+        
+        case 10:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Pulse" fragment:@"Pulse"];
+            detailViewController.title=@"Pulse";
+            break;
+            
+        case 11:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"MontionBlur" fragment:@"MontionBlur"];
+            detailViewController.title=@"Montion Blur";
+            break;
+            
+        case 12:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"PostProcessing" fragment:@"PostProcessing"];
+            detailViewController.title=@"Post Processing";
+            break;
+            
+        case 13:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Julia" fragment:@"Julia"];
+            detailViewController.title=@"Julia";
+            break;
+            
+        case 14:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Mandel" fragment:@"Mandel"];
+            detailViewController.title=@"Mandel";
+            break;
+            
+        case 15:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Flower" fragment:@"Flower"];
+            detailViewController.title=@"Flower";
+            break;
+            
+        case 16:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Metablob" fragment:@"Metablob"];
+            detailViewController.title=@"Metablob";
+            break;
+            
+        case 17:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Plasma" fragment:@"Plasma"];
+            detailViewController.title=@"Plasma";
+            break;
+            
+        case 18:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Clod" fragment:@"Clod"];
+            detailViewController.title=@"Clod";
+            break;
             
         default:
             break;
