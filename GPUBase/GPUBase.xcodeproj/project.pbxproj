@@ -108,6 +108,34 @@
 		5854BC32148E649100AC50EF /* Clod.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC31148E649100AC50EF /* Clod.fsh */; };
 		5854BC33148E64E400AC50EF /* Clod.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC2F148E648600AC50EF /* Clod.vsh */; };
 		5854BC34148E64E400AC50EF /* Clod.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC31148E649100AC50EF /* Clod.fsh */; };
+		58844817148F9B1400F06341 /* Deformation1.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844816148F9B1400F06341 /* Deformation1.vsh */; };
+		5884481A148F9B2000F06341 /* Deformation1.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844819148F9B2000F06341 /* Deformation1.fsh */; };
+		5884481B148F9B2A00F06341 /* Deformation1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844816148F9B1400F06341 /* Deformation1.vsh */; };
+		5884481C148F9B2A00F06341 /* Deformation1.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844819148F9B2000F06341 /* Deformation1.fsh */; };
+		5884481E148F9D4E00F06341 /* Deformation2.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5884481D148F9D4E00F06341 /* Deformation2.vsh */; };
+		58844820148F9D6300F06341 /* Deformation2.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5884481F148F9D6300F06341 /* Deformation2.fsh */; };
+		58844821148F9D6E00F06341 /* Deformation2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884481D148F9D4E00F06341 /* Deformation2.vsh */; };
+		58844822148F9D6E00F06341 /* Deformation2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884481F148F9D6300F06341 /* Deformation2.fsh */; };
+		58844824148F9EDF00F06341 /* Deformation3.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844823148F9EDE00F06341 /* Deformation3.vsh */; };
+		58844826148F9EEA00F06341 /* Deformation3.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844825148F9EEA00F06341 /* Deformation3.fsh */; };
+		58844827148F9EF200F06341 /* Deformation3.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844823148F9EDE00F06341 /* Deformation3.vsh */; };
+		58844828148F9EF200F06341 /* Deformation3.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844825148F9EEA00F06341 /* Deformation3.fsh */; };
+		5884482A148FA17800F06341 /* Deformation4.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844829148FA17800F06341 /* Deformation4.vsh */; };
+		5884482C148FA18500F06341 /* Deformation4.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5884482B148FA18500F06341 /* Deformation4.fsh */; };
+		5884482D148FA18F00F06341 /* Deformation4.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844829148FA17800F06341 /* Deformation4.vsh */; };
+		5884482E148FA18F00F06341 /* Deformation4.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884482B148FA18500F06341 /* Deformation4.fsh */; };
+		58844830148FA35300F06341 /* Deformation5.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5884482F148FA35300F06341 /* Deformation5.vsh */; };
+		58844832148FA35C00F06341 /* Deformation5.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844831148FA35C00F06341 /* Deformation5.fsh */; };
+		58844833148FA3D900F06341 /* Deformation5.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884482F148FA35300F06341 /* Deformation5.vsh */; };
+		58844834148FA3D900F06341 /* Deformation5.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844831148FA35C00F06341 /* Deformation5.fsh */; };
+		58844836148FA4E700F06341 /* Deformation6.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844835148FA4E700F06341 /* Deformation6.vsh */; };
+		58844838148FA4F100F06341 /* Deformation6.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844837148FA4F100F06341 /* Deformation6.fsh */; };
+		58844839148FA53D00F06341 /* Deformation6.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844835148FA4E700F06341 /* Deformation6.vsh */; };
+		5884483A148FA53D00F06341 /* Deformation6.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844837148FA4F100F06341 /* Deformation6.fsh */; };
+		5884483C148FA5BF00F06341 /* Deformation7.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5884483B148FA5BF00F06341 /* Deformation7.vsh */; };
+		5884483E148FA5CA00F06341 /* Deformation7.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5884483D148FA5CA00F06341 /* Deformation7.fsh */; };
+		5884483F148FA5D500F06341 /* Deformation7.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884483B148FA5BF00F06341 /* Deformation7.vsh */; };
+		58844840148FA5D500F06341 /* Deformation7.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884483D148FA5CA00F06341 /* Deformation7.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +214,20 @@
 		5854BC2B148E5F6400AC50EF /* Plasma.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Plasma.fsh; sourceTree = "<group>"; };
 		5854BC2F148E648600AC50EF /* Clod.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Clod.vsh; sourceTree = "<group>"; };
 		5854BC31148E649100AC50EF /* Clod.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Clod.fsh; sourceTree = "<group>"; };
+		58844816148F9B1400F06341 /* Deformation1.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation1.vsh; sourceTree = "<group>"; };
+		58844819148F9B2000F06341 /* Deformation1.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation1.fsh; sourceTree = "<group>"; };
+		5884481D148F9D4E00F06341 /* Deformation2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation2.vsh; sourceTree = "<group>"; };
+		5884481F148F9D6300F06341 /* Deformation2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation2.fsh; sourceTree = "<group>"; };
+		58844823148F9EDE00F06341 /* Deformation3.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation3.vsh; sourceTree = "<group>"; };
+		58844825148F9EEA00F06341 /* Deformation3.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation3.fsh; sourceTree = "<group>"; };
+		58844829148FA17800F06341 /* Deformation4.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation4.vsh; sourceTree = "<group>"; };
+		5884482B148FA18500F06341 /* Deformation4.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation4.fsh; sourceTree = "<group>"; };
+		5884482F148FA35300F06341 /* Deformation5.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation5.vsh; sourceTree = "<group>"; };
+		58844831148FA35C00F06341 /* Deformation5.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation5.fsh; sourceTree = "<group>"; };
+		58844835148FA4E700F06341 /* Deformation6.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation6.vsh; sourceTree = "<group>"; };
+		58844837148FA4F100F06341 /* Deformation6.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation6.fsh; sourceTree = "<group>"; };
+		5884483B148FA5BF00F06341 /* Deformation7.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation7.vsh; sourceTree = "<group>"; };
+		5884483D148FA5CA00F06341 /* Deformation7.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation7.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,8 +343,8 @@
 				5854BBEF148E47D000AC50EF /* ReliefTunnel.fsh */,
 				5854BBF3148E48FD00AC50EF /* SquareTunnel.vsh */,
 				5854BBF5148E490900AC50EF /* SquareTunnel.fsh */,
-				5854BBF9148E4A9000AC50EF /* Fly.vsh */,
 				5854BBFB148E4A9D00AC50EF /* Fly.fsh */,
+				5854BBF9148E4A9000AC50EF /* Fly.vsh */,
 				5854BBFF148E4D5A00AC50EF /* Pulse.vsh */,
 				5854BC01148E4D6600AC50EF /* Pulse.fsh */,
 				5854BC05148E578D00AC50EF /* MontionBlur.vsh */,
@@ -321,6 +363,20 @@
 				5854BC2B148E5F6400AC50EF /* Plasma.fsh */,
 				5854BC2F148E648600AC50EF /* Clod.vsh */,
 				5854BC31148E649100AC50EF /* Clod.fsh */,
+				58844816148F9B1400F06341 /* Deformation1.vsh */,
+				58844819148F9B2000F06341 /* Deformation1.fsh */,
+				5884481D148F9D4E00F06341 /* Deformation2.vsh */,
+				5884481F148F9D6300F06341 /* Deformation2.fsh */,
+				58844823148F9EDE00F06341 /* Deformation3.vsh */,
+				58844825148F9EEA00F06341 /* Deformation3.fsh */,
+				58844829148FA17800F06341 /* Deformation4.vsh */,
+				5884482B148FA18500F06341 /* Deformation4.fsh */,
+				5884482F148FA35300F06341 /* Deformation5.vsh */,
+				58844831148FA35C00F06341 /* Deformation5.fsh */,
+				58844835148FA4E700F06341 /* Deformation6.vsh */,
+				58844837148FA4F100F06341 /* Deformation6.fsh */,
+				5884483B148FA5BF00F06341 /* Deformation7.vsh */,
+				5884483D148FA5CA00F06341 /* Deformation7.fsh */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -372,6 +428,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5884483F148FA5D500F06341 /* Deformation7.vsh in Resources */,
+				58844840148FA5D500F06341 /* Deformation7.fsh in Resources */,
+				58844839148FA53D00F06341 /* Deformation6.vsh in Resources */,
+				5884483A148FA53D00F06341 /* Deformation6.fsh in Resources */,
+				58844833148FA3D900F06341 /* Deformation5.vsh in Resources */,
+				58844834148FA3D900F06341 /* Deformation5.fsh in Resources */,
+				5884482D148FA18F00F06341 /* Deformation4.vsh in Resources */,
+				5884482E148FA18F00F06341 /* Deformation4.fsh in Resources */,
+				58844827148F9EF200F06341 /* Deformation3.vsh in Resources */,
+				58844828148F9EF200F06341 /* Deformation3.fsh in Resources */,
+				58844821148F9D6E00F06341 /* Deformation2.vsh in Resources */,
+				58844822148F9D6E00F06341 /* Deformation2.fsh in Resources */,
+				5884481B148F9B2A00F06341 /* Deformation1.vsh in Resources */,
+				5884481C148F9B2A00F06341 /* Deformation1.fsh in Resources */,
 				5854BC33148E64E400AC50EF /* Clod.vsh in Resources */,
 				5854BC34148E64E400AC50EF /* Clod.fsh in Resources */,
 				5854BC2D148E5FAA00AC50EF /* Plasma.vsh in Resources */,
@@ -478,6 +548,20 @@
 				5854BC2C148E5F6400AC50EF /* Plasma.fsh in Sources */,
 				5854BC30148E648600AC50EF /* Clod.vsh in Sources */,
 				5854BC32148E649100AC50EF /* Clod.fsh in Sources */,
+				58844817148F9B1400F06341 /* Deformation1.vsh in Sources */,
+				5884481A148F9B2000F06341 /* Deformation1.fsh in Sources */,
+				5884481E148F9D4E00F06341 /* Deformation2.vsh in Sources */,
+				58844820148F9D6300F06341 /* Deformation2.fsh in Sources */,
+				58844824148F9EDF00F06341 /* Deformation3.vsh in Sources */,
+				58844826148F9EEA00F06341 /* Deformation3.fsh in Sources */,
+				5884482A148FA17800F06341 /* Deformation4.vsh in Sources */,
+				5884482C148FA18500F06341 /* Deformation4.fsh in Sources */,
+				58844830148FA35300F06341 /* Deformation5.vsh in Sources */,
+				58844832148FA35C00F06341 /* Deformation5.fsh in Sources */,
+				58844836148FA4E700F06341 /* Deformation6.vsh in Sources */,
+				58844838148FA4F100F06341 /* Deformation6.fsh in Sources */,
+				5884483C148FA5BF00F06341 /* Deformation7.vsh in Sources */,
+				5884483E148FA5CA00F06341 /* Deformation7.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

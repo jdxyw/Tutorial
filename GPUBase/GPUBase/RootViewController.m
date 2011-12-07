@@ -24,7 +24,8 @@
     effects=[[NSArray alloc] initWithObjects:@"Deform", @"Monjori",@"Star",@"Twist",@"Kaleidoscope",
              @"Z Invert",@"Tunnel",@"Relief Tunnel",@"Square Tunnel",@"Fly",@"Pluse",
              @"Montion Blur",@"Post Processing",@"Julia",@"Mandel",@"Flower",@"Metablob",
-             @"Plasma",@"Clod",nil];
+             @"Plasma",@"Clod",@"Deformation 1",@"Deformation 2",@"Deformation 3",
+             @"Deformation 4",@"Deformation 5",@"Deformation 6",@"Deformation 7",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -238,6 +239,48 @@
             detailViewController=[[PlaneDeformationController alloc] init];
             [detailViewController setFileName:@"Clod" fragment:@"Clod"];
             detailViewController.title=@"Clod";
+            break;
+        
+        case 19:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Deformation1" fragment:@"Deformation1"];
+            detailViewController.title=@"Deformation 1";
+            break;
+            
+        case 20:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Deformation2" fragment:@"Deformation2"];
+            detailViewController.title=@"Deformation 2";
+            break;
+        
+        case 21:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Deformation3" fragment:@"Deformation3"];
+            detailViewController.title=@"Deformation 3";
+            break;
+        
+        case 22:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Deformation4" fragment:@"Deformation4"];
+            detailViewController.title=@"Deformation 4";
+            break;
+        
+        case 23:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Deformation5" fragment:@"Deformation5"];
+            detailViewController.title=@"Deformation 5";
+            break;
+        
+        case 24:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Deformation6" fragment:@"Deformation6"];
+            detailViewController.title=@"Deformation 6";
+            break;
+            
+        case 25:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Deformation7" fragment:@"Deformation7"];
+            detailViewController.title=@"Deformation 7";
             break;
             
         default:
