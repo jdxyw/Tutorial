@@ -38,6 +38,12 @@
 		5801EC0F148D208E007419F9 /* Star.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5801EC0E148D208E007419F9 /* Star.fsh */; };
 		5801EC10148D209B007419F9 /* Star.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5801EC0C148D2081007419F9 /* Star.vsh */; };
 		5801EC11148D209B007419F9 /* Star.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5801EC0E148D208E007419F9 /* Star.fsh */; };
+		58093CF11490D8230010DBAA /* WireFrameSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093CEF1490D8230010DBAA /* WireFrameSphere.m */; };
+		58093CF21490D8230010DBAA /* WireFrameSphere.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58093CF01490D8230010DBAA /* WireFrameSphere.xib */; };
+		58093CF81490DAC10010DBAA /* WireFrameSphere.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */; };
+		58093CFA1490DACD0010DBAA /* WireFrameSphere.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */; };
+		58093CFB1490DAFE0010DBAA /* WireFrameSphere.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */; };
+		58093CFC1490DAFE0010DBAA /* WireFrameSphere.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */; };
 		582AADA0148E39A9000CCC7F /* TwistOpenGLController.m in Sources */ = {isa = PBXBuildFile; fileRef = 582AAD9E148E39A9000CCC7F /* TwistOpenGLController.m */; };
 		582AADA1148E39A9000CCC7F /* TwistOpenGLController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582AAD9F148E39A9000CCC7F /* TwistOpenGLController.xib */; };
 		582AADA3148E3A7B000CCC7F /* Twist.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 582AADA2148E3A7B000CCC7F /* Twist.vsh */; };
@@ -108,6 +114,10 @@
 		5854BC32148E649100AC50EF /* Clod.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BC31148E649100AC50EF /* Clod.fsh */; };
 		5854BC33148E64E400AC50EF /* Clod.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC2F148E648600AC50EF /* Clod.vsh */; };
 		5854BC34148E64E400AC50EF /* Clod.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BC31148E649100AC50EF /* Clod.fsh */; };
+		587089D41494AA23008A2B51 /* Particle.png in Resources */ = {isa = PBXBuildFile; fileRef = 587089D31494AA23008A2B51 /* Particle.png */; };
+		587089D71494B0A7008A2B51 /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587089D61494B0A7008A2B51 /* PaintingView.m */; };
+		587089DB1494B0E6008A2B51 /* GLPainterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587089D91494B0E5008A2B51 /* GLPainterController.m */; };
+		587089DC1494B0E6008A2B51 /* GLPainterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587089DA1494B0E5008A2B51 /* GLPainterController.xib */; };
 		58844817148F9B1400F06341 /* Deformation1.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844816148F9B1400F06341 /* Deformation1.vsh */; };
 		5884481A148F9B2000F06341 /* Deformation1.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844819148F9B2000F06341 /* Deformation1.fsh */; };
 		5884481B148F9B2A00F06341 /* Deformation1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844816148F9B1400F06341 /* Deformation1.vsh */; };
@@ -136,6 +146,12 @@
 		5884483E148FA5CA00F06341 /* Deformation7.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5884483D148FA5CA00F06341 /* Deformation7.fsh */; };
 		5884483F148FA5D500F06341 /* Deformation7.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884483B148FA5BF00F06341 /* Deformation7.vsh */; };
 		58844840148FA5D500F06341 /* Deformation7.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5884483D148FA5CA00F06341 /* Deformation7.fsh */; };
+		58844844148FB2AA00F06341 /* 3DShaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58844842148FB2AA00F06341 /* 3DShaderController.m */; };
+		58844845148FB2AA00F06341 /* 3DShaderController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58844843148FB2AA00F06341 /* 3DShaderController.xib */; };
+		58844847148FB41D00F06341 /* TreeDShader1.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844846148FB41C00F06341 /* TreeDShader1.vsh */; };
+		58844849148FB42A00F06341 /* TreeDShader1.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844848148FB42A00F06341 /* TreeDShader1.fsh */; };
+		5884484A148FB78800F06341 /* TreeDShader1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844846148FB41C00F06341 /* TreeDShader1.vsh */; };
+		5884484B148FB78800F06341 /* TreeDShader1.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844848148FB42A00F06341 /* TreeDShader1.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -173,6 +189,12 @@
 		5801EC09148D1FEA007419F9 /* StarOpenGLController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarOpenGLController.xib; sourceTree = "<group>"; };
 		5801EC0C148D2081007419F9 /* Star.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star.vsh; path = GPUBase/Star.vsh; sourceTree = "<group>"; };
 		5801EC0E148D208E007419F9 /* Star.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star.fsh; path = GPUBase/Star.fsh; sourceTree = "<group>"; };
+		58093CEC1490D7BB0010DBAA /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		58093CEE1490D8230010DBAA /* WireFrameSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireFrameSphere.h; sourceTree = "<group>"; };
+		58093CEF1490D8230010DBAA /* WireFrameSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WireFrameSphere.m; sourceTree = "<group>"; };
+		58093CF01490D8230010DBAA /* WireFrameSphere.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WireFrameSphere.xib; sourceTree = "<group>"; };
+		58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = WireFrameSphere.vsh; sourceTree = "<group>"; };
+		58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = WireFrameSphere.fsh; sourceTree = "<group>"; };
 		582AAD9D148E39A9000CCC7F /* TwistOpenGLController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwistOpenGLController.h; sourceTree = "<group>"; };
 		582AAD9E148E39A9000CCC7F /* TwistOpenGLController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwistOpenGLController.m; sourceTree = "<group>"; };
 		582AAD9F148E39A9000CCC7F /* TwistOpenGLController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwistOpenGLController.xib; sourceTree = "<group>"; };
@@ -214,6 +236,12 @@
 		5854BC2B148E5F6400AC50EF /* Plasma.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Plasma.fsh; sourceTree = "<group>"; };
 		5854BC2F148E648600AC50EF /* Clod.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Clod.vsh; sourceTree = "<group>"; };
 		5854BC31148E649100AC50EF /* Clod.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Clod.fsh; sourceTree = "<group>"; };
+		587089D31494AA23008A2B51 /* Particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Particle.png; sourceTree = "<group>"; };
+		587089D51494B0A6008A2B51 /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
+		587089D61494B0A7008A2B51 /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
+		587089D81494B0E5008A2B51 /* GLPainterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPainterController.h; sourceTree = "<group>"; };
+		587089D91494B0E5008A2B51 /* GLPainterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPainterController.m; sourceTree = "<group>"; };
+		587089DA1494B0E5008A2B51 /* GLPainterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLPainterController.xib; sourceTree = "<group>"; };
 		58844816148F9B1400F06341 /* Deformation1.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation1.vsh; sourceTree = "<group>"; };
 		58844819148F9B2000F06341 /* Deformation1.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation1.fsh; sourceTree = "<group>"; };
 		5884481D148F9D4E00F06341 /* Deformation2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation2.vsh; sourceTree = "<group>"; };
@@ -228,6 +256,11 @@
 		58844837148FA4F100F06341 /* Deformation6.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation6.fsh; sourceTree = "<group>"; };
 		5884483B148FA5BF00F06341 /* Deformation7.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation7.vsh; sourceTree = "<group>"; };
 		5884483D148FA5CA00F06341 /* Deformation7.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation7.fsh; sourceTree = "<group>"; };
+		58844841148FB2AA00F06341 /* 3DShaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3DShaderController.h; sourceTree = "<group>"; };
+		58844842148FB2AA00F06341 /* 3DShaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 3DShaderController.m; sourceTree = "<group>"; };
+		58844843148FB2AA00F06341 /* 3DShaderController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = 3DShaderController.xib; sourceTree = "<group>"; };
+		58844846148FB41C00F06341 /* TreeDShader1.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TreeDShader1.vsh; sourceTree = "<group>"; };
+		58844848148FB42A00F06341 /* TreeDShader1.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = TreeDShader1.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +312,9 @@
 		5801EBC0148CF8CA007419F9 /* GPUBase */ = {
 			isa = PBXGroup;
 			children = (
+				587089D51494B0A6008A2B51 /* PaintingView.h */,
+				587089D61494B0A7008A2B51 /* PaintingView.m */,
+				58093CEC1490D7BB0010DBAA /* sphere.h */,
 				5801EBEE148D02A2007419F9 /* tex3.jpg */,
 				5801EBC9148CF8CA007419F9 /* GPUBaseAppDelegate.h */,
 				5801EBCA148CF8CA007419F9 /* GPUBaseAppDelegate.m */,
@@ -303,6 +339,15 @@
 				5801EBDE148CFE33007419F9 /* DeformOpenGLController.h */,
 				5801EBDF148CFE33007419F9 /* DeformOpenGLController.m */,
 				5801EBE0148CFE33007419F9 /* DeformOpenGLController.xib */,
+				58093CEE1490D8230010DBAA /* WireFrameSphere.h */,
+				58093CEF1490D8230010DBAA /* WireFrameSphere.m */,
+				58093CF01490D8230010DBAA /* WireFrameSphere.xib */,
+				587089D81494B0E5008A2B51 /* GLPainterController.h */,
+				587089D91494B0E5008A2B51 /* GLPainterController.m */,
+				587089DA1494B0E5008A2B51 /* GLPainterController.xib */,
+				58844841148FB2AA00F06341 /* 3DShaderController.h */,
+				58844842148FB2AA00F06341 /* 3DShaderController.m */,
+				58844843148FB2AA00F06341 /* 3DShaderController.xib */,
 				5801EBCF148CF8CA007419F9 /* RootViewController.h */,
 				5801EBD0148CF8CA007419F9 /* RootViewController.m */,
 				5801EBD2148CF8CA007419F9 /* RootViewController.xib */,
@@ -314,6 +359,7 @@
 		5801EBC1148CF8CA007419F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				587089D31494AA23008A2B51 /* Particle.png */,
 				5801EBC2148CF8CA007419F9 /* GPUBase-Info.plist */,
 				5801EBC3148CF8CA007419F9 /* InfoPlist.strings */,
 				5801EBC6148CF8CA007419F9 /* main.m */,
@@ -377,6 +423,10 @@
 				58844837148FA4F100F06341 /* Deformation6.fsh */,
 				5884483B148FA5BF00F06341 /* Deformation7.vsh */,
 				5884483D148FA5CA00F06341 /* Deformation7.fsh */,
+				58844846148FB41C00F06341 /* TreeDShader1.vsh */,
+				58844848148FB42A00F06341 /* TreeDShader1.fsh */,
+				58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */,
+				58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -428,6 +478,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58093CFB1490DAFE0010DBAA /* WireFrameSphere.vsh in Resources */,
+				58093CFC1490DAFE0010DBAA /* WireFrameSphere.fsh in Resources */,
+				5884484A148FB78800F06341 /* TreeDShader1.vsh in Resources */,
+				5884484B148FB78800F06341 /* TreeDShader1.fsh in Resources */,
 				5884483F148FA5D500F06341 /* Deformation7.vsh in Resources */,
 				58844840148FA5D500F06341 /* Deformation7.fsh in Resources */,
 				58844839148FA53D00F06341 /* Deformation6.vsh in Resources */,
@@ -490,6 +544,10 @@
 				582AADA1148E39A9000CCC7F /* TwistOpenGLController.xib in Resources */,
 				582AADAC148E3DEA000CCC7F /* KaleidoscopeOpenGLController.xib in Resources */,
 				582AADB7148E403E000CCC7F /* PlaneDeformationController.xib in Resources */,
+				58844845148FB2AA00F06341 /* 3DShaderController.xib in Resources */,
+				58093CF21490D8230010DBAA /* WireFrameSphere.xib in Resources */,
+				587089D41494AA23008A2B51 /* Particle.png in Resources */,
+				587089DC1494B0E6008A2B51 /* GLPainterController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +620,14 @@
 				58844838148FA4F100F06341 /* Deformation6.fsh in Sources */,
 				5884483C148FA5BF00F06341 /* Deformation7.vsh in Sources */,
 				5884483E148FA5CA00F06341 /* Deformation7.fsh in Sources */,
+				58844844148FB2AA00F06341 /* 3DShaderController.m in Sources */,
+				58844847148FB41D00F06341 /* TreeDShader1.vsh in Sources */,
+				58844849148FB42A00F06341 /* TreeDShader1.fsh in Sources */,
+				58093CF11490D8230010DBAA /* WireFrameSphere.m in Sources */,
+				58093CF81490DAC10010DBAA /* WireFrameSphere.vsh in Sources */,
+				58093CFA1490DACD0010DBAA /* WireFrameSphere.fsh in Sources */,
+				587089D71494B0A7008A2B51 /* PaintingView.m in Sources */,
+				587089DB1494B0E6008A2B51 /* GLPainterController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,13 +1,12 @@
 //
-//  PlaneDeformationController.h
+//  WireFrameSphere.h
 //  GPUBase
 //
-//  Created by jdxyw on 11-12-6.
+//  Created by jdxyw on 11-12-8.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
 
 #import <OpenGLES/EAGL.h>
 
@@ -16,7 +15,7 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
-@interface PlaneDeformationController : UIViewController
+@interface WireFrameSphere : UIViewController
 {
     EAGLContext *context;
     GLuint program;
@@ -36,7 +35,7 @@
     NSString *vertexfile;
     NSString *fragmentfile;
     
-    float t;
+    GLuint _offset;
     
     float interval;
 }

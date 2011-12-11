@@ -1,15 +1,16 @@
 //
-//  PlaneDeformationController.m
+//  WireFrameSphere.m
 //  GPUBase
 //
-//  Created by jdxyw on 11-12-6.
+//  Created by jdxyw on 11-12-8.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
 
-
-#import "PlaneDeformationController.h"
-#import "EAGLView.h"
+#import "WireFrameSphere.h"
 #import <QuartzCore/QuartzCore.h>
+#import "EAGLView.h"
+#import "sphere.h"
+
 
 enum {
     ATTRIB_VERTEX,
@@ -17,13 +18,18 @@ enum {
     NUM_ATTRIBUTES
 };
 
-@implementation PlaneDeformationController
+@implementation WireFrameSphere
 
 @synthesize animating;
 @synthesize context;
 @synthesize displayLink;
 @synthesize vertexfile;
 @synthesize fragmentfile;
+
+//- (void)awakeFromNib
+//{
+//    
+//}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +38,11 @@ enum {
         // Custom initialization
     }
     return self;
+}
+
+-(void)setFileName:(NSString *)vertex fragment:(NSString *)fragment{
+    vertexfile=[NSString stringWithString:vertex];
+    fragmentfile=[NSString stringWithString:fragment];
 }
 
 - (void)dealloc
@@ -46,14 +57,8 @@ enum {
         [EAGLContext setCurrentContext:nil];
     
     [context release];
-    [vertexfile release];
-    [fragmentfile release];
+    
     [super dealloc];
-}
-
--(void)setFileName:(NSString *)vertex fragment:(NSString *)fragment{
-    vertexfile=[NSString stringWithString:vertex];
-    fragmentfile=[NSString stringWithString:fragment];
 }
 
 -(void)viewDidLoad
@@ -114,7 +119,6 @@ enum {
     animating = FALSE;
     animationFrameInterval = 1;
     self.displayLink = nil;
-    t=0;
     
     [self startAnimation];
     [super viewDidLoad];
@@ -228,6 +232,7 @@ enum {
     };
     
     static float transY = 0.0f;
+    static float t=0.0;
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     
@@ -240,14 +245,15 @@ enum {
         _resloution = glGetUniformLocation(program, "resolution");
         
         // Update uniform value.
-        //        glUniform1f(uniforms[UNIFORM_TRANSLATE], (GLfloat)transY);
-        //        transY += 0.075f;	
+        _offset = glGetUniformLocation(program, "translate");
+        glUniform1f(_offset, (GLfloat)transY);
+        transY += 0.075f;	
         
         // Update attribute values.
-        glVertexAttribPointer(ATTRIB_VERTEX, 2, GL_FLOAT, 0, 0, squareVertices);
+        //glVertexAttribPointer(ATTRIB_VERTEX, 2, GL_FLOAT, 0, 0, squareVertices);
+        
+        glVertexAttribPointer(ATTRIB_VERTEX, 3, GL_FLOAT,0, sizeof(vertexData), &MeshVertexData[0].vertex);
         glEnableVertexAttribArray(ATTRIB_VERTEX);
-        
-        
         glVertexAttribPointer(_texCoordSlot, 2, GL_FLOAT, GL_FALSE, 0, texCoord);    
         
         glActiveTexture(GL_TEXTURE0); 
@@ -280,7 +286,7 @@ enum {
         glEnableClientState(GL_COLOR_ARRAY);
     }
     
-    glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+    glDrawArrays(GL_LINE_STRIP, 0, sizeof(MeshVertexData)/sizeof(vertexData));
     
     [(EAGLView *)self.view presentFramebuffer];
 }
@@ -424,11 +430,13 @@ enum {
         {
             glDeleteProgram(program);
             program = 0;
-        }        return FALSE;
+        }
+        
+        return FALSE;
     }
     
     // Get uniform locations.
-    //uniforms[UNIFORM_TRANSLATE] = glGetUniformLocation(program, "translate");
+    
     
     _texCoordSlot = glGetAttribLocation(program, "TexCoordIn");
     glEnableVertexAttribArray(_texCoordSlot);

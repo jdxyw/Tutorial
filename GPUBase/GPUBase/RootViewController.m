@@ -14,6 +14,8 @@
 #import "TwistOpenGLController.h"
 #import "KaleidoscopeOpenGLController.h"
 #import "PlaneDeformationController.h"
+#import "WireFrameSphere.h"
+#import "GLPainterController.h"
 
 @implementation RootViewController
 
@@ -25,7 +27,8 @@
              @"Z Invert",@"Tunnel",@"Relief Tunnel",@"Square Tunnel",@"Fly",@"Pluse",
              @"Montion Blur",@"Post Processing",@"Julia",@"Mandel",@"Flower",@"Metablob",
              @"Plasma",@"Clod",@"Deformation 1",@"Deformation 2",@"Deformation 3",
-             @"Deformation 4",@"Deformation 5",@"Deformation 6",@"Deformation 7",nil];
+             @"Deformation 4",@"Deformation 5",@"Deformation 6",@"Deformation 7",
+             @"3D Shader",@"WireFrame Sphere",@"GL Paint",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -281,6 +284,25 @@
             detailViewController=[[PlaneDeformationController alloc] init];
             [detailViewController setFileName:@"Deformation7" fragment:@"Deformation7"];
             detailViewController.title=@"Deformation 7";
+            break;
+            
+        case 26:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"TreeDShader1" fragment:@"TreeDShader1"];
+            detailViewController.title=@"3D Shader";
+            break;
+        
+        case 27:
+            detailViewController=[[WireFrameSphere alloc] init];
+            [detailViewController setFileName:@"WireFrameSphere" fragment:@"WireFrameSphere"];
+            detailViewController.title=@"WireFrame Sphere";
+            break;
+            
+        case 28:
+            detailViewController=[[GLPainterController alloc] init];
+            [detailViewController.view setBrushColorWithRed:1.0 green:0.5 blue:0,2];
+            //[detailViewController setFileName:@"WireFrameSphere" fragment:@"WireFrameSphere"];
+            detailViewController.title=@"WireFrame Sphere";
             break;
             
         default:

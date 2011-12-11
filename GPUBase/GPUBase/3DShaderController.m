@@ -1,29 +1,31 @@
 //
-//  PlaneDeformationController.m
+//  3DShaderController.m
 //  GPUBase
 //
-//  Created by jdxyw on 11-12-6.
+//  Created by jdxyw on 11-12-7.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
 
-
-#import "PlaneDeformationController.h"
-#import "EAGLView.h"
+#import "3DShaderController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "EAGLView.h"
+
 
 enum {
     ATTRIB_VERTEX,
     ATTRIB_TEXTURE,
     NUM_ATTRIBUTES
 };
-
-@implementation PlaneDeformationController
+@implementation _DShaderController
 
 @synthesize animating;
 @synthesize context;
 @synthesize displayLink;
-@synthesize vertexfile;
-@synthesize fragmentfile;
+
+//- (void)awakeFromNib
+//{
+//    
+//}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,14 +48,8 @@ enum {
         [EAGLContext setCurrentContext:nil];
     
     [context release];
-    [vertexfile release];
-    [fragmentfile release];
+    
     [super dealloc];
-}
-
--(void)setFileName:(NSString *)vertex fragment:(NSString *)fragment{
-    vertexfile=[NSString stringWithString:vertex];
-    fragmentfile=[NSString stringWithString:fragment];
 }
 
 -(void)viewDidLoad
@@ -114,7 +110,6 @@ enum {
     animating = FALSE;
     animationFrameInterval = 1;
     self.displayLink = nil;
-    t=0;
     
     [self startAnimation];
     [super viewDidLoad];
@@ -228,6 +223,7 @@ enum {
     };
     
     static float transY = 0.0f;
+    static float t=0.0;
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     
@@ -378,7 +374,7 @@ enum {
     program = glCreateProgram();
     
     // Create and compile vertex shader.
-    vertShaderPathname = [[NSBundle mainBundle] pathForResource:vertexfile ofType:@"vsh"];
+    vertShaderPathname = [[NSBundle mainBundle] pathForResource:@"deform" ofType:@"vsh"];
     if (![self compileShader:&vertShader type:GL_VERTEX_SHADER file:vertShaderPathname])
     {
         NSLog(@"Failed to compile vertex shader");
@@ -386,7 +382,7 @@ enum {
     }
     
     // Create and compile fragment shader.
-    fragShaderPathname = [[NSBundle mainBundle] pathForResource:fragmentfile ofType:@"fsh"];
+    fragShaderPathname = [[NSBundle mainBundle] pathForResource:@"deform" ofType:@"fsh"];
     if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER file:fragShaderPathname])
     {
         NSLog(@"Failed to compile fragment shader");
@@ -424,7 +420,9 @@ enum {
         {
             glDeleteProgram(program);
             program = 0;
-        }        return FALSE;
+        }
+        
+        return FALSE;
     }
     
     // Get uniform locations.
