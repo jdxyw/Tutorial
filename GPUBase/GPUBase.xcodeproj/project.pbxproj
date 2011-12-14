@@ -74,6 +74,10 @@
 		583245501498DD3500CE1760 /* Fractal4.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5832454F1498DD3400CE1760 /* Fractal4.fsh */; };
 		583245511498DD5E00CE1760 /* Fractal4.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5832454D1498DD2600CE1760 /* Fractal4.vsh */; };
 		583245521498DD5E00CE1760 /* Fractal4.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5832454F1498DD3400CE1760 /* Fractal4.fsh */; };
+		583245541498E85D00CE1760 /* Fractal5.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 583245531498E85D00CE1760 /* Fractal5.vsh */; };
+		583245561498E88500CE1760 /* Fractal5.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 583245551498E88500CE1760 /* Fractal5.fsh */; };
+		583245571498E8B300CE1760 /* Fractal5.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 583245531498E85D00CE1760 /* Fractal5.vsh */; };
+		583245581498E8B300CE1760 /* Fractal5.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 583245551498E88500CE1760 /* Fractal5.fsh */; };
 		5854BBE2148E425D00AC50EF /* ZInvert.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE1148E425D00AC50EF /* ZInvert.vsh */; };
 		5854BBE4148E426800AC50EF /* ZInvert.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE3148E426800AC50EF /* ZInvert.fsh */; };
 		5854BBE5148E456A00AC50EF /* ZInvert.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBE1148E425D00AC50EF /* ZInvert.vsh */; };
@@ -232,6 +236,8 @@
 		583245491498D74F00CE1760 /* Fractal3.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal3.fsh; sourceTree = "<group>"; };
 		5832454D1498DD2600CE1760 /* Fractal4.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal4.vsh; sourceTree = "<group>"; };
 		5832454F1498DD3400CE1760 /* Fractal4.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal4.fsh; sourceTree = "<group>"; };
+		583245531498E85D00CE1760 /* Fractal5.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal5.vsh; sourceTree = "<group>"; };
+		583245551498E88500CE1760 /* Fractal5.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal5.fsh; sourceTree = "<group>"; };
 		5854BBE1148E425D00AC50EF /* ZInvert.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ZInvert.vsh; sourceTree = "<group>"; };
 		5854BBE3148E426800AC50EF /* ZInvert.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ZInvert.fsh; sourceTree = "<group>"; };
 		5854BBE7148E45E300AC50EF /* Tunnel.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Tunnel.vsh; sourceTree = "<group>"; };
@@ -447,8 +453,8 @@
 				58844837148FA4F100F06341 /* Deformation6.fsh */,
 				5884483B148FA5BF00F06341 /* Deformation7.vsh */,
 				5884483D148FA5CA00F06341 /* Deformation7.fsh */,
-				58844846148FB41C00F06341 /* TreeDShader1.vsh */,
 				58844848148FB42A00F06341 /* TreeDShader1.fsh */,
+				58844846148FB41C00F06341 /* TreeDShader1.vsh */,
 				58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */,
 				58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */,
 				5832453A1498CBE700CE1760 /* Fractal1.vsh */,
@@ -459,6 +465,8 @@
 				583245491498D74F00CE1760 /* Fractal3.fsh */,
 				5832454D1498DD2600CE1760 /* Fractal4.vsh */,
 				5832454F1498DD3400CE1760 /* Fractal4.fsh */,
+				583245531498E85D00CE1760 /* Fractal5.vsh */,
+				583245551498E88500CE1760 /* Fractal5.fsh */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -510,6 +518,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583245571498E8B300CE1760 /* Fractal5.vsh in Resources */,
+				583245581498E8B300CE1760 /* Fractal5.fsh in Resources */,
 				583245511498DD5E00CE1760 /* Fractal4.vsh in Resources */,
 				583245521498DD5E00CE1760 /* Fractal4.fsh in Resources */,
 				5832454B1498D75600CE1760 /* Fractal3.vsh in Resources */,
@@ -676,6 +686,8 @@
 				5832454A1498D74F00CE1760 /* Fractal3.fsh in Sources */,
 				5832454E1498DD2600CE1760 /* Fractal4.vsh in Sources */,
 				583245501498DD3500CE1760 /* Fractal4.fsh in Sources */,
+				583245541498E85D00CE1760 /* Fractal5.vsh in Sources */,
+				583245561498E88500CE1760 /* Fractal5.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

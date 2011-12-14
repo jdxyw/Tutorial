@@ -29,7 +29,7 @@
              @"Plasma",@"Clod",@"Deformation 1",@"Deformation 2",@"Deformation 3",
              @"Deformation 4",@"Deformation 5",@"Deformation 6",@"Deformation 7",
              @"3D Shader",@"WireFrame Sphere",@"GL Paint",@"Fractal One",@"Fractal Two",
-             @"Fractal Three",@"Fractal Four",nil];
+             @"Fractal Three",@"Fractal Four",@"Fractal Five",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -328,6 +328,12 @@
             detailViewController=[[PlaneDeformationController alloc] init];
             [detailViewController setFileName:@"Fractal4" fragment:@"Fractal4"];
             detailViewController.title=@"Fractal4";
+            break;
+            
+        case 33:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal5" fragment:@"Fractal5"];
+            detailViewController.title=@"Fractal5";
             break;
             
         default:
