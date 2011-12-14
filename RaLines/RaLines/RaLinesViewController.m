@@ -1,64 +1,47 @@
 //
-//  PlaneDeformationController.m
-//  GPUBase
+//  RaLinesViewController.m
+//  RaLines
 //
-//  Created by jdxyw on 11-12-6.
+//  Created by jdxyw on 11-12-13.
 //  Copyright 2011年 __MyCompanyName__. All rights reserved.
 //
 
-
-#import "PlaneDeformationController.h"
-#import "EAGLView.h"
 #import <QuartzCore/QuartzCore.h>
 
+#import "RaLinesViewController.h"
+#import "EAGLView.h"
+
+// Uniform index.
+enum {
+    UNIFORM_TRANSLATE,
+    NUM_UNIFORMS
+};
+GLint uniforms[NUM_UNIFORMS];
+
+// Attribute index.
 enum {
     ATTRIB_VERTEX,
-    ATTRIB_TEXTURE,
+    ATTRIB_COLOR,
     NUM_ATTRIBUTES
 };
 
-@implementation PlaneDeformationController
+@interface RaLinesViewController ()
+@property (nonatomic, retain) EAGLContext *context;
+@property (nonatomic, assign) CADisplayLink *displayLink;
+- (BOOL)loadShaders;
+- (BOOL)compileShader:(GLuint *)shader type:(GLenum)type file:(NSString *)file;
+- (BOOL)linkProgram:(GLuint)prog;
+- (BOOL)validateProgram:(GLuint)prog;
+@end
+
+@implementation RaLinesViewController
 
 @synthesize animating;
 @synthesize context;
 @synthesize displayLink;
-@synthesize vertexfile;
-@synthesize fragmentfile;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)awakeFromNib
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)dealloc
-{
-    if (program) {
-        glDeleteProgram(program);
-        program = 0;
-    }
-    
-    // Tear down context.
-    if ([EAGLContext currentContext] == context)
-        [EAGLContext setCurrentContext:nil];
-    
-    [context release];
-    [vertexfile release];
-    [fragmentfile release];
-    [super dealloc];
-}
-
--(void)setFileName:(NSString *)vertex fragment:(NSString *)fragment{
-    vertexfile=[NSString stringWithString:vertex];
-    fragmentfile=[NSString stringWithString:fragment];
-}
-
--(void)viewDidLoad
-{
-    
     EAGLContext *aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
     if (!aContext) {
@@ -79,45 +62,25 @@ enum {
     if ([context API] == kEAGLRenderingAPIOpenGLES2)
         [self loadShaders];
     
-    
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
-    
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"tex3" ofType:@"jpg"];
-    NSData *texData = [[NSData alloc] initWithContentsOfFile:path];
-    UIImage *image = [[UIImage alloc] initWithData:texData];
-    if (image == nil)
-        NSLog(@"Do real error checking here");
-    
-    GLuint width = CGImageGetWidth(image.CGImage);
-    GLuint height = CGImageGetHeight(image.CGImage);
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-    void *imageData = malloc( height * width * 4 );
-    CGContextRef contextRef = CGBitmapContextCreate( imageData, width, height, 8, 4 * width, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big );
-    CGColorSpaceRelease( colorSpace );
-    CGContextClearRect( contextRef, CGRectMake( 0, 0, width, height ) );
-    CGContextTranslateCTM( contextRef, 0, height - height );
-    CGContextDrawImage( contextRef, CGRectMake( 0, 0, width, height ), image.CGImage );
-    
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, imageData);
-    
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    
-    CGContextRelease(contextRef);
-    
-    free(imageData);
-    [image release];
-    [texData release];
-    
-    
     animating = FALSE;
     animationFrameInterval = 1;
     self.displayLink = nil;
-    t=0;
+}
+
+- (void)dealloc
+{
+    if (program) {
+        glDeleteProgram(program);
+        program = 0;
+    }
     
-    [self startAnimation];
-    [super viewDidLoad];
+    // Tear down context.
+    if ([EAGLContext currentContext] == context)
+        [EAGLContext setCurrentContext:nil];
+    
+    [context release];
+    
+    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -150,13 +113,11 @@ enum {
         glDeleteProgram(program);
         program = 0;
     }
-    
+
     // Tear down context.
     if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];
 	self.context = nil;	
-    
-    [self stopAnimation];
 }
 
 - (NSInteger)animationFrameInterval
@@ -207,10 +168,10 @@ enum {
     
     // Replace the implementation of this method to do your own custom drawing.
     static const GLfloat squareVertices[] = {
-        -1.0f, -1.0f,
-        1.0f, -1.0f,
-        -1.0f,  1.0f,
-        1.0f,  1.0f,
+        -0.5f, -0.33f,
+        0.5f, -0.33f,
+        -0.5f,  0.33f,
+        0.5f,  0.33f,
     };
     
     static const GLubyte squareColors[] = {
@@ -220,14 +181,8 @@ enum {
         255,   0, 255, 255,
     };
     
-    static const GLfloat texCoord[]={
-        0,1,
-        1,1,
-        0,0,
-        1,0  
-    };
-    
     static float transY = 0.0f;
+    
     glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
     
@@ -235,29 +190,16 @@ enum {
         // Use shader program.
         glUseProgram(program);
         
-        _textureUniform = glGetUniformLocation(program, "Texture");
-        _time = glGetUniformLocation(program, "time");
-        _resloution = glGetUniformLocation(program, "resolution");
-        
         // Update uniform value.
-        //        glUniform1f(uniforms[UNIFORM_TRANSLATE], (GLfloat)transY);
-        //        transY += 0.075f;	
+        glUniform1f(uniforms[UNIFORM_TRANSLATE], (GLfloat)transY);
+        transY += 0.075f;	
         
         // Update attribute values.
         glVertexAttribPointer(ATTRIB_VERTEX, 2, GL_FLOAT, 0, 0, squareVertices);
         glEnableVertexAttribArray(ATTRIB_VERTEX);
+        glVertexAttribPointer(ATTRIB_COLOR, 4, GL_UNSIGNED_BYTE, 1, 0, squareColors);
+        glEnableVertexAttribArray(ATTRIB_COLOR);
         
-        
-        glVertexAttribPointer(_texCoordSlot, 2, GL_FLOAT, GL_FALSE, 0, texCoord);    
-        
-        glActiveTexture(GL_TEXTURE0); 
-        glBindTexture(GL_TEXTURE_2D, texture);
-        glUniform1i(_textureUniform, 0);
-        
-        //glUniform4f(_mouse, 0, 0, 0, 0);
-        glUniform1f(_time, t);
-        t+=0.2;
-        glUniform2f(_resloution, 320, 436);
         // Validate program before drawing. This is a good check, but only really necessary in a debug build.
         // DEBUG macro must be defined in your debug configurations if that's not already the case.
 #if defined(DEBUG)
@@ -378,7 +320,7 @@ enum {
     program = glCreateProgram();
     
     // Create and compile vertex shader.
-    vertShaderPathname = [[NSBundle mainBundle] pathForResource:vertexfile ofType:@"vsh"];
+    vertShaderPathname = [[NSBundle mainBundle] pathForResource:@"Shader" ofType:@"vsh"];
     if (![self compileShader:&vertShader type:GL_VERTEX_SHADER file:vertShaderPathname])
     {
         NSLog(@"Failed to compile vertex shader");
@@ -386,7 +328,7 @@ enum {
     }
     
     // Create and compile fragment shader.
-    fragShaderPathname = [[NSBundle mainBundle] pathForResource:fragmentfile ofType:@"fsh"];
+    fragShaderPathname = [[NSBundle mainBundle] pathForResource:@"Shader" ofType:@"fsh"];
     if (![self compileShader:&fragShader type:GL_FRAGMENT_SHADER file:fragShaderPathname])
     {
         NSLog(@"Failed to compile fragment shader");
@@ -402,8 +344,7 @@ enum {
     // Bind attribute locations.
     // This needs to be done prior to linking.
     glBindAttribLocation(program, ATTRIB_VERTEX, "position");
-    //glBindAttribLocation(program, ATTRIB_COLOR, "color");
-    //glBindAttribLocation(program, ATTRIB_COLOR, "TexCoordIn");
+    glBindAttribLocation(program, ATTRIB_COLOR, "color");
     
     // Link program.
     if (![self linkProgram:program])
@@ -424,15 +365,13 @@ enum {
         {
             glDeleteProgram(program);
             program = 0;
-        }        return FALSE;
+        }
+        
+        return FALSE;
     }
     
     // Get uniform locations.
-    //uniforms[UNIFORM_TRANSLATE] = glGetUniformLocation(program, "translate");
-    
-    _texCoordSlot = glGetAttribLocation(program, "TexCoordIn");
-    glEnableVertexAttribArray(_texCoordSlot);
-    //_mouse = glGetUniformLocation(program, "mouse");
+    uniforms[UNIFORM_TRANSLATE] = glGetUniformLocation(program, "translate");
     
     // Release vertex and fragment shaders.
     if (vertShader)

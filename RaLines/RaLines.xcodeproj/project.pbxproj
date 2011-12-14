@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58312A42149784BD006A176B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A41149784BD006A176B /* UIKit.framework */; };
+		58312A44149784BD006A176B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A43149784BD006A176B /* Foundation.framework */; };
+		58312A46149784BD006A176B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A45149784BD006A176B /* CoreGraphics.framework */; };
+		58312A48149784BD006A176B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A47149784BD006A176B /* QuartzCore.framework */; };
+		58312A4A149784BD006A176B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A49149784BD006A176B /* OpenGLES.framework */; };
+		58312A50149784BD006A176B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58312A4E149784BD006A176B /* InfoPlist.strings */; };
+		58312A52149784BD006A176B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A51149784BD006A176B /* main.m */; };
+		58312A56149784BD006A176B /* RaLinesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A55149784BD006A176B /* RaLinesAppDelegate.m */; };
+		58312A59149784BD006A176B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58312A57149784BD006A176B /* MainWindow.xib */; };
+		58312A5B149784BD006A176B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58312A5A149784BD006A176B /* Shader.fsh */; };
+		58312A5D149784BD006A176B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58312A5C149784BD006A176B /* Shader.vsh */; };
+		58312A60149784BD006A176B /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A5F149784BD006A176B /* EAGLView.m */; };
+		58312A63149784BD006A176B /* RaLinesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A62149784BD006A176B /* RaLinesViewController.m */; };
+		58312A66149784BD006A176B /* RaLinesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58312A64149784BD006A176B /* RaLinesViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58312A3D149784BD006A176B /* RaLines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaLines.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58312A41149784BD006A176B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58312A43149784BD006A176B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58312A45149784BD006A176B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58312A47149784BD006A176B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		58312A49149784BD006A176B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		58312A4D149784BD006A176B /* RaLines-Info.plist */ = {isa = PBXFileReference; path = "RaLines-Info.plist"; sourceTree = "<group>"; };
+		58312A4F149784BD006A176B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58312A51149784BD006A176B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58312A53149784BD006A176B /* RaLines-Prefix.pch */ = {isa = PBXFileReference; path = "RaLines-Prefix.pch"; sourceTree = "<group>"; };
+		58312A54149784BD006A176B /* RaLinesAppDelegate.h */ = {isa = PBXFileReference; path = RaLinesAppDelegate.h; sourceTree = "<group>"; };
+		58312A55149784BD006A176B /* RaLinesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaLinesAppDelegate.m; sourceTree = "<group>"; };
+		58312A58149784BD006A176B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58312A5A149784BD006A176B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		58312A5C149784BD006A176B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		58312A5E149784BD006A176B /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
+		58312A5F149784BD006A176B /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		58312A61149784BD006A176B /* RaLinesViewController.h */ = {isa = PBXFileReference; path = RaLinesViewController.h; sourceTree = "<group>"; };
+		58312A62149784BD006A176B /* RaLinesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaLinesViewController.m; sourceTree = "<group>"; };
+		58312A65149784BD006A176B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RaLinesViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58312A3A149784BD006A176B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58312A42149784BD006A176B /* UIKit.framework in Frameworks */,
+				58312A44149784BD006A176B /* Foundation.framework in Frameworks */,
+				58312A46149784BD006A176B /* CoreGraphics.framework in Frameworks */,
+				58312A48149784BD006A176B /* QuartzCore.framework in Frameworks */,
+				58312A4A149784BD006A176B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58312A32149784BD006A176B = {
+			isa = PBXGroup;
+			children = (
+				58312A4B149784BD006A176B /* RaLines */,
+				58312A40149784BD006A176B /* Frameworks */,
+				58312A3E149784BD006A176B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58312A3E149784BD006A176B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58312A3D149784BD006A176B /* RaLines.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58312A40149784BD006A176B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58312A41149784BD006A176B /* UIKit.framework */,
+				58312A43149784BD006A176B /* Foundation.framework */,
+				58312A45149784BD006A176B /* CoreGraphics.framework */,
+				58312A47149784BD006A176B /* QuartzCore.framework */,
+				58312A49149784BD006A176B /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58312A4B149784BD006A176B /* RaLines */ = {
+			isa = PBXGroup;
+			children = (
+				58312A54149784BD006A176B /* RaLinesAppDelegate.h */,
+				58312A55149784BD006A176B /* RaLinesAppDelegate.m */,
+				58312A57149784BD006A176B /* MainWindow.xib */,
+				58312A5A149784BD006A176B /* Shader.fsh */,
+				58312A5C149784BD006A176B /* Shader.vsh */,
+				58312A5E149784BD006A176B /* EAGLView.h */,
+				58312A5F149784BD006A176B /* EAGLView.m */,
+				58312A61149784BD006A176B /* RaLinesViewController.h */,
+				58312A62149784BD006A176B /* RaLinesViewController.m */,
+				58312A64149784BD006A176B /* RaLinesViewController.xib */,
+				58312A4C149784BD006A176B /* Supporting Files */,
+			);
+			path = RaLines;
+			sourceTree = "<group>";
+		};
+		58312A4C149784BD006A176B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58312A4D149784BD006A176B /* RaLines-Info.plist */,
+				58312A4E149784BD006A176B /* InfoPlist.strings */,
+				58312A51149784BD006A176B /* main.m */,
+				58312A53149784BD006A176B /* RaLines-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58312A3C149784BD006A176B /* RaLines */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58312A69149784BD006A176B /* Build configuration list for PBXNativeTarget "RaLines" */;
+			buildPhases = (
+				58312A39149784BD006A176B /* Sources */,
+				58312A3A149784BD006A176B /* Frameworks */,
+				58312A3B149784BD006A176B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaLines;
+			productName = RaLines;
+			productReference = 58312A3D149784BD006A176B /* RaLines.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58312A34149784BD006A176B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 58312A37149784BD006A176B /* Build configuration list for PBXProject "RaLines" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58312A32149784BD006A176B;
+			productRefGroup = 58312A3E149784BD006A176B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58312A3C149784BD006A176B /* RaLines */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58312A3B149784BD006A176B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58312A50149784BD006A176B /* InfoPlist.strings in Resources */,
+				58312A59149784BD006A176B /* MainWindow.xib in Resources */,
+				58312A5B149784BD006A176B /* Shader.fsh in Resources */,
+				58312A5D149784BD006A176B /* Shader.vsh in Resources */,
+				58312A66149784BD006A176B /* RaLinesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58312A39149784BD006A176B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58312A52149784BD006A176B /* main.m in Sources */,
+				58312A56149784BD006A176B /* RaLinesAppDelegate.m in Sources */,
+				58312A60149784BD006A176B /* EAGLView.m in Sources */,
+				58312A63149784BD006A176B /* RaLinesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58312A4E149784BD006A176B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58312A4F149784BD006A176B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58312A57149784BD006A176B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58312A58149784BD006A176B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		58312A64149784BD006A176B /* RaLinesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58312A65149784BD006A176B /* en */,
+			);
+			name = RaLinesViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58312A67149784BD006A176B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58312A68149784BD006A176B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58312A6A149784BD006A176B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaLines/RaLines-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RaLines/RaLines-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58312A6B149784BD006A176B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RaLines/RaLines-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RaLines/RaLines-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58312A37149784BD006A176B /* Build configuration list for PBXProject "RaLines" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58312A67149784BD006A176B /* Debug */,
+				58312A68149784BD006A176B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58312A69149784BD006A176B /* Build configuration list for PBXNativeTarget "RaLines" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58312A6A149784BD006A176B /* Debug */,
+				58312A6B149784BD006A176B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58312A34149784BD006A176B /* Project object */;
+}

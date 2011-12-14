@@ -28,7 +28,8 @@
              @"Montion Blur",@"Post Processing",@"Julia",@"Mandel",@"Flower",@"Metablob",
              @"Plasma",@"Clod",@"Deformation 1",@"Deformation 2",@"Deformation 3",
              @"Deformation 4",@"Deformation 5",@"Deformation 6",@"Deformation 7",
-             @"3D Shader",@"WireFrame Sphere",@"GL Paint",nil];
+             @"3D Shader",@"WireFrame Sphere",@"GL Paint",@"Fractal One",@"Fractal Two",
+             @"Fractal Three",@"Fractal Four",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -303,6 +304,30 @@
             [detailViewController.view setBrushColorWithRed:1.0 green:0.5 blue:0,2];
             //[detailViewController setFileName:@"WireFrameSphere" fragment:@"WireFrameSphere"];
             detailViewController.title=@"WireFrame Sphere";
+            break;
+            
+        case 29:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal1" fragment:@"Fractal1"];
+            detailViewController.title=@"Fractal1";
+            break;
+            
+        case 30:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal2" fragment:@"Fractal2"];
+            detailViewController.title=@"Fractal2";
+            break;
+            
+        case 31:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal3" fragment:@"Fractal3"];
+            detailViewController.title=@"Fractal3";
+            break;
+            
+        case 32:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal4" fragment:@"Fractal4"];
+            detailViewController.title=@"Fractal4";
             break;
             
         default:

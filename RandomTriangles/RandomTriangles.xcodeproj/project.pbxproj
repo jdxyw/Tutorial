@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58312A0814977967006A176B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A0714977967006A176B /* UIKit.framework */; };
+		58312A0A14977967006A176B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A0914977967006A176B /* Foundation.framework */; };
+		58312A0C14977967006A176B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A0B14977967006A176B /* CoreGraphics.framework */; };
+		58312A0E14977967006A176B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A0D14977967006A176B /* QuartzCore.framework */; };
+		58312A1014977967006A176B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58312A0F14977967006A176B /* OpenGLES.framework */; };
+		58312A1614977967006A176B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58312A1414977967006A176B /* InfoPlist.strings */; };
+		58312A1814977967006A176B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A1714977967006A176B /* main.m */; };
+		58312A1C14977967006A176B /* RandomTrianglesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A1B14977967006A176B /* RandomTrianglesAppDelegate.m */; };
+		58312A1F14977967006A176B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58312A1D14977967006A176B /* MainWindow.xib */; };
+		58312A2114977967006A176B /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58312A2014977967006A176B /* Shader.fsh */; };
+		58312A2314977967006A176B /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58312A2214977967006A176B /* Shader.vsh */; };
+		58312A2614977967006A176B /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A2514977967006A176B /* EAGLView.m */; };
+		58312A2914977967006A176B /* RandomTrianglesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58312A2814977967006A176B /* RandomTrianglesViewController.m */; };
+		58312A2C14977967006A176B /* RandomTrianglesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58312A2A14977967006A176B /* RandomTrianglesViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58312A0314977967006A176B /* RandomTriangles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomTriangles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58312A0714977967006A176B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58312A0914977967006A176B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58312A0B14977967006A176B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58312A0D14977967006A176B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		58312A0F14977967006A176B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		58312A1314977967006A176B /* RandomTriangles-Info.plist */ = {isa = PBXFileReference; path = "RandomTriangles-Info.plist"; sourceTree = "<group>"; };
+		58312A1514977967006A176B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58312A1714977967006A176B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58312A1914977967006A176B /* RandomTriangles-Prefix.pch */ = {isa = PBXFileReference; path = "RandomTriangles-Prefix.pch"; sourceTree = "<group>"; };
+		58312A1A14977967006A176B /* RandomTrianglesAppDelegate.h */ = {isa = PBXFileReference; path = RandomTrianglesAppDelegate.h; sourceTree = "<group>"; };
+		58312A1B14977967006A176B /* RandomTrianglesAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomTrianglesAppDelegate.m; sourceTree = "<group>"; };
+		58312A1E14977967006A176B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		58312A2014977967006A176B /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		58312A2214977967006A176B /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		58312A2414977967006A176B /* EAGLView.h */ = {isa = PBXFileReference; path = EAGLView.h; sourceTree = "<group>"; };
+		58312A2514977967006A176B /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		58312A2714977967006A176B /* RandomTrianglesViewController.h */ = {isa = PBXFileReference; path = RandomTrianglesViewController.h; sourceTree = "<group>"; };
+		58312A2814977967006A176B /* RandomTrianglesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RandomTrianglesViewController.m; sourceTree = "<group>"; };
+		58312A2B14977967006A176B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RandomTrianglesViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58312A0014977967006A176B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58312A0814977967006A176B /* UIKit.framework in Frameworks */,
+				58312A0A14977967006A176B /* Foundation.framework in Frameworks */,
+				58312A0C14977967006A176B /* CoreGraphics.framework in Frameworks */,
+				58312A0E14977967006A176B /* QuartzCore.framework in Frameworks */,
+				58312A1014977967006A176B /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		583129F814977966006A176B = {
+			isa = PBXGroup;
+			children = (
+				58312A1114977967006A176B /* RandomTriangles */,
+				58312A0614977967006A176B /* Frameworks */,
+				58312A0414977967006A176B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58312A0414977967006A176B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58312A0314977967006A176B /* RandomTriangles.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58312A0614977967006A176B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58312A0714977967006A176B /* UIKit.framework */,
+				58312A0914977967006A176B /* Foundation.framework */,
+				58312A0B14977967006A176B /* CoreGraphics.framework */,
+				58312A0D14977967006A176B /* QuartzCore.framework */,
+				58312A0F14977967006A176B /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58312A1114977967006A176B /* RandomTriangles */ = {
+			isa = PBXGroup;
+			children = (
+				58312A1A14977967006A176B /* RandomTrianglesAppDelegate.h */,
+				58312A1B14977967006A176B /* RandomTrianglesAppDelegate.m */,
+				58312A1D14977967006A176B /* MainWindow.xib */,
+				58312A2014977967006A176B /* Shader.fsh */,
+				58312A2214977967006A176B /* Shader.vsh */,
+				58312A2414977967006A176B /* EAGLView.h */,
+				58312A2514977967006A176B /* EAGLView.m */,
+				58312A2714977967006A176B /* RandomTrianglesViewController.h */,
+				58312A2814977967006A176B /* RandomTrianglesViewController.m */,
+				58312A2A14977967006A176B /* RandomTrianglesViewController.xib */,
+				58312A1214977967006A176B /* Supporting Files */,
+			);
+			path = RandomTriangles;
+			sourceTree = "<group>";
+		};
+		58312A1214977967006A176B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58312A1314977967006A176B /* RandomTriangles-Info.plist */,
+				58312A1414977967006A176B /* InfoPlist.strings */,
+				58312A1714977967006A176B /* main.m */,
+				58312A1914977967006A176B /* RandomTriangles-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58312A0214977967006A176B /* RandomTriangles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58312A2F14977967006A176B /* Build configuration list for PBXNativeTarget "RandomTriangles" */;
+			buildPhases = (
+				583129FF14977967006A176B /* Sources */,
+				58312A0014977967006A176B /* Frameworks */,
+				58312A0114977967006A176B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomTriangles;
+			productName = RandomTriangles;
+			productReference = 58312A0314977967006A176B /* RandomTriangles.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		583129FA14977966006A176B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 583129FD14977966006A176B /* Build configuration list for PBXProject "RandomTriangles" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 583129F814977966006A176B;
+			productRefGroup = 58312A0414977967006A176B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58312A0214977967006A176B /* RandomTriangles */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58312A0114977967006A176B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58312A1614977967006A176B /* InfoPlist.strings in Resources */,
+				58312A1F14977967006A176B /* MainWindow.xib in Resources */,
+				58312A2114977967006A176B /* Shader.fsh in Resources */,
+				58312A2314977967006A176B /* Shader.vsh in Resources */,
+				58312A2C14977967006A176B /* RandomTrianglesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		583129FF14977967006A176B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58312A1814977967006A176B /* main.m in Sources */,
+				58312A1C14977967006A176B /* RandomTrianglesAppDelegate.m in Sources */,
+				58312A2614977967006A176B /* EAGLView.m in Sources */,
+				58312A2914977967006A176B /* RandomTrianglesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58312A1414977967006A176B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58312A1514977967006A176B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58312A1D14977967006A176B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58312A1E14977967006A176B /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		58312A2A14977967006A176B /* RandomTrianglesViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58312A2B14977967006A176B /* en */,
+			);
+			name = RandomTrianglesViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58312A2D14977967006A176B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58312A2E14977967006A176B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58312A3014977967006A176B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomTriangles/RandomTriangles-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RandomTriangles/RandomTriangles-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58312A3114977967006A176B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RandomTriangles/RandomTriangles-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "RandomTriangles/RandomTriangles-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		583129FD14977966006A176B /* Build configuration list for PBXProject "RandomTriangles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58312A2D14977967006A176B /* Debug */,
+				58312A2E14977967006A176B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58312A2F14977967006A176B /* Build configuration list for PBXNativeTarget "RandomTriangles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58312A3014977967006A176B /* Debug */,
+				58312A3114977967006A176B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 583129FA14977966006A176B /* Project object */;
+}
