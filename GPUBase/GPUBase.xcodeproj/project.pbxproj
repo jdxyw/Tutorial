@@ -138,6 +138,26 @@
 		587089D71494B0A7008A2B51 /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587089D61494B0A7008A2B51 /* PaintingView.m */; };
 		587089DB1494B0E6008A2B51 /* GLPainterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587089D91494B0E5008A2B51 /* GLPainterController.m */; };
 		587089DC1494B0E6008A2B51 /* GLPainterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 587089DA1494B0E5008A2B51 /* GLPainterController.xib */; };
+		5871D1D7149A3C1400CEB4C5 /* Fractal6.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1D6149A3C1400CEB4C5 /* Fractal6.vsh */; };
+		5871D1DA149A3C2100CEB4C5 /* Fractal6.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1D9149A3C2100CEB4C5 /* Fractal6.fsh */; };
+		5871D1DB149A3C4800CEB4C5 /* Fractal6.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1D6149A3C1400CEB4C5 /* Fractal6.vsh */; };
+		5871D1DC149A3C4800CEB4C5 /* Fractal6.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1D9149A3C2100CEB4C5 /* Fractal6.fsh */; };
+		5871D1DE149A3D2E00CEB4C5 /* Fractal7.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1DD149A3D2E00CEB4C5 /* Fractal7.vsh */; };
+		5871D1E0149A3D3900CEB4C5 /* Fractal7.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1DF149A3D3900CEB4C5 /* Fractal7.fsh */; };
+		5871D1E1149A3D4400CEB4C5 /* Fractal7.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1DD149A3D2E00CEB4C5 /* Fractal7.vsh */; };
+		5871D1E2149A3D4400CEB4C5 /* Fractal7.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1DF149A3D3900CEB4C5 /* Fractal7.fsh */; };
+		5871D1E4149A3E9500CEB4C5 /* Fractal8.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1E3149A3E9500CEB4C5 /* Fractal8.vsh */; };
+		5871D1E6149A3E9F00CEB4C5 /* Fractal8.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1E5149A3E9F00CEB4C5 /* Fractal8.fsh */; };
+		5871D1E7149A3EAA00CEB4C5 /* Fractal8.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1E3149A3E9500CEB4C5 /* Fractal8.vsh */; };
+		5871D1E8149A3EAA00CEB4C5 /* Fractal8.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1E5149A3E9F00CEB4C5 /* Fractal8.fsh */; };
+		5871D1EA149A469D00CEB4C5 /* Fractal9.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1E9149A469D00CEB4C5 /* Fractal9.vsh */; };
+		5871D1EC149A46AC00CEB4C5 /* Fractal9.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1EB149A46AC00CEB4C5 /* Fractal9.fsh */; };
+		5871D1ED149A46CF00CEB4C5 /* Fractal9.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1E9149A469D00CEB4C5 /* Fractal9.vsh */; };
+		5871D1EE149A46CF00CEB4C5 /* Fractal9.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1EB149A46AC00CEB4C5 /* Fractal9.fsh */; };
+		5871D1F0149A486400CEB4C5 /* Fractal10.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1EF149A486400CEB4C5 /* Fractal10.vsh */; };
+		5871D1F2149A486F00CEB4C5 /* Fractal10.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5871D1F1149A486F00CEB4C5 /* Fractal10.fsh */; };
+		5871D1F3149A489500CEB4C5 /* Fractal10.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1EF149A486400CEB4C5 /* Fractal10.vsh */; };
+		5871D1F4149A489500CEB4C5 /* Fractal10.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5871D1F1149A486F00CEB4C5 /* Fractal10.fsh */; };
 		58844817148F9B1400F06341 /* Deformation1.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844816148F9B1400F06341 /* Deformation1.vsh */; };
 		5884481A148F9B2000F06341 /* Deformation1.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58844819148F9B2000F06341 /* Deformation1.fsh */; };
 		5884481B148F9B2A00F06341 /* Deformation1.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58844816148F9B1400F06341 /* Deformation1.vsh */; };
@@ -272,6 +292,16 @@
 		587089D81494B0E5008A2B51 /* GLPainterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLPainterController.h; sourceTree = "<group>"; };
 		587089D91494B0E5008A2B51 /* GLPainterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLPainterController.m; sourceTree = "<group>"; };
 		587089DA1494B0E5008A2B51 /* GLPainterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLPainterController.xib; sourceTree = "<group>"; };
+		5871D1D6149A3C1400CEB4C5 /* Fractal6.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal6.vsh; sourceTree = "<group>"; };
+		5871D1D9149A3C2100CEB4C5 /* Fractal6.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal6.fsh; sourceTree = "<group>"; };
+		5871D1DD149A3D2E00CEB4C5 /* Fractal7.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal7.vsh; sourceTree = "<group>"; };
+		5871D1DF149A3D3900CEB4C5 /* Fractal7.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal7.fsh; sourceTree = "<group>"; };
+		5871D1E3149A3E9500CEB4C5 /* Fractal8.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal8.vsh; sourceTree = "<group>"; };
+		5871D1E5149A3E9F00CEB4C5 /* Fractal8.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal8.fsh; sourceTree = "<group>"; };
+		5871D1E9149A469D00CEB4C5 /* Fractal9.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal9.vsh; sourceTree = "<group>"; };
+		5871D1EB149A46AC00CEB4C5 /* Fractal9.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal9.fsh; sourceTree = "<group>"; };
+		5871D1EF149A486400CEB4C5 /* Fractal10.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal10.vsh; sourceTree = "<group>"; };
+		5871D1F1149A486F00CEB4C5 /* Fractal10.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal10.fsh; sourceTree = "<group>"; };
 		58844816148F9B1400F06341 /* Deformation1.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation1.vsh; sourceTree = "<group>"; };
 		58844819148F9B2000F06341 /* Deformation1.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation1.fsh; sourceTree = "<group>"; };
 		5884481D148F9D4E00F06341 /* Deformation2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Deformation2.vsh; sourceTree = "<group>"; };
@@ -467,6 +497,16 @@
 				5832454F1498DD3400CE1760 /* Fractal4.fsh */,
 				583245531498E85D00CE1760 /* Fractal5.vsh */,
 				583245551498E88500CE1760 /* Fractal5.fsh */,
+				5871D1D6149A3C1400CEB4C5 /* Fractal6.vsh */,
+				5871D1D9149A3C2100CEB4C5 /* Fractal6.fsh */,
+				5871D1DD149A3D2E00CEB4C5 /* Fractal7.vsh */,
+				5871D1DF149A3D3900CEB4C5 /* Fractal7.fsh */,
+				5871D1E3149A3E9500CEB4C5 /* Fractal8.vsh */,
+				5871D1E5149A3E9F00CEB4C5 /* Fractal8.fsh */,
+				5871D1E9149A469D00CEB4C5 /* Fractal9.vsh */,
+				5871D1EB149A46AC00CEB4C5 /* Fractal9.fsh */,
+				5871D1EF149A486400CEB4C5 /* Fractal10.vsh */,
+				5871D1F1149A486F00CEB4C5 /* Fractal10.fsh */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -518,6 +558,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5871D1F3149A489500CEB4C5 /* Fractal10.vsh in Resources */,
+				5871D1F4149A489500CEB4C5 /* Fractal10.fsh in Resources */,
+				5871D1ED149A46CF00CEB4C5 /* Fractal9.vsh in Resources */,
+				5871D1EE149A46CF00CEB4C5 /* Fractal9.fsh in Resources */,
+				5871D1E7149A3EAA00CEB4C5 /* Fractal8.vsh in Resources */,
+				5871D1E8149A3EAA00CEB4C5 /* Fractal8.fsh in Resources */,
+				5871D1E1149A3D4400CEB4C5 /* Fractal7.vsh in Resources */,
+				5871D1E2149A3D4400CEB4C5 /* Fractal7.fsh in Resources */,
+				5871D1DB149A3C4800CEB4C5 /* Fractal6.vsh in Resources */,
+				5871D1DC149A3C4800CEB4C5 /* Fractal6.fsh in Resources */,
 				583245571498E8B300CE1760 /* Fractal5.vsh in Resources */,
 				583245581498E8B300CE1760 /* Fractal5.fsh in Resources */,
 				583245511498DD5E00CE1760 /* Fractal4.vsh in Resources */,
@@ -688,6 +738,16 @@
 				583245501498DD3500CE1760 /* Fractal4.fsh in Sources */,
 				583245541498E85D00CE1760 /* Fractal5.vsh in Sources */,
 				583245561498E88500CE1760 /* Fractal5.fsh in Sources */,
+				5871D1D7149A3C1400CEB4C5 /* Fractal6.vsh in Sources */,
+				5871D1DA149A3C2100CEB4C5 /* Fractal6.fsh in Sources */,
+				5871D1DE149A3D2E00CEB4C5 /* Fractal7.vsh in Sources */,
+				5871D1E0149A3D3900CEB4C5 /* Fractal7.fsh in Sources */,
+				5871D1E4149A3E9500CEB4C5 /* Fractal8.vsh in Sources */,
+				5871D1E6149A3E9F00CEB4C5 /* Fractal8.fsh in Sources */,
+				5871D1EA149A469D00CEB4C5 /* Fractal9.vsh in Sources */,
+				5871D1EC149A46AC00CEB4C5 /* Fractal9.fsh in Sources */,
+				5871D1F0149A486400CEB4C5 /* Fractal10.vsh in Sources */,
+				5871D1F2149A486F00CEB4C5 /* Fractal10.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

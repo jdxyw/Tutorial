@@ -256,7 +256,7 @@ enum {
         
         //glUniform4f(_mouse, 0, 0, 0, 0);
         glUniform1f(_time, t);
-        t+=0.1;
+        t+=0.05;
         glUniform2f(_resloution, 320, 436);
         // Validate program before drawing. This is a good check, but only really necessary in a debug build.
         // DEBUG macro must be defined in your debug configurations if that's not already the case.

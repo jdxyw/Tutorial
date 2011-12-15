@@ -29,7 +29,8 @@
              @"Plasma",@"Clod",@"Deformation 1",@"Deformation 2",@"Deformation 3",
              @"Deformation 4",@"Deformation 5",@"Deformation 6",@"Deformation 7",
              @"3D Shader",@"WireFrame Sphere",@"GL Paint",@"Fractal One",@"Fractal Two",
-             @"Fractal Three",@"Fractal Four",@"Fractal Five",nil];
+             @"Fractal Three",@"Fractal Four",@"Fractal Five",@"Fractal Six",
+             @"Fractal Seven",@"Fractal Eight",@"Fractal Nine",@"Fractal Ten",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -334,6 +335,36 @@
             detailViewController=[[PlaneDeformationController alloc] init];
             [detailViewController setFileName:@"Fractal5" fragment:@"Fractal5"];
             detailViewController.title=@"Fractal5";
+            break;
+            
+        case 34:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal6" fragment:@"Fractal6"];
+            detailViewController.title=@"Fractal6";
+            break;
+        
+        case 35:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal7" fragment:@"Fractal7"];
+            detailViewController.title=@"Fractal7";
+            break;
+            
+        case 36:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal8" fragment:@"Fractal8"];
+            detailViewController.title=@"Fractal8";
+            break;
+            
+        case 37:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal9" fragment:@"Fractal9"];
+            detailViewController.title=@"Fractal9";
+            break;
+            
+        case 38:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal10" fragment:@"Fractal10"];
+            detailViewController.title=@"Fractal10";
             break;
             
         default:
