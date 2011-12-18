@@ -16,6 +16,7 @@
 #import "PlaneDeformationController.h"
 #import "WireFrameSphere.h"
 #import "GLPainterController.h"
+#import "IFSViewController.h"
 
 @implementation RootViewController
 
@@ -30,7 +31,8 @@
              @"Deformation 4",@"Deformation 5",@"Deformation 6",@"Deformation 7",
              @"3D Shader",@"WireFrame Sphere",@"GL Paint",@"Fractal One",@"Fractal Two",
              @"Fractal Three",@"Fractal Four",@"Fractal Five",@"Fractal Six",
-             @"Fractal Seven",@"Fractal Eight",@"Fractal Nine",@"Fractal Ten",nil];
+             @"Fractal Seven",@"Fractal Eight",@"Fractal Nine",@"Fractal Ten",
+             @"IFS One",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -365,6 +367,11 @@
             detailViewController=[[PlaneDeformationController alloc] init];
             [detailViewController setFileName:@"Fractal10" fragment:@"Fractal10"];
             detailViewController.title=@"Fractal10";
+            break;
+            
+        case 39:
+            detailViewController=[[IFSViewController alloc] init];
+            detailViewController.title=@"IFS 1";
             break;
             
         default:
