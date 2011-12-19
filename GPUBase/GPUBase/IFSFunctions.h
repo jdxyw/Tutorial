@@ -40,6 +40,6 @@ typedef struct{
 -(DataPoint)Disc:(DataPoint)point;
 -(DataPoint)Diamond:(DataPoint)point;
 -(DataPoint)Ex:(DataPoint)point;
--(UIColor *)colorfunction:(int)type;
+-(UIColor *)colorfunction:(float)rand;
 
 @end

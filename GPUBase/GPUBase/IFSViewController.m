@@ -87,7 +87,7 @@
     
     IFSFunctions *ifsfunction=[[IFSFunctions alloc] init];
     
-    for (int i=0; i<3000000; i++) {
+    for (int i=0; i<1000000; i++) {
         if(p.x<=160 && p.x >=-160 && p.y <= 240 && p.y >= -240)
         {
             //fre[((int)p.y+240)*320+(int)p.x+160]++;

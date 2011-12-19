@@ -26,7 +26,7 @@
         }
         color=[[NSMutableArray alloc] init];
         for (int i=0; i<11; i++) {
-            UIColor *color1=[self colorfunction:i];
+            UIColor *color1=[self colorfunction:arc4random()*1.0/ARC4RANDOM_MAX];
             const CGFloat *c=CGColorGetComponents(color1.CGColor);
             NSArray *arrColor=[[NSArray alloc] initWithObjects:[NSNumber numberWithFloat:c[0]],[NSNumber numberWithFloat:c[1]],[NSNumber numberWithFloat:c[2]], nil];
             [color addObject:arrColor];
@@ -36,8 +36,8 @@
     return self;
 }
 
--(UIColor *)colorfunction:(int)type{
-    return [UIColor colorWithHue:1.0/(type+1) saturation:1.0 brightness:1.0 alpha:1.0];
+-(UIColor *)colorfunction:(float)rand{
+    return [UIColor colorWithHue:rand saturation:1.0 brightness:1.0 alpha:1.0];
 }
 
 -(DataPoint) Sinusodial:(DataPoint)point{
