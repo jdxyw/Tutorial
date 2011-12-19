@@ -79,32 +79,38 @@
     int MIN_ITERATE=10;
     int ite_from_start=0;
     
+    DataPoint point;
+    point.p=p;
+    point.red=0.0;
+    point.green=0.0;
+    point.blue=0.0;
+    
     IFSFunctions *ifsfunction=[[IFSFunctions alloc] init];
     
-    for (int i=0; i<1000000; i++) {
+    for (int i=0; i<3000000; i++) {
         if(p.x<=160 && p.x >=-160 && p.y <= 240 && p.y >= -240)
         {
             //fre[((int)p.y+240)*320+(int)p.x+160]++;
-                p=[ifsfunction caculate:p];
+                point=[ifsfunction caculate:point];
             
-            int data_x=(int)(320*(p.x-xmin)/(xmax-xmin));
-            int data_y=(int)(480*(p.y-ymin)/(ymax-ymin));
+            int data_x=(int)(320*(point.p.x-xmin)/(xmax-xmin));
+            int data_y=(int)(480*(point.p.y-ymin)/(ymax-ymin));
             
             if(data_x >=0 && data_x<320 && data_y >=0 && data_y < 480 && ite_from_start < 20000)
             {
                 ite_from_start++;
                 if(ite_from_start > MIN_ITERATE)
                 {
-                    *((char *)(imageData+data_y*width*4+data_x*4))=255;
-                    *((char *)(imageData+data_y*width*4+data_x*4+1))=125;
-                    *((char *)(imageData+data_y*width*4+data_x*4+2))=55;
+                    *((char *)(imageData+data_y*width*4+data_x*4))=(int)point.red;
+                    *((char *)(imageData+data_y*width*4+data_x*4+1))=(int)point.green;
+                    *((char *)(imageData+data_y*width*4+data_x*4+2))=(int)point.blue;;
                 }
                 fre[data_y*width+data_x]++;
             }
             else
             {
                 ite_from_start=0;
-                p=[ifsfunction caculate:p];
+                point=[ifsfunction caculate:point];
             }
         }
     }
@@ -115,17 +121,17 @@
             max_int=fre[i];
         }
     }
-    NSLog([NSString stringWithFormat:@"The max interation %f",logf(max_int+1)]);
-//    for (int i=0; i<height; i++) {
-//        for(int j=0;j<width;j++){
-//            float intensity=logf(fre[i*width+j]+1.0)/logf(max_int+1);
-//            //NSLog([NSString stringWithFormat:@"The %f",intensity]);
-//            //float gamma=powf(intensity, 0.25);
-//            *((char *)(imageData+i*width*4+j*4))=(int)intensity*255;
-//            *((char *)(imageData+i*width*4+j*4+1))=(int)intensity*125;;
-//            *((char *)(imageData+i*width*4+j*4+2))=(int)intensity*55;;
-//        }
-//    }
+    //NSLog([NSString stringWithFormat:@"The max interation %f",logf(max_int+1)]);
+    for (int i=0; i<height; i++) {
+        for(int j=0;j<width;j++){
+            float intensity=logf(fre[i*width+j]+1.0)/logf(max_int/300+1);
+            //NSLog([NSString stringWithFormat:@"The %f",intensity]);
+            float gamma=powf(intensity, 0.25);
+            *((char *)(imageData+i*width*4+j*4))=(int)(gamma*(*((char *)(imageData+i*width*4+j*4))));
+            *((char *)(imageData+i*width*4+j*4+1))=(int)(gamma*(*((char *)(imageData+i*width*4+j*4+1))));
+            *((char *)(imageData+i*width*4+j*4+2))=(int)(gamma*(*((char *)(imageData+i*width*4+j*4+2))));
+        }
+    }
     
     CGDataProviderRef dataProvider=CGDataProviderCreateWithData(NULL, imageData, height * width * 4, NULL);
     CGImageRef imageRef=CGImageCreate(width, height, 8, 32, 4*width, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big, dataProvider, NULL, NO, kCGRenderingIntentDefault);
