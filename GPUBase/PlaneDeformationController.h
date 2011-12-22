@@ -32,12 +32,20 @@
     
     GLuint _time;
     GLuint _resloution;
+    GLuint _transformation;
+    GLuint _scale;
     
     NSString *vertexfile;
     NSString *fragmentfile;
     
-    float t;
+    CGPoint prelocation;
     
+    CGPoint step;
+    
+    float initialDistance;
+    
+    float t;
+    float scale;
     float interval;
 }
 
@@ -48,6 +56,10 @@
 @property (nonatomic,retain) NSString *vertexfile;
 @property (nonatomic,retain) NSString *fragmentfile;
 @property (nonatomic) float interval;
+@property (nonatomic) CGPoint prelocation;
+@property (nonatomic) CGPoint step;
+@property (nonatomic) float initialDistance;
+@property (nonatomic) float scale;
 
 
 - (void)startAnimation;
@@ -58,5 +70,6 @@
 - (BOOL)validateProgram:(GLuint)prog;
 - (void)setFileName:(NSString *)vertex fragment:(NSString*)fragment;
 - (void)setTimeInterval:(float)inter;
+-(CGFloat)distanceBetweenTwoPoints:(CGPoint)fromPoint toPoint:(CGPoint)toPoint;
 
 @end

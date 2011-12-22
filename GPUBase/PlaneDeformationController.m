@@ -24,6 +24,10 @@ enum {
 @synthesize displayLink;
 @synthesize vertexfile;
 @synthesize fragmentfile;
+@synthesize prelocation;
+@synthesize step;
+@synthesize initialDistance;
+@synthesize scale;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -79,7 +83,9 @@ enum {
     if ([context API] == kEAGLRenderingAPIOpenGLES2)
         [self loadShaders];
     
-    
+    prelocation=CGPointMake(0.0, 0.0);
+    step=CGPointMake(0.0, 0.0);
+    scale=1.0;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
     
@@ -238,7 +244,8 @@ enum {
         _textureUniform = glGetUniformLocation(program, "Texture");
         _time = glGetUniformLocation(program, "time");
         _resloution = glGetUniformLocation(program, "resolution");
-        
+        _transformation=glGetUniformLocation(program, "transform");
+        _scale=glGetUniformLocation(program, "scale");
         // Update uniform value.
         //        glUniform1f(uniforms[UNIFORM_TRANSLATE], (GLfloat)transY);
         //        transY += 0.075f;	
@@ -256,8 +263,10 @@ enum {
         
         //glUniform4f(_mouse, 0, 0, 0, 0);
         glUniform1f(_time, t);
+        glUniform1f(_scale, scale);
         t+=0.05;
         glUniform2f(_resloution, 320, 436);
+        glUniform2f(_transformation, step.x, step.y);
         // Validate program before drawing. This is a good check, but only really necessary in a debug build.
         // DEBUG macro must be defined in your debug configurations if that's not already the case.
 #if defined(DEBUG)
@@ -443,4 +452,148 @@ enum {
     return TRUE;
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    CGRect				bounds = [self.view bounds];
+    UITouch*	touch = [[event touchesForView:self.view] anyObject];
+    
+    NSSet *allTouches=[event allTouches];
+    switch ([allTouches count]) {
+        case 1:
+            prelocation = [touch locationInView:self.view];
+            prelocation.y = bounds.size.height - prelocation.y;
+            break;
+        case 2:
+        {
+            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+            
+            initialDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
+                                                     toPoint:[touch2 locationInView:[self view]]];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    CGRect				bounds = [self.view bounds];
+    UITouch*	touch = [[event touchesForView:self.view] anyObject];
+	NSSet *allTouches=[event allTouches];
+    switch ([allTouches count]) {
+        case 1:
+        {
+            CGPoint current=[touch locationInView:self.view];
+            current.y = bounds.size.height - current.y;
+            
+            CGPoint temp;
+            
+            temp.x=-current.x+prelocation.x;
+            temp.y=-current.y+prelocation.y;
+            
+            step.x = step.x-temp.x/bounds.size.width;
+            step.y = step.y-temp.y/bounds.size.height;
+        }
+            break;
+            
+        case 2:
+        {
+            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+            
+            //Calculate the distance between the two fingers.
+            CGFloat finalDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
+                                                           toPoint:[touch2 locationInView:[self view]]];
+            
+            //CGFloat dia=sqrtf(bounds.size.height*bounds.size.height+bounds.size.width*bounds.size.width);
+            if(finalDistance<initialDistance)
+            {
+                if(scale<10)
+                {
+                    scale=scale+logf(finalDistance)/logf(initialDistance);
+                    initialDistance=finalDistance;
+                }
+            }
+            else
+            {
+                if(scale>0.1)
+                {
+                    scale=scale-logf(finalDistance)/logf(initialDistance);
+                    initialDistance=finalDistance;
+                }
+                
+            }
+            
+        }
+            break;
+        default:
+            break;
+    }
+	
+    
+}
+
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    CGRect				bounds = [self.view bounds];
+    UITouch*	touch = [[event touchesForView:self.view] anyObject];
+	NSSet *allTouches=[event allTouches];
+    switch ([allTouches count]) {
+        case 1:
+        {
+            CGPoint current=[touch locationInView:self.view];
+            current.y = bounds.size.height - current.y;
+            
+            CGPoint temp;
+            
+            temp.x=-current.x+prelocation.x;
+            temp.y=-current.y+prelocation.y;
+            
+            step.x = step.x-temp.x/bounds.size.width;
+            step.y = step.y-temp.y/bounds.size.height;
+            prelocation=current;
+        }
+            break;
+        case 2:
+        {
+            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+            
+            //Calculate the distance between the two fingers.
+            CGFloat finalDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
+                                                           toPoint:[touch2 locationInView:[self view]]];
+            
+            //CGFloat dia=sqrtf(bounds.size.height*bounds.size.height+bounds.size.width*bounds.size.width);
+            if(finalDistance<initialDistance)
+            {
+                if(scale<10)
+                {
+                    scale=scale+logf(finalDistance)/logf(initialDistance);
+                    initialDistance=finalDistance;
+                }
+            }
+            else
+            {
+                if(scale>0.1)
+                {
+                    scale=scale-logf(finalDistance)/logf(initialDistance);
+                    initialDistance=finalDistance;
+                }
+
+            }
+            
+        }
+            break;
+            
+        default:
+            break;
+    }
+
+}
+
+-(CGFloat)distanceBetweenTwoPoints:(CGPoint)fromPoint toPoint:(CGPoint)toPoint {
+    float x = toPoint.x- fromPoint.x;
+    float y = toPoint.y- fromPoint.y;
+    
+    return sqrt(x * x + y * y);
+}
 @end

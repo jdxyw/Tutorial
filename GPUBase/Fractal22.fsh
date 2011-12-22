@@ -44,18 +44,30 @@ void main(void)
 {
     vec2 p = -1.0 + 2.0 * gl_FragCoord.xy / resolution.xy;
     vec2 cc = vec2( cos(.25*time), sin(.25*time*1.423) );
-    cc=vec2(-0.8+cos(time)*0.05,0.156+sin(time)*0.05);
+
     float dmin = 1000.0;
-    vec2 z  = p*vec2(3.0,3.0)+vec2(0.0,0.0);
+    vec2 line=vec2(sin(time)-.22,cos(time)*0.73+0.21);
+    vec2 z  = p*vec2(1.33,1.0);
+    vec2 v=vec2(0.2,0.6);
+    vec2 v1=vec2(-0.3,-0.4);
     for( int i=0; i<64; i++ )
     {
-        z = multip_comp(cc,exp_comp(-1.0*z))+multip_comp(z,cc)-vec2(1.0,0);
+        z = cc + vec2( z.x*z.x - z.y*z.y, 2.0*z.x*z.y );
         float m2 = dot(z,z);
-        if( m2>100.0 ) break;
-        dmin=min(dmin,m2);
-    }
-    
-    float color = sqrt(sqrt(dmin))*0.7;
-    gl_FragColor = vec4(color-0.133*cos(time),color+0.236*cos(time),color+0.188*cos(0.8*time),1.0);
-}
+        float temp=abs((z.x-line.x));
+        if( m2>4.0 ) break;
+        dmin=min(dmin,temp);
+        float temp1=abs(z.y-line.y);
+        dmin=min(dmin,temp1);
+       float temp3=abs(z.y-v.y);
+        dmin=min(dmin,temp3);
+       float temp4=abs(z.x-v.x);
+               dmin=min(dmin,temp4);
+       dmin=min(dmin,m2);
+        }
 
+    float color = sqrt(sqrt(dmin))*0.7;
+
+    gl_FragColor = vec4(sin(color)+0.37,cos(color-0.22)*0.67-0.21,color+0.11-sin(time)*0.34,1.0);
+//gl_FragColor=vec4(1.0,0,0,1.0);
+}

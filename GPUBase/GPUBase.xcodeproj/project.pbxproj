@@ -118,6 +118,10 @@
 		583245561498E88500CE1760 /* Fractal5.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 583245551498E88500CE1760 /* Fractal5.fsh */; };
 		583245571498E8B300CE1760 /* Fractal5.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 583245531498E85D00CE1760 /* Fractal5.vsh */; };
 		583245581498E8B300CE1760 /* Fractal5.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 583245551498E88500CE1760 /* Fractal5.fsh */; };
+		583B36E514A37F0100542168 /* Fractal23.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 583B36E414A37F0100542168 /* Fractal23.vsh */; };
+		583B36E814A37F0C00542168 /* Fractal23.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 583B36E714A37F0C00542168 /* Fractal23.fsh */; };
+		583B36E914A37F4900542168 /* Fractal23.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 583B36E414A37F0100542168 /* Fractal23.vsh */; };
+		583B36EA14A37F4900542168 /* Fractal23.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 583B36E714A37F0C00542168 /* Fractal23.fsh */; };
 		5854BBE2148E425D00AC50EF /* ZInvert.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE1148E425D00AC50EF /* ZInvert.vsh */; };
 		5854BBE4148E426800AC50EF /* ZInvert.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5854BBE3148E426800AC50EF /* ZInvert.fsh */; };
 		5854BBE5148E456A00AC50EF /* ZInvert.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5854BBE1148E425D00AC50EF /* ZInvert.vsh */; };
@@ -235,6 +239,14 @@
 		58B0FC4C149DC46200803226 /* IFSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B0FC4A149DC46200803226 /* IFSViewController.m */; };
 		58B0FC4D149DC46200803226 /* IFSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58B0FC4B149DC46200803226 /* IFSViewController.xib */; };
 		58B0FC51149DCA8400803226 /* IFSFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 58B0FC50149DCA8400803226 /* IFSFunctions.m */; };
+		58B35A8314A36F4D00B43CD1 /* Fractal21.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B35A8214A36F4D00B43CD1 /* Fractal21.vsh */; };
+		58B35A8614A36F5D00B43CD1 /* Fractal21.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B35A8514A36F5D00B43CD1 /* Fractal21.fsh */; };
+		58B35A8714A3702300B43CD1 /* Fractal21.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B35A8214A36F4D00B43CD1 /* Fractal21.vsh */; };
+		58B35A8814A3702300B43CD1 /* Fractal21.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B35A8514A36F5D00B43CD1 /* Fractal21.fsh */; };
+		58B35A8A14A3747500B43CD1 /* Fractal22.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B35A8914A3747500B43CD1 /* Fractal22.vsh */; };
+		58B35A8C14A3748200B43CD1 /* Fractal22.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B35A8B14A3748200B43CD1 /* Fractal22.fsh */; };
+		58B35A8D14A3750300B43CD1 /* Fractal22.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B35A8914A3747500B43CD1 /* Fractal22.vsh */; };
+		58B35A8E14A3750300B43CD1 /* Fractal22.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B35A8B14A3748200B43CD1 /* Fractal22.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,6 +333,8 @@
 		5832454F1498DD3400CE1760 /* Fractal4.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal4.fsh; sourceTree = "<group>"; };
 		583245531498E85D00CE1760 /* Fractal5.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal5.vsh; sourceTree = "<group>"; };
 		583245551498E88500CE1760 /* Fractal5.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal5.fsh; sourceTree = "<group>"; };
+		583B36E414A37F0100542168 /* Fractal23.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal23.vsh; sourceTree = "<group>"; };
+		583B36E714A37F0C00542168 /* Fractal23.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal23.fsh; sourceTree = "<group>"; };
 		5854BBE1148E425D00AC50EF /* ZInvert.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ZInvert.vsh; sourceTree = "<group>"; };
 		5854BBE3148E426800AC50EF /* ZInvert.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = ZInvert.fsh; sourceTree = "<group>"; };
 		5854BBE7148E45E300AC50EF /* Tunnel.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Tunnel.vsh; sourceTree = "<group>"; };
@@ -389,6 +403,10 @@
 		58B0FC4B149DC46200803226 /* IFSViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IFSViewController.xib; sourceTree = "<group>"; };
 		58B0FC4F149DCA8400803226 /* IFSFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFSFunctions.h; sourceTree = "<group>"; };
 		58B0FC50149DCA8400803226 /* IFSFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFSFunctions.m; sourceTree = "<group>"; };
+		58B35A8214A36F4D00B43CD1 /* Fractal21.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal21.vsh; sourceTree = "<group>"; };
+		58B35A8514A36F5D00B43CD1 /* Fractal21.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal21.fsh; sourceTree = "<group>"; };
+		58B35A8914A3747500B43CD1 /* Fractal22.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal22.vsh; sourceTree = "<group>"; };
+		58B35A8B14A3748200B43CD1 /* Fractal22.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal22.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -600,6 +618,12 @@
 				5825650714A0B8A60023523A /* Fractal19.fsh */,
 				5825650B14A0B9750023523A /* Fractal20.vsh */,
 				5825650D14A0B97E0023523A /* Fractal20.fsh */,
+				58B35A8214A36F4D00B43CD1 /* Fractal21.vsh */,
+				58B35A8514A36F5D00B43CD1 /* Fractal21.fsh */,
+				58B35A8914A3747500B43CD1 /* Fractal22.vsh */,
+				58B35A8B14A3748200B43CD1 /* Fractal22.fsh */,
+				583B36E414A37F0100542168 /* Fractal23.vsh */,
+				583B36E714A37F0C00542168 /* Fractal23.fsh */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -651,6 +675,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583B36E914A37F4900542168 /* Fractal23.vsh in Resources */,
+				583B36EA14A37F4900542168 /* Fractal23.fsh in Resources */,
+				58B35A8D14A3750300B43CD1 /* Fractal22.vsh in Resources */,
+				58B35A8E14A3750300B43CD1 /* Fractal22.fsh in Resources */,
+				58B35A8714A3702300B43CD1 /* Fractal21.vsh in Resources */,
+				58B35A8814A3702300B43CD1 /* Fractal21.fsh in Resources */,
 				5825650F14A0B9A30023523A /* Fractal20.vsh in Resources */,
 				5825651014A0B9A30023523A /* Fractal20.fsh in Resources */,
 				5825650914A0B8D80023523A /* Fractal19.vsh in Resources */,
@@ -884,6 +914,12 @@
 				5825650814A0B8A60023523A /* Fractal19.fsh in Sources */,
 				5825650C14A0B9760023523A /* Fractal20.vsh in Sources */,
 				5825650E14A0B97F0023523A /* Fractal20.fsh in Sources */,
+				58B35A8314A36F4D00B43CD1 /* Fractal21.vsh in Sources */,
+				58B35A8614A36F5D00B43CD1 /* Fractal21.fsh in Sources */,
+				58B35A8A14A3747500B43CD1 /* Fractal22.vsh in Sources */,
+				58B35A8C14A3748200B43CD1 /* Fractal22.fsh in Sources */,
+				583B36E514A37F0100542168 /* Fractal23.vsh in Sources */,
+				583B36E814A37F0C00542168 /* Fractal23.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -936,7 +972,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -953,7 +989,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -992,7 +1028,7 @@
 				5801EBD6148CF8CA007419F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		5801EBD7148CF8CA007419F9 /* Build configuration list for PBXNativeTarget "GPUBase" */ = {
 			isa = XCConfigurationList;
@@ -1001,7 +1037,7 @@
 				5801EBD9148CF8CA007419F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

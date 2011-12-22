@@ -7,6 +7,11 @@ uniform  float time;
 uniform  vec2 resolution;
 uniform  vec4 mouse;
 
+float sincolor(float iter)
+{
+    return (sin(iter*2.0*3.1415926/510.0-3.1415926*0.5)+1.0)*0.5;
+}
+
 void main(void)
 {
     vec2 p = -1.0 + 2.0 * gl_FragCoord.xy / resolution.xy;
@@ -14,14 +19,23 @@ void main(void)
     cc=vec2(0.285+cos(time)*0.05,0.1-sin(time)*0.15);
     float dmin = 1000.0;
     vec2 z  = p*vec2(1.33,1.0);
-    for( int i=0; i<64; i++ )
+    float iter=0.0;
+    for( float i=0.0; i<256.0; i+=1.0  )
     {
         z = cc + vec2( z.x*z.x - z.y*z.y, 2.0*z.x*z.y );
         float m2 = dot(z,z);
-        if( m2>100.0 ) break;
+        if( m2>4.0 ) 
+        {
+            iter=i;
+            break;
+        }
         dmin=min(dmin,m2);
     }
     
-    float color = sqrt(sqrt(dmin))*0.85;
-    gl_FragColor = vec4(color+0.6*sin(time),color+0.236*cos(time),color-0.188*cos(0.8*time),1.0);
+    float color = sqrt(sqrt(dmin))*0.7;
+    if(iter<255.0)
+    {
+        gl_FragColor = vec4(sincolor(iter*15.0+23.0),sincolor(iter*20.0+87.0),sincolor(iter*76.0+12.0),1.0);
+        //gl_FragColor = vec4(color+0.133*sin(time),color+0.236*cos(time),color+0.188*cos(0.8*time),1.0);
+    }
 }

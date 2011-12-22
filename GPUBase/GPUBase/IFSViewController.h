@@ -11,8 +11,12 @@
 @interface IFSViewController : UIViewController
 {
     IBOutlet UIImageView *imgView;
+    IBOutlet UIButton *button;
 }
 
 @property (nonatomic,retain) UIImageView *imgView;
+@property (nonatomic,retain) UIButton *button;
+
+-(IBAction)buttonClick:(id) sender;
 
 @end

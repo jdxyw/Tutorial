@@ -15,6 +15,7 @@
 @implementation IFSViewController
 
 @synthesize imgView;
+@synthesize button;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,7 +41,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [button setTitle:@"Generate" forState:UIControlStateNormal];
+    // Do any additional setup after loading the view from its nib.
+}
+
+-(IBAction)buttonClick:(id)sender
+{
     int width=320;
     int height=480;
     
@@ -91,7 +97,7 @@
         if(p.x<=160 && p.x >=-160 && p.y <= 240 && p.y >= -240)
         {
             //fre[((int)p.y+240)*320+(int)p.x+160]++;
-                point=[ifsfunction caculate:point];
+            point=[ifsfunction caculate:point];
             
             int data_x=(int)(320*(point.p.x-xmin)/(xmax-xmin));
             int data_y=(int)(480*(point.p.y-ymin)/(ymax-ymin));
@@ -146,7 +152,6 @@
     CGContextRelease(contextRef);
     free(imageData);
 
-    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
@@ -164,6 +169,7 @@
 
 -(void)dealloc{
     [imgView release];
+    [button release];
     [super dealloc];
 }
 
