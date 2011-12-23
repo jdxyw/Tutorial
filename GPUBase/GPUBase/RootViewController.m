@@ -35,7 +35,7 @@
              @"Fractal Eleven",@"Fractal Twelve",@"Fractal Thirteen",@"Fractal Fourteen",
              @"Fractal Fiftyteen",@"Fractal Sixteen",@"Fractal Seventeen",@"Fractal Eighteen",
              @"Fractal Nineteen",@"Fractal Twenty",@"Fractal Twenty-One",@"Fractal Twenty-Two",
-             @"Fractal Twenty-Three",@"IFS One",nil];
+             @"Fractal Twenty-Three",@"Fractal Twenty-Four",@"IFS One",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -451,6 +451,12 @@
             break;
             
         case 52:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal24" fragment:@"Fractal24"];
+            detailViewController.title=@"Fractal24";
+            break;
+            
+        case 53:
             detailViewController=[[IFSViewController alloc] init];
             detailViewController.title=@"IFS 1";
             break;

@@ -38,6 +38,10 @@
 		5801EC0F148D208E007419F9 /* Star.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5801EC0E148D208E007419F9 /* Star.fsh */; };
 		5801EC10148D209B007419F9 /* Star.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5801EC0C148D2081007419F9 /* Star.vsh */; };
 		5801EC11148D209B007419F9 /* Star.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5801EC0E148D208E007419F9 /* Star.fsh */; };
+		5803D84314A4E1FC0062F4D6 /* Fractal24.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5803D84214A4E1FC0062F4D6 /* Fractal24.vsh */; };
+		5803D84614A4E2070062F4D6 /* Fractal24.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5803D84514A4E2070062F4D6 /* Fractal24.fsh */; };
+		5803D84714A4E2360062F4D6 /* Fractal24.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5803D84214A4E1FC0062F4D6 /* Fractal24.vsh */; };
+		5803D84814A4E2360062F4D6 /* Fractal24.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5803D84514A4E2070062F4D6 /* Fractal24.fsh */; };
 		58093CF11490D8230010DBAA /* WireFrameSphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 58093CEF1490D8230010DBAA /* WireFrameSphere.m */; };
 		58093CF21490D8230010DBAA /* WireFrameSphere.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58093CF01490D8230010DBAA /* WireFrameSphere.xib */; };
 		58093CF81490DAC10010DBAA /* WireFrameSphere.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */; };
@@ -284,6 +288,8 @@
 		5801EC09148D1FEA007419F9 /* StarOpenGLController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StarOpenGLController.xib; sourceTree = "<group>"; };
 		5801EC0C148D2081007419F9 /* Star.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star.vsh; path = GPUBase/Star.vsh; sourceTree = "<group>"; };
 		5801EC0E148D208E007419F9 /* Star.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = Star.fsh; path = GPUBase/Star.fsh; sourceTree = "<group>"; };
+		5803D84214A4E1FC0062F4D6 /* Fractal24.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal24.vsh; sourceTree = "<group>"; };
+		5803D84514A4E2070062F4D6 /* Fractal24.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal24.fsh; sourceTree = "<group>"; };
 		58093CEC1490D7BB0010DBAA /* sphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
 		58093CEE1490D8230010DBAA /* WireFrameSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireFrameSphere.h; sourceTree = "<group>"; };
 		58093CEF1490D8230010DBAA /* WireFrameSphere.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WireFrameSphere.m; sourceTree = "<group>"; };
@@ -624,6 +630,8 @@
 				58B35A8B14A3748200B43CD1 /* Fractal22.fsh */,
 				583B36E414A37F0100542168 /* Fractal23.vsh */,
 				583B36E714A37F0C00542168 /* Fractal23.fsh */,
+				5803D84214A4E1FC0062F4D6 /* Fractal24.vsh */,
+				5803D84514A4E2070062F4D6 /* Fractal24.fsh */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -675,6 +683,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5803D84714A4E2360062F4D6 /* Fractal24.vsh in Resources */,
+				5803D84814A4E2360062F4D6 /* Fractal24.fsh in Resources */,
 				583B36E914A37F4900542168 /* Fractal23.vsh in Resources */,
 				583B36EA14A37F4900542168 /* Fractal23.fsh in Resources */,
 				58B35A8D14A3750300B43CD1 /* Fractal22.vsh in Resources */,
@@ -920,6 +930,8 @@
 				58B35A8C14A3748200B43CD1 /* Fractal22.fsh in Sources */,
 				583B36E514A37F0100542168 /* Fractal23.vsh in Sources */,
 				583B36E814A37F0C00542168 /* Fractal23.fsh in Sources */,
+				5803D84314A4E1FC0062F4D6 /* Fractal24.vsh in Sources */,
+				5803D84614A4E2070062F4D6 /* Fractal24.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
