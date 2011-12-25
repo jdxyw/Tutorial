@@ -93,7 +93,11 @@ void main(void)
         z = cc + power_of_comp(z,2.0);
         float m2 = dot(z,z);
         if( m2>40.0 ) break;
-        float m4=sqrt(abs(z.x-p2.x))/p3.x+sqrt(abs(z.y-p2.y))/p3.y;
+        vec2 t=fract(abs(z));
+        if(t.x>0.5) t.x=1.0-t.x;
+        if(t.y>0.5) t.y=1.0-t.y;
+        //vec2 m3=vec2(fract(z));
+        float m4=dot(t,t);
         dmin=min(dmin,m4);
         
         
@@ -104,6 +108,8 @@ void main(void)
         
     }
     
-    float color = sqrt(sqrt(dmin))*0.7;
-    gl_FragColor = vec4(hsl2rgb(color,1.0,0.7),1.0);
+    float color = sqrt(sqrt(dmin));
+    if(color<0.4) color=1.0-color;
+    if(color>0.4) color=sqrt(color)*1.6-0.2;
+    gl_FragColor = vec4(hsl2rgb(color,1.0,0.7),1.7);
 }

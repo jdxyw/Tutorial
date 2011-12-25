@@ -30,8 +30,12 @@ vec2 multip_comp(vec2 p1, vec2 p2)
 
 vec2 divide_comp(vec2 p1, vec2 p2)
 {
-    float r2=dot(p2,p2);
-    return vec2((p1.x*p2.x+p1.y*p2.y)/r2,(p1.y*p2.x-p1.x*p2.y)/r2);
+    //float r2=dot(p2,p2);
+    //return vec2((p1.x*p2.x+p1.y*p2.y)/r2,(p1.y*p2.x-p1.x*p2.y)/r2);
+    float r=sqrt(dot(p1,p1))/sqrt(dot(p2,p2));
+    float theta1=atan(p1.y,p1.x);
+    float theta2=atan(p2.y,p2.x);
+    return vec2(r*(cos(theta1-theta2)),r*sin(theta1-theta2));
 }
 
 vec2 exp_comp(vec2 p)
@@ -82,28 +86,57 @@ void main(void)
 {
     vec2 p = -1.0 + 2.0 * gl_FragCoord.xy / resolution.xy;
     vec2 cc = vec2( cos(.25*time), sin(.25*time*1.423) );
-    
+    //vec2 cc=vec2(0.3,0.4);
     float dmin = 1000.0;
     vec2 z  = p*vec2(1.33,1.0);
-    vec2 p2=vec2(0.2,-0.4);
-    vec2 p3=vec2(0.3,0.6);
-    vec2 l=vec2(0.2,0.6);
+    
+    vec2 p1=vec2(0.3,0.6);
+    vec2 p2=vec2(0.0,1.0);
+    vec2 p3=vec2(25.0,128.0);
+    float d;
+    float done=2.0;
+    float q;
+    //z=vec2(0,0);
     for( int i=0; i<64; i++ )
     {
-        z = cc + power_of_comp(z,2.0);
+        z = cc + vec2( z.x*z.x - z.y*z.y, 2.0*z.x*z.y );
         float m2 = dot(z,z);
-        if( m2>40.0 ) break;
-        float m4=sqrt(abs(z.x-p2.x))/p3.x+sqrt(abs(z.y-p2.y))/p3.y;
-        dmin=min(dmin,m4);
+        dmin=min(m2,dmin);
+        done=done+1.0;
+        vec2 z2=(z-p1)*0.65;
+        d=abs(z2.x*z2.y);
+        dmin=min(d,dmin);
         
+        if(d>p3.y)
+        {
+            //q=d*p3.x;
+            //q=q-255.0*floor(q/255.0);
+            //q=q-done;
+            z=vec2(dmin*p3.x);
+            z=z-255.0*floor(z/255.0);
+            z=z-done;     
+            break;
+        }
         
-        //dmin=min(dmin,m2);
-        
-        
-        
+        if(i==63)
+        {
+            z=vec2(dmin*p3.x);
+            z=z-255.0*floor(z/255.0);
+            z=z-done;
+            break;
+        }
         
     }
     
-    float color = sqrt(sqrt(dmin))*0.7;
-    gl_FragColor = vec4(hsl2rgb(color,1.0,0.7),1.0);
+    if(done<61.0)
+    {
+        float color = sqrt(sqrt(sqrt(dot(z,z)*0.5)))*0.7;
+        gl_FragColor = vec4(hsl2rgb(color,1.0,0.8),1.0);
+    }
+    else
+    {
+        float color = sqrt(sqrt(dmin))*0.7;
+        gl_FragColor = vec4(hsl2rgb(color,1.0,0.8),1.0);
+    }
+
 }

@@ -30,8 +30,12 @@ vec2 multip_comp(vec2 p1, vec2 p2)
 
 vec2 divide_comp(vec2 p1, vec2 p2)
 {
-    float r2=dot(p2,p2);
-    return vec2((p1.x*p2.x+p1.y*p2.y)/r2,(p1.y*p2.x-p1.x*p2.y)/r2);
+    //float r2=dot(p2,p2);
+    //return vec2((p1.x*p2.x+p1.y*p2.y)/r2,(p1.y*p2.x-p1.x*p2.y)/r2);
+    float r=sqrt(dot(p1,p1))/sqrt(dot(p2,p2));
+    float theta1=atan(p1.y,p1.x);
+    float theta2=atan(p2.y,p2.x);
+    return vec2(r*(cos(theta1-theta2)),r*sin(theta1-theta2));
 }
 
 vec2 exp_comp(vec2 p)
@@ -81,29 +85,50 @@ vec2 power_of_comp(vec2 p,float n)
 void main(void)
 {
     vec2 p = -1.0 + 2.0 * gl_FragCoord.xy / resolution.xy;
-    vec2 cc = vec2( cos(.25*time), sin(.25*time*1.423) );
+    p.x *= resolution.x/resolution.y;
     
-    float dmin = 1000.0;
-    vec2 z  = p*vec2(1.33,1.0);
-    vec2 p2=vec2(0.2,-0.4);
-    vec2 p3=vec2(0.3,0.6);
-    vec2 l=vec2(0.2,0.6);
+    float zoo = -0.62+.38*sin(.1*time);
+    float coa = cos( 0.1*(1.0-zoo)*time );
+    float sia = sin( 0.1*(1.0-zoo)*time );
+    zoo = pow( zoo,2.0);
+    vec2 xy = vec2( p.x*coa-p.y*sia, p.x*sia+p.y*coa);
+    //vec2 cc = vec2(-.745,.186) + xy*zoo;
+    vec2 cc=xy;
+    vec2 z  = vec2(sin(time)+0.11,cos(time+1.23)-0.12);
+    //vec2 z=vec2(0.0);
+    vec2 z2 = z*z;
+    float m2;
+    float co = 0.0;
+    
+    float dmin=1000.0;
+    // chrome/angelproject/nvidia/glslES don't seem to like to "break" a loop...
+    // so we have to rewrite it in another way
+    
     for( int i=0; i<64; i++ )
     {
         z = cc + power_of_comp(z,2.0);
-        float m2 = dot(z,z);
-        if( m2>40.0 ) break;
-        float m4=sqrt(abs(z.x-p2.x))/p3.x+sqrt(abs(z.y-p2.y))/p3.y;
+        m2 = dot(z,z);
+        if( m2>100.0 ) break;
+        co += 1.0;
+        
+        vec2 t=fract(abs(z));
+        if(t.x>0.5) t.x=1.0-t.x;
+        if(t.y>0.5) t.y=1.0-t.y;
+        float m4=dot(t,t);
         dmin=min(dmin,m4);
-        
-        
-        //dmin=min(dmin,m2);
-        
-        
-        
-        
     }
     
-    float color = sqrt(sqrt(dmin))*0.7;
-    gl_FragColor = vec4(hsl2rgb(color,1.0,0.7),1.0);
+    
+    co = co + 1.0 - log2(.5*log2(m2));
+    
+    co = sqrt(co/256.0);
+    
+    float color = sqrt(sqrt(dmin))*0.75;
+    if(color<0.4) color=1.0-color;
+    if(color>0.4) color=sqrt(color)*1.6-0.2;
+    gl_FragColor = vec4(hsl2rgb(color,1.0,0.7),1.7);
+    /*gl_FragColor = vec4( .5+.5*cos(6.2831*co+0.0),
+     .5+.5*cos(6.2831*co+0.4),
+     .5+.5*cos(6.2831*co+0.7),
+     1.0 );*/
 }

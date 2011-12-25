@@ -30,8 +30,12 @@ vec2 multip_comp(vec2 p1, vec2 p2)
 
 vec2 divide_comp(vec2 p1, vec2 p2)
 {
-    float r2=dot(p2,p2);
-    return vec2((p1.x*p2.x+p1.y*p2.y)/r2,(p1.y*p2.x-p1.x*p2.y)/r2);
+    //float r2=dot(p2,p2);
+    //return vec2((p1.x*p2.x+p1.y*p2.y)/r2,(p1.y*p2.x-p1.x*p2.y)/r2);
+    float r=sqrt(dot(p1,p1))/sqrt(dot(p2,p2));
+    float theta1=atan(p1.y,p1.x);
+    float theta2=atan(p2.y,p2.x);
+    return vec2(r*(cos(theta1-theta2)),r*sin(theta1-theta2));
 }
 
 vec2 exp_comp(vec2 p)
@@ -88,22 +92,27 @@ void main(void)
     vec2 p2=vec2(0.2,-0.4);
     vec2 p3=vec2(0.3,0.6);
     vec2 l=vec2(0.2,0.6);
-    for( int i=0; i<64; i++ )
+    for( int i=0; i<32; i++ )
     {
-        z = cc + power_of_comp(z,2.0);
+        z = cc + divide_comp(power_of_comp(z,3.0)+z,3.0*power_of_comp(z,2.0));
         float m2 = dot(z,z);
-        if( m2>40.0 ) break;
-        float m4=sqrt(abs(z.x-p2.x))/p3.x+sqrt(abs(z.y-p2.y))/p3.y;
-        dmin=min(dmin,m4);
+        if( m2>10.0 ) break;
+        dmin=min(dmin,m2);
         
-        
-        //dmin=min(dmin,m2);
-        
+        vec2 t=fract(abs(z));
+        if(t.x>0.5) t.x=1.0-t.x;
+        if(t.y>0.5) t.y=1.0-t.y;
+        //vec2 m3=vec2(fract(z));
+        float m4=dot(t,t);
+        dmin=min(dmin,m4);        
         
         
         
     }
     
-    float color = sqrt(sqrt(dmin))*0.7;
-    gl_FragColor = vec4(hsl2rgb(color,1.0,0.7),1.0);
+    float color = sqrt(sqrt(dmin))*0.9;
+    //if(color<0.4) color=1.0-color;
+    //if(color>0.4) color=sqrt(color)*1.6-0.2;
+    if(color>2.0) color=dot(p,p)*2.0;
+    gl_FragColor = vec4(hsl2rgb(color,1.0,0.7),1.7);
 }

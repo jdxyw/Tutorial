@@ -37,7 +37,8 @@
              @"Fractal Nineteen",@"Fractal Twenty",@"Fractal Twenty-One",@"Fractal Twenty-Two",
              @"Fractal Twenty-Three",@"Fractal Twenty-Four",@"Fractal Twenty-Five",
              @"Fractal Twenty-Six",@"Fractal Twenty-Seven",@"Fractal Twenty-Eight",@"Fractal Twenty-Nine",
-             @"Fractal Thirty",@"IFS One",nil];
+             @"Fractal Thirty",@"Fractal Thirty-One",@"Fractal Thirty-Two",@"Fractal Thirty-Three",
+             @"Fractal Thirty-Four",@"Fractal Thirty-Five",@"IFS One",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -495,6 +496,36 @@
             break;
             
         case 59:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal31" fragment:@"Fractal31"];
+            detailViewController.title=@"Fractal31";
+            break;
+            
+        case 60:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal32" fragment:@"Fractal32"];
+            detailViewController.title=@"Fractal32";
+            break;
+            
+        case 61:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal33" fragment:@"Fractal33"];
+            detailViewController.title=@"Fractal33";
+            break;
+            
+        case 62:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal34" fragment:@"Fractal34"];
+            detailViewController.title=@"Fractal34";
+            break;
+
+        case 63:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal35" fragment:@"Fractal35"];
+            detailViewController.title=@"Fractal35";
+            break;
+
+        case 64:
             detailViewController=[[IFSViewController alloc] init];
             detailViewController.title=@"IFS 1";
             break;
