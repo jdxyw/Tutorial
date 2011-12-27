@@ -16,10 +16,16 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
+#import "EAGLView.h"
+#import "QuadCurveMenu.h"
+
 @interface PlaneDeformationController : UIViewController
 {
     EAGLContext *context;
     GLuint program;
+    
+    EAGLView *glView;
+    QuadCurveMenu *menu;
     
     BOOL animating;
     NSInteger animationFrameInterval;
@@ -60,6 +66,8 @@
 @property (nonatomic) CGPoint step;
 @property (nonatomic) float initialDistance;
 @property (nonatomic) float scale;
+@property (nonatomic,retain) EAGLView *glView;
+@property (nonatomic,retain) QuadCurveMenu *menu;;
 
 
 - (void)startAnimation;

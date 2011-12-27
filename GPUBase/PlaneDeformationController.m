@@ -10,6 +10,7 @@
 #import "PlaneDeformationController.h"
 #import "EAGLView.h"
 #import <QuartzCore/QuartzCore.h>
+#import "QuadCurveMenu.h"
 
 enum {
     ATTRIB_VERTEX,
@@ -30,11 +31,21 @@ enum {
 @synthesize initialDistance;
 @synthesize scale;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+//- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+//{
+//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+//    if (self) {
+//        // Custom initialization
+//    }
+//    return self;
+//}
+
+-(id) init{
+    if(self=[super init])
+    {
+        
+
+        
     }
     return self;
 }
@@ -49,7 +60,8 @@ enum {
     // Tear down context.
     if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];
-    
+    [menu release];
+    [glView release];
     [context release];
     [vertexfile release];
     [fragmentfile release];
@@ -63,6 +75,44 @@ enum {
 
 -(void)viewDidLoad
 {
+    glView=[[EAGLView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    glView.tag=101;
+    [self.view addSubview:glView];
+    
+    UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
+    UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
+    
+    UIImage *starImage = [UIImage imageNamed:@"icon-star.png"];
+    
+    QuadCurveMenuItem *starMenuItem1 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem2 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem3 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    QuadCurveMenuItem *starMenuItem4 = [[QuadCurveMenuItem alloc] initWithImage:storyMenuItemImage
+                                                               highlightedImage:storyMenuItemImagePressed 
+                                                                   ContentImage:starImage 
+                                                        highlightedContentImage:nil];
+    
+    NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, nil];
+    [starMenuItem1 release];
+    [starMenuItem2 release];
+    [starMenuItem3 release];
+    [starMenuItem4 release]; 
+    
+    menu = [[QuadCurveMenu alloc] initWithFrame:CGRectMake(0, 0, 320, 480) menus:menus];
+    //[menu setCenter:CGPointMake(40, 420)];
+    //[menu setBounds:CGRectMake(0, 0, 120, 60)];
+    [self.view addSubview:menu];
+
+    
     
     EAGLContext *aContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
     
@@ -78,8 +128,8 @@ enum {
 	self.context = aContext;
 	[aContext release];
 	
-    [(EAGLView *)self.view setContext:context];
-    [(EAGLView *)self.view setFramebuffer];
+    [(EAGLView *)[self.view viewWithTag:101] setContext:context];
+    [(EAGLView *)[self.view viewWithTag:101] setFramebuffer];
     
     if ([context API] == kEAGLRenderingAPIOpenGLES2)
         [self loadShaders];
@@ -166,6 +216,8 @@ enum {
     [self stopAnimation];
 }
 
+
+
 - (NSInteger)animationFrameInterval
 {
     return animationFrameInterval;
@@ -210,7 +262,7 @@ enum {
 
 - (void)drawFrame
 {
-    [(EAGLView *)self.view setFramebuffer];
+    [(EAGLView *)[self.view viewWithTag:101] setFramebuffer];
     
     // Replace the implementation of this method to do your own custom drawing.
     static const GLfloat squareVertices[] = {
@@ -292,7 +344,7 @@ enum {
     
     glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
     
-    [(EAGLView *)self.view presentFramebuffer];
+    [(EAGLView *)[self.view viewWithTag:101] presentFramebuffer];
 }
 
 - (BOOL)compileShader:(GLuint *)shader type:(GLenum)type file:(NSString *)file

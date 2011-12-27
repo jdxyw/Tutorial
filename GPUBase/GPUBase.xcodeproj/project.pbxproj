@@ -128,6 +128,22 @@
 		583B36E814A37F0C00542168 /* Fractal23.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 583B36E714A37F0C00542168 /* Fractal23.fsh */; };
 		583B36E914A37F4900542168 /* Fractal23.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 583B36E414A37F0100542168 /* Fractal23.vsh */; };
 		583B36EA14A37F4900542168 /* Fractal23.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 583B36E714A37F0C00542168 /* Fractal23.fsh */; };
+		583BD47614AA151B00D4666E /* QuadCurveMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 583BD47314AA151B00D4666E /* QuadCurveMenu.m */; };
+		583BD47714AA151B00D4666E /* QuadCurveMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 583BD47514AA151B00D4666E /* QuadCurveMenuItem.m */; };
+		583BD48714AA170000D4666E /* bg-addbutton-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD47914AA170000D4666E /* bg-addbutton-highlighted.png */; };
+		583BD48814AA170000D4666E /* bg-addbutton-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD47A14AA170000D4666E /* bg-addbutton-highlighted@2x.png */; };
+		583BD48914AA170000D4666E /* bg-addbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD47B14AA170000D4666E /* bg-addbutton.png */; };
+		583BD48A14AA170000D4666E /* bg-addbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD47C14AA170000D4666E /* bg-addbutton@2x.png */; };
+		583BD48B14AA170000D4666E /* bg-menuitem-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD47D14AA170000D4666E /* bg-menuitem-highlighted.png */; };
+		583BD48C14AA170000D4666E /* bg-menuitem-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD47E14AA170000D4666E /* bg-menuitem-highlighted@2x.png */; };
+		583BD48D14AA170000D4666E /* bg-menuitem.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD47F14AA170000D4666E /* bg-menuitem.png */; };
+		583BD48E14AA170000D4666E /* bg-menuitem@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD48014AA170000D4666E /* bg-menuitem@2x.png */; };
+		583BD48F14AA170000D4666E /* icon-plus-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD48114AA170000D4666E /* icon-plus-highlighted.png */; };
+		583BD49014AA170000D4666E /* icon-plus-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD48214AA170000D4666E /* icon-plus-highlighted@2x.png */; };
+		583BD49114AA170000D4666E /* icon-plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD48314AA170000D4666E /* icon-plus.png */; };
+		583BD49214AA170000D4666E /* icon-plus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD48414AA170000D4666E /* icon-plus@2x.png */; };
+		583BD49314AA170000D4666E /* icon-star.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD48514AA170000D4666E /* icon-star.png */; };
+		583BD49414AA170000D4666E /* icon-star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 583BD48614AA170000D4666E /* icon-star@2x.png */; };
 		5846482C14A5FBC8009307C3 /* Fractal25.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5846482B14A5FBC8009307C3 /* Fractal25.vsh */; };
 		5846482F14A5FBDC009307C3 /* Fractal25.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5846482E14A5FBDC009307C3 /* Fractal25.fsh */; };
 		5846483014A5FBE4009307C3 /* Fractal25.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5846482B14A5FBC8009307C3 /* Fractal25.vsh */; };
@@ -319,6 +335,10 @@
 		58B7D87614A8AF730015A6D6 /* Fractal41.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B7D87514A8AF730015A6D6 /* Fractal41.fsh */; };
 		58B7D87714A8AF7B0015A6D6 /* Fractal41.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B7D87314A8AF6B0015A6D6 /* Fractal41.vsh */; };
 		58B7D87814A8AF7B0015A6D6 /* Fractal41.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B7D87514A8AF730015A6D6 /* Fractal41.fsh */; };
+		58B7D87A14A8BE1F0015A6D6 /* Fractal42.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B7D87914A8BE1F0015A6D6 /* Fractal42.vsh */; };
+		58B7D87C14A8BE280015A6D6 /* Fractal42.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B7D87B14A8BE280015A6D6 /* Fractal42.fsh */; };
+		58B7D87D14A8BE300015A6D6 /* Fractal42.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B7D87914A8BE1F0015A6D6 /* Fractal42.vsh */; };
+		58B7D87E14A8BE300015A6D6 /* Fractal42.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B7D87B14A8BE280015A6D6 /* Fractal42.fsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -411,6 +431,24 @@
 		583245551498E88500CE1760 /* Fractal5.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal5.fsh; sourceTree = "<group>"; };
 		583B36E414A37F0100542168 /* Fractal23.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal23.vsh; sourceTree = "<group>"; };
 		583B36E714A37F0C00542168 /* Fractal23.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal23.fsh; sourceTree = "<group>"; };
+		583BD47214AA151B00D4666E /* QuadCurveMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenu.h; path = GPUBase/QuadCurveMenu/QuadCurveMenu.h; sourceTree = "<group>"; };
+		583BD47314AA151B00D4666E /* QuadCurveMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuadCurveMenu.m; path = GPUBase/QuadCurveMenu/QuadCurveMenu.m; sourceTree = "<group>"; };
+		583BD47414AA151B00D4666E /* QuadCurveMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuadCurveMenuItem.h; path = GPUBase/QuadCurveMenu/QuadCurveMenuItem.h; sourceTree = "<group>"; };
+		583BD47514AA151B00D4666E /* QuadCurveMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuadCurveMenuItem.m; path = GPUBase/QuadCurveMenu/QuadCurveMenuItem.m; sourceTree = "<group>"; };
+		583BD47914AA170000D4666E /* bg-addbutton-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-addbutton-highlighted.png"; path = "GPUBase/Images/bg-addbutton-highlighted.png"; sourceTree = "<group>"; };
+		583BD47A14AA170000D4666E /* bg-addbutton-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-addbutton-highlighted@2x.png"; path = "GPUBase/Images/bg-addbutton-highlighted@2x.png"; sourceTree = "<group>"; };
+		583BD47B14AA170000D4666E /* bg-addbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-addbutton.png"; path = "GPUBase/Images/bg-addbutton.png"; sourceTree = "<group>"; };
+		583BD47C14AA170000D4666E /* bg-addbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-addbutton@2x.png"; path = "GPUBase/Images/bg-addbutton@2x.png"; sourceTree = "<group>"; };
+		583BD47D14AA170000D4666E /* bg-menuitem-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-menuitem-highlighted.png"; path = "GPUBase/Images/bg-menuitem-highlighted.png"; sourceTree = "<group>"; };
+		583BD47E14AA170000D4666E /* bg-menuitem-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-menuitem-highlighted@2x.png"; path = "GPUBase/Images/bg-menuitem-highlighted@2x.png"; sourceTree = "<group>"; };
+		583BD47F14AA170000D4666E /* bg-menuitem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-menuitem.png"; path = "GPUBase/Images/bg-menuitem.png"; sourceTree = "<group>"; };
+		583BD48014AA170000D4666E /* bg-menuitem@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-menuitem@2x.png"; path = "GPUBase/Images/bg-menuitem@2x.png"; sourceTree = "<group>"; };
+		583BD48114AA170000D4666E /* icon-plus-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-plus-highlighted.png"; path = "GPUBase/Images/icon-plus-highlighted.png"; sourceTree = "<group>"; };
+		583BD48214AA170000D4666E /* icon-plus-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-plus-highlighted@2x.png"; path = "GPUBase/Images/icon-plus-highlighted@2x.png"; sourceTree = "<group>"; };
+		583BD48314AA170000D4666E /* icon-plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-plus.png"; path = "GPUBase/Images/icon-plus.png"; sourceTree = "<group>"; };
+		583BD48414AA170000D4666E /* icon-plus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-plus@2x.png"; path = "GPUBase/Images/icon-plus@2x.png"; sourceTree = "<group>"; };
+		583BD48514AA170000D4666E /* icon-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-star.png"; path = "GPUBase/Images/icon-star.png"; sourceTree = "<group>"; };
+		583BD48614AA170000D4666E /* icon-star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-star@2x.png"; path = "GPUBase/Images/icon-star@2x.png"; sourceTree = "<group>"; };
 		5846482B14A5FBC8009307C3 /* Fractal25.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal25.vsh; sourceTree = "<group>"; };
 		5846482E14A5FBDC009307C3 /* Fractal25.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal25.fsh; sourceTree = "<group>"; };
 		5846483214A5FFBD009307C3 /* Fractal26.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal26.vsh; sourceTree = "<group>"; };
@@ -515,6 +553,8 @@
 		58B7D86F14A8AD730015A6D6 /* Fractal40.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal40.fsh; sourceTree = "<group>"; };
 		58B7D87314A8AF6B0015A6D6 /* Fractal41.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal41.vsh; sourceTree = "<group>"; };
 		58B7D87514A8AF730015A6D6 /* Fractal41.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal41.fsh; sourceTree = "<group>"; };
+		58B7D87914A8BE1F0015A6D6 /* Fractal42.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal42.vsh; sourceTree = "<group>"; };
+		58B7D87B14A8BE280015A6D6 /* Fractal42.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal42.fsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -536,6 +576,8 @@
 		5801EBAB148CF8CA007419F9 = {
 			isa = PBXGroup;
 			children = (
+				583BD47814AA16BC00D4666E /* images */,
+				583BD47014AA14AB00D4666E /* thirdParty */,
 				5801EC12148D2263007419F9 /* Shader */,
 				5801EBC0148CF8CA007419F9 /* GPUBase */,
 				5801EBB9148CF8CA007419F9 /* Frameworks */,
@@ -768,8 +810,42 @@
 				58B7D86F14A8AD730015A6D6 /* Fractal40.fsh */,
 				58B7D87314A8AF6B0015A6D6 /* Fractal41.vsh */,
 				58B7D87514A8AF730015A6D6 /* Fractal41.fsh */,
+				58B7D87914A8BE1F0015A6D6 /* Fractal42.vsh */,
+				58B7D87B14A8BE280015A6D6 /* Fractal42.fsh */,
 			);
 			name = Shader;
+			sourceTree = "<group>";
+		};
+		583BD47014AA14AB00D4666E /* thirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				583BD47214AA151B00D4666E /* QuadCurveMenu.h */,
+				583BD47314AA151B00D4666E /* QuadCurveMenu.m */,
+				583BD47414AA151B00D4666E /* QuadCurveMenuItem.h */,
+				583BD47514AA151B00D4666E /* QuadCurveMenuItem.m */,
+			);
+			name = thirdParty;
+			sourceTree = "<group>";
+		};
+		583BD47814AA16BC00D4666E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				583BD47914AA170000D4666E /* bg-addbutton-highlighted.png */,
+				583BD47A14AA170000D4666E /* bg-addbutton-highlighted@2x.png */,
+				583BD47B14AA170000D4666E /* bg-addbutton.png */,
+				583BD47C14AA170000D4666E /* bg-addbutton@2x.png */,
+				583BD47D14AA170000D4666E /* bg-menuitem-highlighted.png */,
+				583BD47E14AA170000D4666E /* bg-menuitem-highlighted@2x.png */,
+				583BD47F14AA170000D4666E /* bg-menuitem.png */,
+				583BD48014AA170000D4666E /* bg-menuitem@2x.png */,
+				583BD48114AA170000D4666E /* icon-plus-highlighted.png */,
+				583BD48214AA170000D4666E /* icon-plus-highlighted@2x.png */,
+				583BD48314AA170000D4666E /* icon-plus.png */,
+				583BD48414AA170000D4666E /* icon-plus@2x.png */,
+				583BD48514AA170000D4666E /* icon-star.png */,
+				583BD48614AA170000D4666E /* icon-star@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -819,6 +895,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B7D87D14A8BE300015A6D6 /* Fractal42.vsh in Resources */,
+				58B7D87E14A8BE300015A6D6 /* Fractal42.fsh in Resources */,
 				58B7D87714A8AF7B0015A6D6 /* Fractal41.vsh in Resources */,
 				58B7D87814A8AF7B0015A6D6 /* Fractal41.fsh in Resources */,
 				58B7D87114A8AE490015A6D6 /* Fractal40.vsh in Resources */,
@@ -972,6 +1050,20 @@
 				587089D41494AA23008A2B51 /* Particle.png in Resources */,
 				587089DC1494B0E6008A2B51 /* GLPainterController.xib in Resources */,
 				58B0FC4D149DC46200803226 /* IFSViewController.xib in Resources */,
+				583BD48714AA170000D4666E /* bg-addbutton-highlighted.png in Resources */,
+				583BD48814AA170000D4666E /* bg-addbutton-highlighted@2x.png in Resources */,
+				583BD48914AA170000D4666E /* bg-addbutton.png in Resources */,
+				583BD48A14AA170000D4666E /* bg-addbutton@2x.png in Resources */,
+				583BD48B14AA170000D4666E /* bg-menuitem-highlighted.png in Resources */,
+				583BD48C14AA170000D4666E /* bg-menuitem-highlighted@2x.png in Resources */,
+				583BD48D14AA170000D4666E /* bg-menuitem.png in Resources */,
+				583BD48E14AA170000D4666E /* bg-menuitem@2x.png in Resources */,
+				583BD48F14AA170000D4666E /* icon-plus-highlighted.png in Resources */,
+				583BD49014AA170000D4666E /* icon-plus-highlighted@2x.png in Resources */,
+				583BD49114AA170000D4666E /* icon-plus.png in Resources */,
+				583BD49214AA170000D4666E /* icon-plus@2x.png in Resources */,
+				583BD49314AA170000D4666E /* icon-star.png in Resources */,
+				583BD49414AA170000D4666E /* icon-star@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1136,6 +1228,10 @@
 				58B7D87014A8AD730015A6D6 /* Fractal40.fsh in Sources */,
 				58B7D87414A8AF6B0015A6D6 /* Fractal41.vsh in Sources */,
 				58B7D87614A8AF730015A6D6 /* Fractal41.fsh in Sources */,
+				58B7D87A14A8BE1F0015A6D6 /* Fractal42.vsh in Sources */,
+				58B7D87C14A8BE280015A6D6 /* Fractal42.fsh in Sources */,
+				583BD47614AA151B00D4666E /* QuadCurveMenu.m in Sources */,
+				583BD47714AA151B00D4666E /* QuadCurveMenuItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
