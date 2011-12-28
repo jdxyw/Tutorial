@@ -110,6 +110,7 @@ enum {
     menu = [[QuadCurveMenu alloc] initWithFrame:CGRectMake(0, 0, 320, 480) menus:menus];
     //[menu setCenter:CGPointMake(40, 420)];
     //[menu setBounds:CGRectMake(0, 0, 120, 60)];
+    menu.delegate=self;
     [self.view addSubview:menu];
 
     
@@ -175,6 +176,40 @@ enum {
     
     [self startAnimation];
     [super viewDidLoad];
+}
+
+- (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
+{
+    NSLog(@"Select the index : %d",idx);
+    switch (idx) {
+        case 0:
+        {
+            unsigned char buffer[320*480*4];
+            glReadPixels(0,0,320,480,GL_RGBA,GL_UNSIGNED_BYTE,&buffer);
+            CGDataProviderRef ref = CGDataProviderCreateWithData(NULL, &buffer, 320*480*4, NULL);
+            CGImageRef iref = CGImageCreate(320,480,8,32,320*4,CGColorSpaceCreateDeviceRGB(),kCGBitmapByteOrderDefault,ref,NULL,true,kCGRenderingIntentDefault);
+            
+            size_t width         = CGImageGetWidth(iref);
+            size_t height        = CGImageGetHeight(iref);
+            size_t length        = width*height*4;
+            uint32_t *pixels     = (uint32_t *)malloc(length);
+            CGContextRef contextImage = CGBitmapContextCreate(pixels, width, height, 8, width*4, CGImageGetColorSpace(iref),kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+            CGContextTranslateCTM(contextImage, 0.0, height);
+            CGContextScaleCTM(contextImage, 1.0, -1.0);
+            CGContextDrawImage(contextImage, CGRectMake(0.0, 0.0, width, height), iref);
+            CGImageRef outputRef = CGBitmapContextCreateImage(contextImage);
+            UIImage *outputImage = [UIImage imageWithCGImage:outputRef];
+            
+            UIImageWriteToSavedPhotosAlbum(outputImage, nil, nil, nil);
+            CGContextRelease(contextImage);
+            CGImageRelease(iref);
+            CGImageRelease(outputRef);
+        }
+            break;
+            
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning

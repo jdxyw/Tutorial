@@ -19,7 +19,7 @@
 #import "EAGLView.h"
 #import "QuadCurveMenu.h"
 
-@interface PlaneDeformationController : UIViewController
+@interface PlaneDeformationController: UIViewController<QuadCurveMenuDelegate> 
 {
     EAGLContext *context;
     GLuint program;
