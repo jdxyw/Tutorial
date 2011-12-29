@@ -82,6 +82,14 @@
 		5813E94A14AC9FE000951A34 /* Fractal50.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5813E94914AC9FE000951A34 /* Fractal50.fsh */; };
 		5813E94B14AC9FE900951A34 /* Fractal50.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5813E94714AC9FD600951A34 /* Fractal50.vsh */; };
 		5813E94C14AC9FE900951A34 /* Fractal50.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5813E94914AC9FE000951A34 /* Fractal50.fsh */; };
+		5813E94E14ACA48C00951A34 /* Fractal51.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5813E94D14ACA48C00951A34 /* Fractal51.vsh */; };
+		5813E95014ACA49900951A34 /* Fractal51.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5813E94F14ACA49800951A34 /* Fractal51.fsh */; };
+		5813E95114ACA4A500951A34 /* Fractal51.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5813E94D14ACA48C00951A34 /* Fractal51.vsh */; };
+		5813E95214ACA4A500951A34 /* Fractal51.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5813E94F14ACA49800951A34 /* Fractal51.fsh */; };
+		5813E95414ACA94B00951A34 /* Fractal52.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5813E95314ACA94A00951A34 /* Fractal52.vsh */; };
+		5813E95614ACA95300951A34 /* Fractal52.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 5813E95514ACA95300951A34 /* Fractal52.fsh */; };
+		5813E95714ACA95A00951A34 /* Fractal52.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 5813E95314ACA94A00951A34 /* Fractal52.vsh */; };
+		5813E95814ACA95A00951A34 /* Fractal52.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 5813E95514ACA95300951A34 /* Fractal52.fsh */; };
 		582564D514A0A78B0023523A /* Fractal11.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 582564D414A0A78B0023523A /* Fractal11.vsh */; };
 		582564D814A0A7950023523A /* Fractal11.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 582564D714A0A7950023523A /* Fractal11.fsh */; };
 		582564D914A0A7BE0023523A /* Fractal11.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 582564D414A0A78B0023523A /* Fractal11.vsh */; };
@@ -434,6 +442,10 @@
 		5813E94314AC9DCF00951A34 /* Fractal49.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal49.fsh; sourceTree = "<group>"; };
 		5813E94714AC9FD600951A34 /* Fractal50.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal50.vsh; sourceTree = "<group>"; };
 		5813E94914AC9FE000951A34 /* Fractal50.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal50.fsh; sourceTree = "<group>"; };
+		5813E94D14ACA48C00951A34 /* Fractal51.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal51.vsh; sourceTree = "<group>"; };
+		5813E94F14ACA49800951A34 /* Fractal51.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal51.fsh; sourceTree = "<group>"; };
+		5813E95314ACA94A00951A34 /* Fractal52.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal52.vsh; sourceTree = "<group>"; };
+		5813E95514ACA95300951A34 /* Fractal52.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal52.fsh; sourceTree = "<group>"; };
 		582564D414A0A78B0023523A /* Fractal11.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal11.vsh; sourceTree = "<group>"; };
 		582564D714A0A7950023523A /* Fractal11.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal11.fsh; sourceTree = "<group>"; };
 		582564DB14A0AA7A0023523A /* Fractal12.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal12.vsh; sourceTree = "<group>"; };
@@ -876,6 +888,10 @@
 				5813E94314AC9DCF00951A34 /* Fractal49.fsh */,
 				5813E94714AC9FD600951A34 /* Fractal50.vsh */,
 				5813E94914AC9FE000951A34 /* Fractal50.fsh */,
+				5813E94D14ACA48C00951A34 /* Fractal51.vsh */,
+				5813E94F14ACA49800951A34 /* Fractal51.fsh */,
+				5813E95314ACA94A00951A34 /* Fractal52.vsh */,
+				5813E95514ACA95300951A34 /* Fractal52.fsh */,
 			);
 			name = Shader;
 			sourceTree = "<group>";
@@ -959,6 +975,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5813E95714ACA95A00951A34 /* Fractal52.vsh in Resources */,
+				5813E95814ACA95A00951A34 /* Fractal52.fsh in Resources */,
+				5813E95114ACA4A500951A34 /* Fractal51.vsh in Resources */,
+				5813E95214ACA4A500951A34 /* Fractal51.fsh in Resources */,
 				5813E94B14AC9FE900951A34 /* Fractal50.vsh in Resources */,
 				5813E94C14AC9FE900951A34 /* Fractal50.fsh in Resources */,
 				5813E94514AC9DD700951A34 /* Fractal49.vsh in Resources */,
@@ -1328,6 +1348,10 @@
 				5813E94414AC9DCF00951A34 /* Fractal49.fsh in Sources */,
 				5813E94814AC9FD600951A34 /* Fractal50.vsh in Sources */,
 				5813E94A14AC9FE000951A34 /* Fractal50.fsh in Sources */,
+				5813E94E14ACA48C00951A34 /* Fractal51.vsh in Sources */,
+				5813E95014ACA49900951A34 /* Fractal51.fsh in Sources */,
+				5813E95414ACA94B00951A34 /* Fractal52.vsh in Sources */,
+				5813E95614ACA95300951A34 /* Fractal52.fsh in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
