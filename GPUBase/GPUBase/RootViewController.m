@@ -42,7 +42,10 @@
              @"Fractal Thirty-Eight",@"Fractal Thirty-Nine",@"Fractal Forty",@"Fractal Forty-One",
              @"Fractal Forty-Two",@"Fractal Forty-Three",@"Fractal Forty-Four",@"Fractal Forty-Five",
              @"Fractal Forty-Six",@"Fractal Forty-Seven",@"Fractal Forty-Eight",@"Fractal Forty-Nine",
-             @"Fractal Fifty",@"Fractal Fifty-One",@"Fractal Fifty-Two",@"IFS One",nil];
+             @"Fractal Fifty",@"Fractal Fifty-One",@"Fractal Fifty-Two",@"Fractal Fifty-three",
+             @"Fractal Fifty-four",@"Fractal Fifty-five",@"Fractal Fifty-six",@"Fractal Fifty-seven",
+             @"Fractal Fifty-eight",@"Fractal Fifty-nine",@"Fractal Sixty",@"Fractal Sixty-One",@"Fractal Sixty-Two",
+             @"Fractal Sixty-Three",@"Fractal Sixty-Four",@"IFS One",nil];
     //[effects addObject:[NSString stringWithString:@"Deform"]];
     [self setTitle:@"GPU Effect"];
     [super viewDidLoad];
@@ -630,8 +633,80 @@
             [detailViewController setFileName:@"Fractal52" fragment:@"Fractal52"];
             detailViewController.title=@"Fractal52";
             break;
-
+            
         case 81:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal53" fragment:@"Fractal53"];
+            detailViewController.title=@"Fractal53";
+            break;
+            
+        case 82:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal54" fragment:@"Fractal54"];
+            detailViewController.title=@"Fractal54";
+            break;
+            
+        case 83:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal55" fragment:@"Fractal55"];
+            detailViewController.title=@"Fractal55";
+            break;
+            
+        case 84:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal56" fragment:@"Fractal56"];
+            detailViewController.title=@"Fractal56";
+            break;
+            
+        case 85:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal57" fragment:@"Fractal57"];
+            detailViewController.title=@"Fractal57";
+            break;
+            
+        case 86:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal58" fragment:@"Fractal58"];
+            detailViewController.title=@"Fractal58";
+            break;
+            
+        case 87:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal59" fragment:@"Fractal59"];
+            detailViewController.title=@"Fractal59";
+            break;
+            
+        case 88:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal60" fragment:@"Fractal60"];
+            detailViewController.title=@"Fractal60";
+            break;
+            
+        case 89:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal61" fragment:@"Fractal61"];
+            detailViewController.title=@"Fractal61";
+            break;
+            
+        case 90:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal62" fragment:@"Fractal62"];
+            detailViewController.title=@"Fractal62";
+            break;
+            
+        case 91:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal63" fragment:@"Fractal63"];
+            detailViewController.title=@"Fractal63";
+            break;
+            
+        case 92:
+            detailViewController=[[PlaneDeformationController alloc] init];
+            [detailViewController setFileName:@"Fractal64" fragment:@"Fractal64"];
+            detailViewController.title=@"Fractal64";
+            break;
+            
+        case 93:
             detailViewController=[[IFSViewController alloc] init];
             detailViewController.title=@"IFS 1";
             break;

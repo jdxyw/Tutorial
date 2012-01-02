@@ -1,0 +1,263 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5891477114AF341D00BB7610 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891477014AF341D00BB7610 /* UIKit.framework */; };
+		5891477314AF341D00BB7610 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891477214AF341D00BB7610 /* Foundation.framework */; };
+		5891477514AF341D00BB7610 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5891477414AF341D00BB7610 /* CoreGraphics.framework */; };
+		5891477B14AF341D00BB7610 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5891477914AF341D00BB7610 /* InfoPlist.strings */; };
+		5891477D14AF341D00BB7610 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891477C14AF341D00BB7610 /* main.m */; };
+		5891478114AF341D00BB7610 /* VSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5891478014AF341D00BB7610 /* VSAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5891476C14AF341D00BB7610 /* CoreAnimationSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5891477014AF341D00BB7610 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5891477214AF341D00BB7610 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5891477414AF341D00BB7610 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5891477814AF341D00BB7610 /* CoreAnimationSamples-Info.plist */ = {isa = PBXFileReference; path = "CoreAnimationSamples-Info.plist"; sourceTree = "<group>"; };
+		5891477A14AF341D00BB7610 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5891477C14AF341D00BB7610 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5891477E14AF341D00BB7610 /* CoreAnimationSamples-Prefix.pch */ = {isa = PBXFileReference; path = "CoreAnimationSamples-Prefix.pch"; sourceTree = "<group>"; };
+		5891477F14AF341D00BB7610 /* VSAppDelegate.h */ = {isa = PBXFileReference; path = VSAppDelegate.h; sourceTree = "<group>"; };
+		5891478014AF341D00BB7610 /* VSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5891476914AF341D00BB7610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5891477114AF341D00BB7610 /* UIKit.framework in Frameworks */,
+				5891477314AF341D00BB7610 /* Foundation.framework in Frameworks */,
+				5891477514AF341D00BB7610 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5891476114AF341D00BB7610 = {
+			isa = PBXGroup;
+			children = (
+				5891477614AF341D00BB7610 /* CoreAnimationSamples */,
+				5891476F14AF341D00BB7610 /* Frameworks */,
+				5891476D14AF341D00BB7610 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5891476D14AF341D00BB7610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5891476C14AF341D00BB7610 /* CoreAnimationSamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5891476F14AF341D00BB7610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5891477014AF341D00BB7610 /* UIKit.framework */,
+				5891477214AF341D00BB7610 /* Foundation.framework */,
+				5891477414AF341D00BB7610 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5891477614AF341D00BB7610 /* CoreAnimationSamples */ = {
+			isa = PBXGroup;
+			children = (
+				5891477F14AF341D00BB7610 /* VSAppDelegate.h */,
+				5891478014AF341D00BB7610 /* VSAppDelegate.m */,
+				5891477714AF341D00BB7610 /* Supporting Files */,
+			);
+			path = CoreAnimationSamples;
+			sourceTree = "<group>";
+		};
+		5891477714AF341D00BB7610 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5891477814AF341D00BB7610 /* CoreAnimationSamples-Info.plist */,
+				5891477914AF341D00BB7610 /* InfoPlist.strings */,
+				5891477C14AF341D00BB7610 /* main.m */,
+				5891477E14AF341D00BB7610 /* CoreAnimationSamples-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5891476B14AF341D00BB7610 /* CoreAnimationSamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5891478414AF341D00BB7610 /* Build configuration list for PBXNativeTarget "CoreAnimationSamples" */;
+			buildPhases = (
+				5891476814AF341D00BB7610 /* Sources */,
+				5891476914AF341D00BB7610 /* Frameworks */,
+				5891476A14AF341D00BB7610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreAnimationSamples;
+			productName = CoreAnimationSamples;
+			productReference = 5891476C14AF341D00BB7610 /* CoreAnimationSamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5891476314AF341D00BB7610 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5891476614AF341D00BB7610 /* Build configuration list for PBXProject "CoreAnimationSamples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5891476114AF341D00BB7610;
+			productRefGroup = 5891476D14AF341D00BB7610 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5891476B14AF341D00BB7610 /* CoreAnimationSamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5891476A14AF341D00BB7610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5891477B14AF341D00BB7610 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5891476814AF341D00BB7610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5891477D14AF341D00BB7610 /* main.m in Sources */,
+				5891478114AF341D00BB7610 /* VSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5891477914AF341D00BB7610 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5891477A14AF341D00BB7610 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5891478214AF341D00BB7610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5891478314AF341D00BB7610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5891478514AF341D00BB7610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreAnimationSamples/CoreAnimationSamples-Prefix.pch";
+				INFOPLIST_FILE = "CoreAnimationSamples/CoreAnimationSamples-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5891478614AF341D00BB7610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoreAnimationSamples/CoreAnimationSamples-Prefix.pch";
+				INFOPLIST_FILE = "CoreAnimationSamples/CoreAnimationSamples-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5891476614AF341D00BB7610 /* Build configuration list for PBXProject "CoreAnimationSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5891478214AF341D00BB7610 /* Debug */,
+				5891478314AF341D00BB7610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5891478414AF341D00BB7610 /* Build configuration list for PBXNativeTarget "CoreAnimationSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5891478514AF341D00BB7610 /* Debug */,
+				5891478614AF341D00BB7610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5891476314AF341D00BB7610 /* Project object */;
+}
