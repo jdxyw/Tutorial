@@ -173,7 +173,7 @@ enum {
     animationFrameInterval = 1;
     self.displayLink = nil;
     t=0;
-    
+    Hide=NO;
     [self startAnimation];
     [super viewDidLoad];
 }
@@ -540,142 +540,172 @@ enum {
     return TRUE;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    CGRect				bounds = [self.view bounds];
-    UITouch*	touch = [[event touchesForView:self.view] anyObject];
-    
-    NSSet *allTouches=[event allTouches];
-    switch ([allTouches count]) {
-        case 1:
-            prelocation = [touch locationInView:self.view];
-            prelocation.y = bounds.size.height - prelocation.y;
-            break;
-        case 2:
-        {
-            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
-            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
-            
-            initialDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
-                                                     toPoint:[touch2 locationInView:[self view]]];
-        }
-            break;
-        default:
-            break;
+//-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+//    CGRect				bounds = [self.view bounds];
+//    UITouch*	touch = [[event touchesForView:self.view] anyObject];
+//    
+//    NSSet *allTouches=[event allTouches];
+//    switch ([allTouches count]) {
+//        case 1:
+//            prelocation = [touch locationInView:self.view];
+//            prelocation.y = bounds.size.height - prelocation.y;
+//            break;
+//        case 2:
+//        {
+//            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+//            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+//            
+//            initialDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
+//                                                     toPoint:[touch2 locationInView:[self view]]];
+//        }
+//            break;
+//        default:
+//            break;
+//    }
+//}
+//
+//-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+//    CGRect				bounds = [self.view bounds];
+//    UITouch*	touch = [[event touchesForView:self.view] anyObject];
+//	NSSet *allTouches=[event allTouches];
+//    switch ([allTouches count]) {
+//        case 1:
+//        {
+//            CGPoint current=[touch locationInView:self.view];
+//            current.y = bounds.size.height - current.y;
+//            
+//            CGPoint temp;
+//            
+//            temp.x=-current.x+prelocation.x;
+//            temp.y=-current.y+prelocation.y;
+//            
+//            step.x = step.x-temp.x/bounds.size.width;
+//            step.y = step.y-temp.y/bounds.size.height;
+//        }
+//            break;
+//            
+//        case 2:
+//        {
+//            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+//            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+//            
+//            //Calculate the distance between the two fingers.
+//            CGFloat finalDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
+//                                                           toPoint:[touch2 locationInView:[self view]]];
+//            
+//            //CGFloat dia=sqrtf(bounds.size.height*bounds.size.height+bounds.size.width*bounds.size.width);
+//            if(finalDistance<initialDistance)
+//            {
+//                if(scale<10)
+//                {
+//                    scale=scale+logf(finalDistance)/logf(initialDistance);
+//                    initialDistance=finalDistance;
+//                }
+//            }
+//            else
+//            {
+//                if(scale>0.1)
+//                {
+//                    scale=scale-logf(finalDistance)/logf(initialDistance);
+//                    initialDistance=finalDistance;
+//                }
+//                
+//            }
+//            
+//        }
+//            break;
+//        default:
+//            break;
+//    }
+//	
+//    
+//}
+//
+//-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+//    CGRect				bounds = [self.view bounds];
+//    UITouch*	touch = [[event touchesForView:self.view] anyObject];
+//	NSSet *allTouches=[event allTouches];
+//    switch ([allTouches count]) {
+//        case 1:
+//        {
+//            CGPoint current=[touch locationInView:self.view];
+//            current.y = bounds.size.height - current.y;
+//            
+//            CGPoint temp;
+//            
+//            temp.x=-current.x+prelocation.x;
+//            temp.y=-current.y+prelocation.y;
+//            
+//            step.x = step.x-temp.x/bounds.size.width;
+//            step.y = step.y-temp.y/bounds.size.height;
+//            prelocation=current;
+//        }
+//            break;
+//        case 2:
+//        {
+//            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
+//            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
+//            
+//            //Calculate the distance between the two fingers.
+//            CGFloat finalDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
+//                                                           toPoint:[touch2 locationInView:[self view]]];
+//            
+//            //CGFloat dia=sqrtf(bounds.size.height*bounds.size.height+bounds.size.width*bounds.size.width);
+//            if(finalDistance<initialDistance)
+//            {
+//                if(scale<10)
+//                {
+//                    scale=scale+logf(finalDistance)/logf(initialDistance);
+//                    initialDistance=finalDistance;
+//                }
+//            }
+//            else
+//            {
+//                if(scale>0.1)
+//                {
+//                    scale=scale-logf(finalDistance)/logf(initialDistance);
+//                    initialDistance=finalDistance;
+//                }
+//
+//            }
+//            
+//        }
+//            break;
+//            
+//        default:
+//            break;
+//    }
+//
+//}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if(!Hide)
+    {
+        [UIView beginAnimations: nil context:NULL];
+        [UIView setAnimationDuration:0.4];
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+        CGRect rect = CGRectMake(0, -44, 320, 44);
+        self.navigationController.navigationBar.frame = rect;
+        CGRect rect2=CGRectMake(0, 0, 320, 480);
+        rect2.origin.y=-64;
+        self.view.frame=rect2;
+        [UIView commitAnimations];
+        Hide=!Hide;
     }
-}
-
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
-    CGRect				bounds = [self.view bounds];
-    UITouch*	touch = [[event touchesForView:self.view] anyObject];
-	NSSet *allTouches=[event allTouches];
-    switch ([allTouches count]) {
-        case 1:
-        {
-            CGPoint current=[touch locationInView:self.view];
-            current.y = bounds.size.height - current.y;
-            
-            CGPoint temp;
-            
-            temp.x=-current.x+prelocation.x;
-            temp.y=-current.y+prelocation.y;
-            
-            step.x = step.x-temp.x/bounds.size.width;
-            step.y = step.y-temp.y/bounds.size.height;
-        }
-            break;
-            
-        case 2:
-        {
-            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
-            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
-            
-            //Calculate the distance between the two fingers.
-            CGFloat finalDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
-                                                           toPoint:[touch2 locationInView:[self view]]];
-            
-            //CGFloat dia=sqrtf(bounds.size.height*bounds.size.height+bounds.size.width*bounds.size.width);
-            if(finalDistance<initialDistance)
-            {
-                if(scale<10)
-                {
-                    scale=scale+logf(finalDistance)/logf(initialDistance);
-                    initialDistance=finalDistance;
-                }
-            }
-            else
-            {
-                if(scale>0.1)
-                {
-                    scale=scale-logf(finalDistance)/logf(initialDistance);
-                    initialDistance=finalDistance;
-                }
-                
-            }
-            
-        }
-            break;
-        default:
-            break;
+    else
+    {
+        [UIView beginAnimations: nil context:NULL];
+        [UIView setAnimationDuration:0.4];
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+        CGRect rect = CGRectMake(0, 20, 320, 44);
+        self.navigationController.navigationBar.frame = rect;
+        CGRect rect2=CGRectMake(0, 0, 320, 480);
+        rect2.origin.y=0.0;
+        self.view.frame=rect2;
+        [UIView commitAnimations];
+        Hide=!Hide;
     }
-	
-    
-}
-
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
-    CGRect				bounds = [self.view bounds];
-    UITouch*	touch = [[event touchesForView:self.view] anyObject];
-	NSSet *allTouches=[event allTouches];
-    switch ([allTouches count]) {
-        case 1:
-        {
-            CGPoint current=[touch locationInView:self.view];
-            current.y = bounds.size.height - current.y;
-            
-            CGPoint temp;
-            
-            temp.x=-current.x+prelocation.x;
-            temp.y=-current.y+prelocation.y;
-            
-            step.x = step.x-temp.x/bounds.size.width;
-            step.y = step.y-temp.y/bounds.size.height;
-            prelocation=current;
-        }
-            break;
-        case 2:
-        {
-            UITouch *touch1 = [[allTouches allObjects] objectAtIndex:0];
-            UITouch *touch2 = [[allTouches allObjects] objectAtIndex:1];
-            
-            //Calculate the distance between the two fingers.
-            CGFloat finalDistance = [self distanceBetweenTwoPoints:[touch1 locationInView:[self view]]
-                                                           toPoint:[touch2 locationInView:[self view]]];
-            
-            //CGFloat dia=sqrtf(bounds.size.height*bounds.size.height+bounds.size.width*bounds.size.width);
-            if(finalDistance<initialDistance)
-            {
-                if(scale<10)
-                {
-                    scale=scale+logf(finalDistance)/logf(initialDistance);
-                    initialDistance=finalDistance;
-                }
-            }
-            else
-            {
-                if(scale>0.1)
-                {
-                    scale=scale-logf(finalDistance)/logf(initialDistance);
-                    initialDistance=finalDistance;
-                }
-
-            }
-            
-        }
-            break;
-            
-        default:
-            break;
-    }
-
 }
 
 -(CGFloat)distanceBetweenTwoPoints:(CGPoint)fromPoint toPoint:(CGPoint)toPoint {

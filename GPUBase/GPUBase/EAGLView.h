@@ -33,5 +33,6 @@
 
 - (void)setFramebuffer;
 - (BOOL)presentFramebuffer;
+-(BOOL)resizeFramebuffer;
 
 @end

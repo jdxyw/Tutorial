@@ -40,6 +40,7 @@ enum {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        Hide=NO;
     }
     return self;
 }
@@ -447,6 +448,36 @@ enum {
         glDeleteShader(fragShader);
     
     return TRUE;
+}
+
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    if(!Hide)
+    {
+        [UIView beginAnimations: nil context:NULL];
+        [UIView setAnimationDuration:0.4];
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+        CGRect rect = CGRectMake(0, -44, 320, 44);
+        self.navigationController.navigationBar.frame = rect;
+        CGRect rect2=CGRectMake(0, 0, 320, 480);
+        rect2.origin.y=-64;
+        self.view.frame=rect2;
+        [UIView commitAnimations];
+        Hide=!Hide;
+    }
+    else
+    {
+        [UIView beginAnimations: nil context:NULL];
+        [UIView setAnimationDuration:0.4];
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+        CGRect rect = CGRectMake(0, 20, 320, 44);
+        self.navigationController.navigationBar.frame = rect;
+        CGRect rect2=CGRectMake(0, 0, 320, 480);
+        rect2.origin.y=0.0;
+        self.view.frame=rect2;
+        [UIView commitAnimations];
+        Hide=!Hide;
+    }
 }
 
 

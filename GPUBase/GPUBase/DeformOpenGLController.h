@@ -30,6 +30,8 @@
     
     GLuint _time;
     GLuint _resloution;
+    
+    BOOL Hide;
 
 }
 

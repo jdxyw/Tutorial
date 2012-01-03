@@ -131,6 +131,11 @@
     }
 }
 
+-(BOOL)resizeFramebuffer{
+    [self deleteFramebuffer];
+    [self createFramebuffer];
+}
+
 - (BOOL)presentFramebuffer
 {
     BOOL success = FALSE;

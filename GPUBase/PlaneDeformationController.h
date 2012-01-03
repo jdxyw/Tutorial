@@ -53,6 +53,8 @@
     float t;
     float scale;
     float interval;
+    
+    BOOL Hide;
 }
 
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
