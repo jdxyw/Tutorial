@@ -6,6 +6,7 @@ uniform sampler2D Texture;
 uniform  float time;
 uniform  vec2 resolution;
 uniform  vec4 mouse;
+uniform float scale;
 
 vec2 multip_comp(vec2 p1, vec2 p2)
 {
@@ -97,7 +98,7 @@ p.y=abs(p.y);
     cc=vec2(-cc.y,cc.x);
     float dmin = 1000.0;
 float d2=1000.0;
-    vec2 z  = p*vec2(1.66,1.33);
+    vec2 z  = p*vec2(1.66,1.33)*scale;
     vec2 p2=vec2(0.2,-0.4);
     vec2 p3=vec2(0.3,0.6);
     vec2 l=vec2(0.2,0.6);

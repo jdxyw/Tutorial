@@ -6,6 +6,8 @@ uniform sampler2D Texture;
 uniform  float time;
 uniform  vec2 resolution;
 uniform  vec4 mouse;
+uniform float scale;
+uniform vec2 transform;
 
 vec2 exp2_complex(vec2 p)
 {
@@ -40,7 +42,7 @@ void main(void)
     vec2 cc = vec2( cos(.25*time), sin(.25*time*1.423) );
     cc=vec2(-0.8+cos(time)*0.05,0.156+sin(time)*0.05);
     float dmin = 1000.0;
-    vec2 z  = p*vec2(0.6,0.6)+vec2(0.0,0);
+    vec2 z  = p*vec2(0.6,0.6)*scale+transform;
     for( int i=0; i<64; i++ )
     {
         vec2 zz=square_comp(z);

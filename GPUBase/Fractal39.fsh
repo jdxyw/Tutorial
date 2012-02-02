@@ -116,5 +116,5 @@ void main(void)
     //float color3 = sqrt(sqrt(d3))*0.7;
     //float color4 = sqrt(sqrt(d4))*0.7;
     //float color5 = sqrt(sqrt(d5))*0.7;
-    gl_FragColor = vec4(hsl2rgb(color*0.4,1.0,0.7),1.0);
+    gl_FragColor = vec4(hsl2rgb(color*0.4,1.0,0.5),1.0);
 }

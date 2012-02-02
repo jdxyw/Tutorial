@@ -47,11 +47,20 @@
 
 -(IBAction)buttonClick:(id)sender
 {
+    IFSFunctions *ifsfunction=[[IFSFunctions alloc] init];
+    [self performSelectorInBackground:@selector(generateImage:) withObject:ifsfunction];
+}
+
+-(void)generateImage:(id)ifsfunction
+{
+    NSAutoreleasePool *pool=[[NSAutoreleasePool alloc] init];
     int width=320;
     int height=480;
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     void *imageData = malloc( height * width * 4 );
+    
+    int *fre=(int *)malloc(320*480*sizeof(int));
     CGContextRef contextRef = CGBitmapContextCreate( imageData, width, height, 8, 4 * width, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big );
     //CGColorSpaceRelease( colorSpace );
     CGContextClearRect( contextRef, CGRectMake( 0, 0, width, height ) );
@@ -64,6 +73,7 @@
             *((char *)(imageData+i*width*4+j*4+1))=0;
             *((char *)(imageData+i*width*4+j*4+2))=0;
             *((char *)(imageData+i*width*4+j*4+3))=255;
+            fre[i*width+j]=0;
         }
     }
     
@@ -72,13 +82,13 @@
     int ymin=-2;
     int ymax=2;
     
-    int fre[320 * 480]={0};
-    
+    //int fre[320 * 480]={0};
     CGPoint p=CGPointZero;
     
-    float x=arc4random()*1.0/ARC4RANDOM_MAX;
-    float y=arc4random()*1.0/ARC4RANDOM_MAX;
-    
+    float x=0.5;
+    //float x=arc4random()*1.0/ARC4RANDOM_MAX;
+    //float y=arc4random()*1.0/ARC4RANDOM_MAX;
+    float y=0.4;
     p.x=x*(xmax-xmin)+xmin;
     p.y=y*(ymax-ymin)+ymin;
     
@@ -91,9 +101,9 @@
     point.green=0.0;
     point.blue=0.0;
     
-    IFSFunctions *ifsfunction=[[IFSFunctions alloc] init];
+    //IFSFunctions *ifsfunction=[[IFSFunctions alloc] init];
     
-    for (int i=0; i<1000000; i++) {
+    for (int i=0; i<250000; i++) {
         if(p.x<=160 && p.x >=-160 && p.y <= 240 && p.y >= -240)
         {
             //fre[((int)p.y+240)*320+(int)p.x+160]++;
@@ -146,12 +156,26 @@
     CGDataProviderRelease(dataProvider);
     CGContextDrawImage(contextRef, CGRectMake( 0, 0, width, height ), imageRef);
     
-    imgView.image=[UIImage imageWithCGImage:imageRef];
-    
+    //imgView.image=[UIImage imageWithCGImage:imageRef];
+    UIImage *image=[UIImage imageWithCGImage:imageRef];
+    [self performSelectorOnMainThread:@selector(completeGeneration:) withObject:image waitUntilDone:YES];
     CGImageRelease(imageRef);
     CGContextRelease(contextRef);
     free(imageData);
+    free(fre);
+    [pool release];
+    
+    
+}
 
+-(void)completeGeneration:(id)image
+{
+    imgView.image=image;
+    //UIImageView *imageView=[[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    //imageView.image=image;
+    //[self.view addSubview:imageView];
+
+    //[image release];
 }
 
 - (void)viewDidUnload

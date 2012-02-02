@@ -6,6 +6,8 @@ uniform sampler2D Texture;
 uniform  float time;
 uniform  vec2 resolution;
 uniform  vec4 mouse;
+uniform float scale;
+uniform vec2 transform;
 
 float sincolor(float iter)
 {
@@ -18,7 +20,7 @@ void main(void)
     vec2 cc = vec2( cos(.25*time), sin(.25*time*1.423) );
     cc=vec2(0.285+cos(time)*0.05,0.1-sin(time)*0.15);
     float dmin = 1000.0;
-    vec2 z  = p*vec2(1.33,1.0);
+    vec2 z  = p*vec2(1.33,1.0)*scale+transform;
     float iter=0.0;
     for( float i=0.0; i<256.0; i+=1.0  )
     {

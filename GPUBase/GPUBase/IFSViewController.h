@@ -12,6 +12,7 @@
 {
     IBOutlet UIImageView *imgView;
     IBOutlet UIButton *button;
+    //UIImage *image;
 }
 
 @property (nonatomic,retain) UIImageView *imgView;

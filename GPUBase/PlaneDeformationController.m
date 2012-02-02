@@ -170,14 +170,33 @@ enum {
     
     
     animating = FALSE;
-    animationFrameInterval = 1;
+    animationFrameInterval = 10;
     self.displayLink = nil;
     t=0;
     Hide=NO;
     [self startAnimation];
+    
+    UIPinchGestureRecognizer *pinchGesture=[[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(handlePinchGesture:)];
+    UIPanGestureRecognizer *panGesture=[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)];
+    
+    [[self.view viewWithTag:101] addGestureRecognizer:pinchGesture];
+    [[self.view viewWithTag:101] addGestureRecognizer:panGesture];
+    
     [super viewDidLoad];
 }
 
+-(IBAction)handlePinchGesture:(id)sender{
+    scale*=([(UIPinchGestureRecognizer*)sender scale]);
+    
+}
+
+-(IBAction)handlePanGesture:(id)sender{
+    CGPoint transform = [sender translationInView:[self.view viewWithTag:101]];
+    CGSize size=[UIScreen mainScreen].bounds.size;
+    step.x += (transform.x*0.2/size.width);
+    step.y += (transform.y*0.2/size.height);
+}
+                                            
 - (void)quadCurveMenu:(QuadCurveMenu *)menu didSelectIndex:(NSInteger)idx
 {
     NSLog(@"Select the index : %d",idx);
@@ -351,10 +370,10 @@ enum {
         
         //glUniform4f(_mouse, 0, 0, 0, 0);
         glUniform1f(_time, t);
-        glUniform1f(_scale, scale);
-        t+=0.05;
-        glUniform2f(_resloution, 320, 436);
-        glUniform2f(_transformation, step.x, step.y);
+        glUniform1f(_scale, 1.0/scale);
+        t+=0.5;
+        glUniform2f(_resloution, 320, 480);
+        glUniform2f(_transformation, -step.x, step.y);
         // Validate program before drawing. This is a good check, but only really necessary in a debug build.
         // DEBUG macro must be defined in your debug configurations if that's not already the case.
 #if defined(DEBUG)
