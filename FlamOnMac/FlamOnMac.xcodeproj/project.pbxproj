@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		581AA49B14DD102D00A69909 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 581AA49A14DD102D00A69909 /* main.c */; };
+		581AA49D14DD102D00A69909 /* FlamOnMac.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 581AA49C14DD102D00A69909 /* FlamOnMac.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		581AA49414DD102D00A69909 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				581AA49D14DD102D00A69909 /* FlamOnMac.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		581AA49614DD102D00A69909 /* FlamOnMac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FlamOnMac; sourceTree = BUILT_PRODUCTS_DIR; };
+		581AA49A14DD102D00A69909 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		581AA49C14DD102D00A69909 /* FlamOnMac.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FlamOnMac.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		581AA49314DD102D00A69909 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		581AA48B14DD102D00A69909 = {
+			isa = PBXGroup;
+			children = (
+				581AA49914DD102D00A69909 /* FlamOnMac */,
+				581AA49714DD102D00A69909 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		581AA49714DD102D00A69909 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				581AA49614DD102D00A69909 /* FlamOnMac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		581AA49914DD102D00A69909 /* FlamOnMac */ = {
+			isa = PBXGroup;
+			children = (
+				581AA49A14DD102D00A69909 /* main.c */,
+				581AA49C14DD102D00A69909 /* FlamOnMac.1 */,
+			);
+			path = FlamOnMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		581AA49514DD102D00A69909 /* FlamOnMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581AA4A014DD102D00A69909 /* Build configuration list for PBXNativeTarget "FlamOnMac" */;
+			buildPhases = (
+				581AA49214DD102D00A69909 /* Sources */,
+				581AA49314DD102D00A69909 /* Frameworks */,
+				581AA49414DD102D00A69909 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlamOnMac;
+			productName = FlamOnMac;
+			productReference = 581AA49614DD102D00A69909 /* FlamOnMac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		581AA48D14DD102D00A69909 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 581AA49014DD102D00A69909 /* Build configuration list for PBXProject "FlamOnMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 581AA48B14DD102D00A69909;
+			productRefGroup = 581AA49714DD102D00A69909 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				581AA49514DD102D00A69909 /* FlamOnMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		581AA49214DD102D00A69909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581AA49B14DD102D00A69909 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		581AA49E14DD102D00A69909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		581AA49F14DD102D00A69909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		581AA4A114DD102D00A69909 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		581AA4A214DD102D00A69909 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		581AA49014DD102D00A69909 /* Build configuration list for PBXProject "FlamOnMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581AA49E14DD102D00A69909 /* Debug */,
+				581AA49F14DD102D00A69909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		581AA4A014DD102D00A69909 /* Build configuration list for PBXNativeTarget "FlamOnMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581AA4A114DD102D00A69909 /* Debug */,
+				581AA4A214DD102D00A69909 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 581AA48D14DD102D00A69909 /* Project object */;
+}

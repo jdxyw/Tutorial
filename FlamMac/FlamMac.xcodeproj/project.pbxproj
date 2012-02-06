@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58E7626314DD509D002C1A91 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58E7626214DD509D002C1A91 /* main.c */; };
+		58E7626514DD509D002C1A91 /* FlamMac.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 58E7626414DD509D002C1A91 /* FlamMac.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58E7625C14DD509C002C1A91 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				58E7626514DD509D002C1A91 /* FlamMac.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		58E7625E14DD509C002C1A91 /* FlamMac */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FlamMac; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E7626214DD509D002C1A91 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		58E7626414DD509D002C1A91 /* FlamMac.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = FlamMac.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58E7625B14DD509C002C1A91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58E7625314DD509C002C1A91 = {
+			isa = PBXGroup;
+			children = (
+				58E7626114DD509C002C1A91 /* FlamMac */,
+				58E7625F14DD509C002C1A91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58E7625F14DD509C002C1A91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58E7625E14DD509C002C1A91 /* FlamMac */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58E7626114DD509C002C1A91 /* FlamMac */ = {
+			isa = PBXGroup;
+			children = (
+				58E7626214DD509D002C1A91 /* main.c */,
+				58E7626414DD509D002C1A91 /* FlamMac.1 */,
+			);
+			path = FlamMac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58E7625D14DD509C002C1A91 /* FlamMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58E7626814DD509D002C1A91 /* Build configuration list for PBXNativeTarget "FlamMac" */;
+			buildPhases = (
+				58E7625A14DD509C002C1A91 /* Sources */,
+				58E7625B14DD509C002C1A91 /* Frameworks */,
+				58E7625C14DD509C002C1A91 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlamMac;
+			productName = FlamMac;
+			productReference = 58E7625E14DD509C002C1A91 /* FlamMac */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58E7625514DD509C002C1A91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 58E7625814DD509C002C1A91 /* Build configuration list for PBXProject "FlamMac" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58E7625314DD509C002C1A91;
+			productRefGroup = 58E7625F14DD509C002C1A91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58E7625D14DD509C002C1A91 /* FlamMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58E7625A14DD509C002C1A91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58E7626314DD509D002C1A91 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		58E7626614DD509D002C1A91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		58E7626714DD509D002C1A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		58E7626914DD509D002C1A91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58E7626A14DD509D002C1A91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58E7625814DD509C002C1A91 /* Build configuration list for PBXProject "FlamMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E7626614DD509D002C1A91 /* Debug */,
+				58E7626714DD509D002C1A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58E7626814DD509D002C1A91 /* Build configuration list for PBXNativeTarget "FlamMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E7626914DD509D002C1A91 /* Debug */,
+				58E7626A14DD509D002C1A91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58E7625514DD509C002C1A91 /* Project object */;
+}

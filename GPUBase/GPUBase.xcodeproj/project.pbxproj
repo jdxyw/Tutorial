@@ -48,6 +48,7 @@
 		58093CFA1490DACD0010DBAA /* WireFrameSphere.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */; };
 		58093CFB1490DAFE0010DBAA /* WireFrameSphere.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */; };
 		58093CFC1490DAFE0010DBAA /* WireFrameSphere.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */; };
+		580A8BD814DC252C00292733 /* fractal.c in Sources */ = {isa = PBXBuildFile; fileRef = 580A8BD614DC252B00292733 /* fractal.c */; };
 		580D879814A895A300750B82 /* Fractal36.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 580D879714A895A300750B82 /* Fractal36.vsh */; };
 		580D879A14A895AF00750B82 /* Fractal36.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 580D879914A895AF00750B82 /* Fractal36.fsh */; };
 		5813E91D14AC8AA500951A34 /* Fractal43.vsh in Sources */ = {isa = PBXBuildFile; fileRef = 5813E91C14AC8AA500951A34 /* Fractal43.vsh */; };
@@ -427,6 +428,11 @@
 		58B7D87C14A8BE280015A6D6 /* Fractal42.fsh in Sources */ = {isa = PBXBuildFile; fileRef = 58B7D87B14A8BE280015A6D6 /* Fractal42.fsh */; };
 		58B7D87D14A8BE300015A6D6 /* Fractal42.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B7D87914A8BE1F0015A6D6 /* Fractal42.vsh */; };
 		58B7D87E14A8BE300015A6D6 /* Fractal42.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 58B7D87B14A8BE280015A6D6 /* Fractal42.fsh */; };
+		58E7628D14DD59BF002C1A91 /* colorpalette.c in Sources */ = {isa = PBXBuildFile; fileRef = 58E7628414DD59BF002C1A91 /* colorpalette.c */; };
+		58E7628E14DD59BF002C1A91 /* functions.c in Sources */ = {isa = PBXBuildFile; fileRef = 58E7628614DD59BF002C1A91 /* functions.c */; };
+		58E7628F14DD59BF002C1A91 /* global.c in Sources */ = {isa = PBXBuildFile; fileRef = 58E7628814DD59BF002C1A91 /* global.c */; };
+		58E7629014DD59BF002C1A91 /* sheep_138022_color_palette_processed.inc in Sources */ = {isa = PBXBuildFile; fileRef = 58E7628A14DD59BF002C1A91 /* sheep_138022_color_palette_processed.inc */; };
+		58E7629114DD59BF002C1A91 /* variations.c in Sources */ = {isa = PBXBuildFile; fileRef = 58E7628B14DD59BF002C1A91 /* variations.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -472,6 +478,8 @@
 		58093CF01490D8230010DBAA /* WireFrameSphere.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WireFrameSphere.xib; sourceTree = "<group>"; };
 		58093CF71490DAC10010DBAA /* WireFrameSphere.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = WireFrameSphere.vsh; sourceTree = "<group>"; };
 		58093CF91490DACD0010DBAA /* WireFrameSphere.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = WireFrameSphere.fsh; sourceTree = "<group>"; };
+		580A8BD614DC252B00292733 /* fractal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fractal.c; sourceTree = "<group>"; };
+		580A8BD714DC252C00292733 /* fractal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fractal.h; sourceTree = "<group>"; };
 		580D879714A895A300750B82 /* Fractal36.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal36.vsh; sourceTree = "<group>"; };
 		580D879914A895AF00750B82 /* Fractal36.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal36.fsh; sourceTree = "<group>"; };
 		5813E91C14AC8AA500951A34 /* Fractal43.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal43.vsh; sourceTree = "<group>"; };
@@ -687,6 +695,15 @@
 		58B7D87514A8AF730015A6D6 /* Fractal41.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal41.fsh; sourceTree = "<group>"; };
 		58B7D87914A8BE1F0015A6D6 /* Fractal42.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal42.vsh; sourceTree = "<group>"; };
 		58B7D87B14A8BE280015A6D6 /* Fractal42.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Fractal42.fsh; sourceTree = "<group>"; };
+		58E7628414DD59BF002C1A91 /* colorpalette.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = colorpalette.c; sourceTree = "<group>"; };
+		58E7628514DD59BF002C1A91 /* colorpalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorpalette.h; sourceTree = "<group>"; };
+		58E7628614DD59BF002C1A91 /* functions.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = functions.c; sourceTree = "<group>"; };
+		58E7628714DD59BF002C1A91 /* functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
+		58E7628814DD59BF002C1A91 /* global.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = global.c; sourceTree = "<group>"; };
+		58E7628914DD59BF002C1A91 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
+		58E7628A14DD59BF002C1A91 /* sheep_138022_color_palette_processed.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = sheep_138022_color_palette_processed.inc; sourceTree = "<group>"; };
+		58E7628B14DD59BF002C1A91 /* variations.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = variations.c; sourceTree = "<group>"; };
+		58E7628C14DD59BF002C1A91 /* variations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = variations.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -740,6 +757,17 @@
 		5801EBC0148CF8CA007419F9 /* GPUBase */ = {
 			isa = PBXGroup;
 			children = (
+				58E7628414DD59BF002C1A91 /* colorpalette.c */,
+				58E7628514DD59BF002C1A91 /* colorpalette.h */,
+				58E7628614DD59BF002C1A91 /* functions.c */,
+				58E7628714DD59BF002C1A91 /* functions.h */,
+				58E7628814DD59BF002C1A91 /* global.c */,
+				58E7628914DD59BF002C1A91 /* global.h */,
+				58E7628A14DD59BF002C1A91 /* sheep_138022_color_palette_processed.inc */,
+				58E7628B14DD59BF002C1A91 /* variations.c */,
+				58E7628C14DD59BF002C1A91 /* variations.h */,
+				580A8BD614DC252B00292733 /* fractal.c */,
+				580A8BD714DC252C00292733 /* fractal.h */,
 				587089D51494B0A6008A2B51 /* PaintingView.h */,
 				587089D61494B0A7008A2B51 /* PaintingView.m */,
 				58093CEC1490D7BB0010DBAA /* sphere.h */,
@@ -1496,6 +1524,12 @@
 				589147F614B1FD4200BB7610 /* Fractal63.fsh in Sources */,
 				589147FA14B1FD7400BB7610 /* Fractal64.vsh in Sources */,
 				589147FC14B1FD8000BB7610 /* Fractal64.fsh in Sources */,
+				580A8BD814DC252C00292733 /* fractal.c in Sources */,
+				58E7628D14DD59BF002C1A91 /* colorpalette.c in Sources */,
+				58E7628E14DD59BF002C1A91 /* functions.c in Sources */,
+				58E7628F14DD59BF002C1A91 /* global.c in Sources */,
+				58E7629014DD59BF002C1A91 /* sheep_138022_color_palette_processed.inc in Sources */,
+				58E7629114DD59BF002C1A91 /* variations.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

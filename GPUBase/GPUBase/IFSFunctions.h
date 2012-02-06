@@ -26,9 +26,9 @@ typedef struct{
 @property (nonatomic,retain) NSMutableArray *parameter;
 @property (nonatomic,retain) NSMutableArray *color;
 
--(void)initParameter;
 
 -(DataPoint)caculate:(DataPoint) point;
+-(DataPoint)finalcaculate:(DataPoint) point;
 -(DataPoint)Sinusodial:(DataPoint) point;
 -(DataPoint)Spherical:(DataPoint) point;
 -(DataPoint)Swirl:(DataPoint)point;
