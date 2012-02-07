@@ -5,10 +5,19 @@
 
 //globals
 
-#define NVARIATIONS 8
+#define NVARIATIONS 5
 
 //variations
 V_func * variations;
+V_func * variations1;
+V_func * variations2;
+V_func * variations3;
+V_func * variations4;
+V_func * variations5;
+V_func * variations6;
+V_func * variations7;
+V_func * variations8;
+
 int nv=0;
 
 //final transformation
@@ -451,13 +460,73 @@ extern int init_variations(){
   vp.p = NULL;
   vp.np = 0;
   variations = malloc(sizeof(V_func) * nv);
+    variations1 = malloc(sizeof(V_func) * nv);
+    variations2 = malloc(sizeof(V_func) * nv);
+    variations3 = malloc(sizeof(V_func) * nv);
+    variations4 = malloc(sizeof(V_func) * nv);
+    variations5 = malloc(sizeof(V_func) * nv);
+    variations6 = malloc(sizeof(V_func) * nv);
+    variations7 = malloc(sizeof(V_func) * nv);
+    variations8 = malloc(sizeof(V_func) * nv);
   for(j=0; j<nv; j++){
     variations[j].v=v[arc4random()%25];
     variations[j].use_fp = 0;
     variations[j].use_vp = 0;
     variations[j].vp = vp;
   }
-  
+
+    for(j=0; j<nv; j++){
+        variations1[j].v=v[arc4random()%25];
+        variations1[j].use_fp = 0;
+        variations1[j].use_vp = 0;
+        variations1[j].vp = vp;
+    }
+
+    for(j=0; j<nv; j++){
+        variations2[j].v=v[arc4random()%25];
+        variations2[j].use_fp = 0;
+        variations2[j].use_vp = 0;
+        variations2[j].vp = vp;
+    }
+
+    for(j=0; j<nv; j++){
+        variations3[j].v=v[arc4random()%25];
+        variations3[j].use_fp = 0;
+        variations3[j].use_vp = 0;
+        variations3[j].vp = vp;
+    }
+
+    for(j=0; j<nv; j++){
+        variations4[j].v=v[arc4random()%25];
+        variations4[j].use_fp = 0;
+        variations4[j].use_vp = 0;
+        variations4[j].vp = vp;
+    }
+    for(j=0; j<nv; j++){
+        variations5[j].v=v[arc4random()%25];
+        variations5[j].use_fp = 0;
+        variations5[j].use_vp = 0;
+        variations5[j].vp = vp;
+    }
+    for(j=0; j<nv; j++){
+        variations6[j].v=v[arc4random()%25];
+        variations6[j].use_fp = 0;
+        variations6[j].use_vp = 0;
+        variations6[j].vp = vp;
+    }
+    for(j=0; j<nv; j++){
+        variations7[j].v=v[arc4random()%25];
+        variations7[j].use_fp = 0;
+        variations7[j].use_vp = 0;
+        variations7[j].vp = vp;
+    }
+    for(j=0; j<nv; j++){
+        variations8[j].v=v[arc4random()%25];
+        variations8[j].use_fp = 0;
+        variations8[j].use_vp = 0;
+        variations8[j].vp = vp;
+    }
+
   //final transformation
   final = malloc(sizeof(V_func));
   final->v=v[arc4random()%25];
@@ -498,6 +567,30 @@ extern int cleanup_variations(){
 
 extern V_func * get_variations(){
   return variations;
+}
+extern V_func * get_variations1(){
+    return variations1;
+}
+extern V_func * get_variations2(){
+    return variations2;
+}
+extern V_func * get_variations3(){
+    return variations3;
+}
+extern V_func * get_variations4(){
+    return variations4;
+}
+extern V_func * get_variations5(){
+    return variations5;
+}
+extern V_func * get_variations6(){
+    return variations6;
+}
+extern V_func * get_variations7(){
+    return variations7;
+}
+extern V_func * get_variations8(){
+    return variations8;
 }
 
 extern V_func * get_final(){

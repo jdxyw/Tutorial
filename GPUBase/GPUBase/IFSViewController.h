@@ -12,11 +12,13 @@
 {
     IBOutlet UIImageView *imgView;
     IBOutlet UIButton *button;
+    UIActivityIndicatorView *spinner;
     //UIImage *image;
 }
 
 @property (nonatomic,retain) UIImageView *imgView;
 @property (nonatomic,retain) UIButton *button;
+@property (nonatomic,retain) UIActivityIndicatorView *spinner;
 
 -(IBAction)buttonClick:(id) sender;
 

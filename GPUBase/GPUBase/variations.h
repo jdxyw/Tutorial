@@ -259,6 +259,14 @@ extern int cleanup_variations();
 //accessors  
         
 extern V_func * get_variations();
+extern V_func * get_variations1();
+extern V_func * get_variations2();
+extern V_func * get_variations3();
+extern V_func * get_variations4();
+extern V_func * get_variations5();
+extern V_func * get_variations6();
+extern V_func * get_variations7();
+extern V_func * get_variations8();
 extern V_func * get_final();
 
 //run functions

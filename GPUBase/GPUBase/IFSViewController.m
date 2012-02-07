@@ -26,7 +26,7 @@
 #define RANGE 2.0
 //these should eventually all be specified in a file or on the command line
 #define MINITERATIONS 20
-#define NITERATIONS 4000000
+#define NITERATIONS 2000000
 #define WINW 320
 #define WINH 480
 #define GAMMA 4.0
@@ -37,7 +37,7 @@
 //MACROS
 
 //random floating-point value in range [0.0,1.0)
-#define RANDD (rand()/(RAND_MAX + 1.0))
+#define RANDD (arc4random()/(ARC4RANDOM_MAX + 1.0))
 
 //random floating-point value in range [MINV, (RANGE + MINV))
 #define RANDU (RANDD * RANGE + MINV)
@@ -62,6 +62,14 @@ typedef unsigned int plotcount_t;
     return self;
 }
 
+//-(void)loadView{
+//    spinner=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//    [spinner setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width/2, 
+//                                   [UIScreen mainScreen].bounds.size.height/2)];
+//    //[self.view addSubview:spinner];
+//    
+//}
+
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
@@ -82,6 +90,10 @@ typedef unsigned int plotcount_t;
 -(IBAction)buttonClick:(id)sender
 {
     IFSFunctions *ifsfunction=[[IFSFunctions alloc] init];
+        spinner=[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        [spinner setCenter:CGPointMake([UIScreen mainScreen].bounds.size.width/2, 
+                                       [UIScreen mainScreen].bounds.size.height/2)];
+        [self.view addSubview:spinner];
     [self performSelectorInBackground:@selector(generateImageV2) withObject:nil];
 }
 
@@ -90,7 +102,7 @@ typedef unsigned int plotcount_t;
     NSAutoreleasePool *pool=[[NSAutoreleasePool alloc] init];
     int width=320;
     int height=480;
-    
+    [self performSelectorOnMainThread:@selector(startIndicator) withObject:self waitUntilDone:YES];
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     void *imageData = malloc( height * width * 4  );
     
@@ -149,11 +161,12 @@ typedef unsigned int plotcount_t;
     //fill vars with random values
     p.x = (coord_t)RANDU;
     p.y = (coord_t)RANDU;
-    c = (float)1.0/(arc4random()%256+1);
+    c = (float)1.0/(arc4random()%20+1);
     
     //initialize count of points outside the range the algorithm attempts to plot
     outside = 0;
     set_frame(0);
+    int start=0;
     for(i=0; i<NITERATIONS; i++){
         vector_pos = RANDD; //between 0.0 and 1.0
         vector_pos = vector_len*vector_pos; //between 0.0 and vector_len 
@@ -176,8 +189,8 @@ typedef unsigned int plotcount_t;
             
             x = (int)((p.x - minX)/rangeX * winW);
             y = (int)((p.y - minY)/rangeY * winH);
-            
-            if(x > 0 && x < winW && y > 0 && y < winH){
+            start++;
+            if(x > 0 && x < winW && y > 0 && y < winH && start<2000){
                 //printf("plot: coordinates (%d,%d) out of range.  not plotting.\n",x,y);
                 i = y*winW + x;
                 
@@ -194,6 +207,9 @@ typedef unsigned int plotcount_t;
             }
             else
             {
+                p.x = (coord_t)RANDU;
+                p.y = (coord_t)RANDU;
+                start=0;
                 outside++;
             }
         }
@@ -298,6 +314,7 @@ typedef unsigned int plotcount_t;
     
     //imgView.image=[UIImage imageWithCGImage:imageRef];
     UIImage *image=[UIImage imageWithCGImage:imageRef];
+    [self performSelectorOnMainThread:@selector(endIndicator) withObject:self waitUntilDone:YES];
     [self performSelectorOnMainThread:@selector(completeGeneration:) withObject:image waitUntilDone:YES];
     CGImageRelease(imageRef);
     CGContextRelease(contextRef);
@@ -310,6 +327,18 @@ typedef unsigned int plotcount_t;
     [pool release];
 
     
+}
+
+-(void)startIndicator
+{
+    [spinner startAnimating];
+}
+
+-(void)endIndicator
+{
+    [spinner stopAnimating];
+    [spinner removeFromSuperview];
+    [spinner release];
 }
 
 -(void)generateImage:(id)ifsfunction

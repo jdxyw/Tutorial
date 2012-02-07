@@ -21,6 +21,14 @@
 
 //variations
 static V_func * variations;
+static V_func * variations1;
+static V_func * variations2;
+static V_func * variations3;
+static V_func * variations4;
+static V_func * variations5;
+static V_func * variations6;
+static V_func * variations7;
+static V_func * variations8;
 static coord_t * v_coeff;
 static int nv;
 
@@ -166,6 +174,14 @@ extern int init_functions(int _nframes){
   }
   //get list of variation functions
   variations = get_variations();
+    variations1 = get_variations1();
+    variations2 = get_variations2();
+    variations3 = get_variations3();
+    variations4 = get_variations4();
+    variations5 = get_variations5();
+    variations6 = get_variations6();
+    variations7 = get_variations7();
+    variations8 = get_variations8();
   
   //initialize animation parameters
   nframes = _nframes;
@@ -197,7 +213,37 @@ extern int init_functions(int _nframes){
     functions[i].f = first;
     
     //variations and weights
-    functions[i].v = variations;
+      switch (arc4random()%5) {
+          case 0:
+              functions[i].v = variations;
+              break;
+          case 1:
+              functions[i].v = variations1;
+              break;
+          case 2:
+              functions[i].v = variations2;
+              break;
+          case 3:
+              functions[i].v = variations3;
+              break;
+          case 4:
+              functions[i].v = variations4;
+              break;
+          case 5:
+              functions[i].v = variations5;
+              break;
+          case 6:
+              functions[i].v = variations6;
+              break;
+          case 7:
+              functions[i].v = variations7;
+              break;
+          case 8:
+              functions[i].v = variations8;
+              break;
+          default:
+              break;
+      }
     functions[i].v_coeff = v_coeff;
     functions[i].nv = nv;
     
@@ -207,7 +253,7 @@ extern int init_functions(int _nframes){
     //these aren't used yet
     //color
     //functions[i].c = ci_scale*i;
-      functions[i].c=1.0/(1+arc4random()%256);
+      functions[i].c=1.0/(1+arc4random()%20);
     //probabilistic function weight
     functions[i].w = 1.0;
     functions[i].startw = weight_vector_len;
@@ -217,7 +263,7 @@ extern int init_functions(int _nframes){
   //set up final nonlinear transformation (set up in init_variations since it's
   //nonlinear)
   final = get_final();
-  cfinal = 1.0/(arc4random()%256+1); //make final transform the middle color for no particular reason
+  cfinal = 1.0/(arc4random()%30+1); //make final transform the middle color for no particular reason
   
   return nfunctions;
 }
