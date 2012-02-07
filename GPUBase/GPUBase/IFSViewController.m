@@ -26,7 +26,7 @@
 #define RANGE 2.0
 //these should eventually all be specified in a file or on the command line
 #define MINITERATIONS 20
-#define NITERATIONS 2000000
+#define NITERATIONS 4000000
 #define WINW 320
 #define WINH 480
 #define GAMMA 4.0
@@ -149,7 +149,7 @@ typedef unsigned int plotcount_t;
     //fill vars with random values
     p.x = (coord_t)RANDU;
     p.y = (coord_t)RANDU;
-    c = (float)RANDD;
+    c = (float)1.0/(arc4random()%256+1);
     
     //initialize count of points outside the range the algorithm attempts to plot
     outside = 0;

@@ -206,8 +206,8 @@ extern int init_functions(int _nframes){
     
     //these aren't used yet
     //color
-    functions[i].c = ci_scale*i;
-    
+    //functions[i].c = ci_scale*i;
+      functions[i].c=1.0/(1+arc4random()%256);
     //probabilistic function weight
     functions[i].w = 1.0;
     functions[i].startw = weight_vector_len;
@@ -217,7 +217,7 @@ extern int init_functions(int _nframes){
   //set up final nonlinear transformation (set up in init_variations since it's
   //nonlinear)
   final = get_final();
-  cfinal = 0.5; //make final transform the middle color for no particular reason
+  cfinal = 1.0/(arc4random()%256+1); //make final transform the middle color for no particular reason
   
   return nfunctions;
 }

@@ -27,8 +27,9 @@ extern int cleanup_color_palette(){
 extern color * lookup_color(float index){
   int i = (int)(index*palette.ncolors);
   if(i < 0 || i >= palette.ncolors){
-    printf("lookup_color: index out of bounds\n");
-    exit(1);
+    //printf("lookup_color: index out of bounds\n");
+    //exit(1);
+      return &palette.colors[arc4random()%palette.ncolors];
   }
   return &palette.colors[i];
 }
