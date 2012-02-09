@@ -343,10 +343,16 @@ extern int run_function(float vector_pos, coords * c, float * ci){
   }
   //check last one
   if(functions[i].startw <= vector_pos && 
-     vector_pos <= (functions[i].startw + functions[i].w)){ 
+     vector_pos <= (functions[i].startw + functions[i].w && i<nfunctions)){ 
     *ci = functions[i].c;  
     return run_f(&functions[i], c);
   }
+    else
+    {
+        i=arc4random()%nfunctions;
+        *ci = functions[i].c;  
+        return run_f(&functions[i], c);
+    }
   
   //otherwise, vector_pos doesn't correspond to a function
   return 0;

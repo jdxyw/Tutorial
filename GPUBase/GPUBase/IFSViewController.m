@@ -25,8 +25,8 @@
 #define MINV -1.0
 #define RANGE 2.0
 //these should eventually all be specified in a file or on the command line
-#define MINITERATIONS 20
-#define NITERATIONS 2000000
+#define MINITERATIONS 100
+#define NITERATIONS 2500000
 #define WINW 320
 #define WINH 480
 #define GAMMA 4.0
@@ -56,7 +56,6 @@ typedef unsigned int plotcount_t;
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
-        
                 
     }
     return self;
@@ -289,6 +288,17 @@ typedef unsigned int plotcount_t;
             printf("compute_pixels: gamma put channels out of range\n");
             //exit(1);  
         }
+        
+//        if (frames[0][3*i]   < 0.5 &&
+//            frames[0][3*i+1] < 0.5 &&
+//            frames[0][3*i+2] < 0.5 &&
+//            frames[0][3*i]   > 0.2 &&
+//            frames[0][3*i+1] > 0.2 &&
+//            frames[0][3*i+2] > 0.2) {
+//            frames[0][3*i]+=0.1;
+//            frames[0][3*i+1]+=0.1;
+//            frames[0][3*i+2]+=0.1;
+//        }
         
     }
 

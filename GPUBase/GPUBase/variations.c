@@ -5,7 +5,7 @@
 
 //globals
 
-#define NVARIATIONS 5
+#define NVARIATIONS 6
 
 //variations
 V_func * variations;
@@ -28,12 +28,17 @@ flam3_xform* xform;
 
 //nonlinear functions.  these are externally linked because pointers to them
 //will be used in functio of this file
-
+#define ARC4RANDOM_MAX      0x100000000
 #define RSQUARED(c) ((c)->x*(c)->x + (c)->y*(c)->y)
 #define INVRSQUARED(c) (1.0/RSQUARED(c))
 #define R(c) (sqrtl(RSQUARED(c)))
 #define INVR(c) (1.0/R(c))
 #define EPS 0.000001
+#define sincos(x,s,c) *(s)=sin(x); *(c)=cos(x);
+#define NUMVAR 33
+#define RANDOMXFORM (-1.0+2.0*1.0/(arc4random()%100))
+#define Omega ((arc4random()/ARC4RANDOM_MAX)*M_PI)
+#define Uniform_Random (arc4random()/ARC4RANDOM_MAX)
 
 extern int flam3_random_bit(){
     static int n=0;
@@ -48,13 +53,11 @@ extern int flam3_random_bit(){
     return l&1;
 }
 
-#define RANDOMXFORM (-1.0+2.0*1.0/(arc4random()%100))
 
 extern void init_xform(){
     xform=(flam3_xform*)malloc(sizeof(flam3_xform));
-    
     xform->blob_high=RANDOMXFORM;
-    xform->blob_low=-1.0;
+    xform->blob_low=-RANDOMXFORM;
     xform->blob_waves=RANDOMXFORM;
     
     xform->pdj_a=RANDOMXFORM;
@@ -87,8 +90,105 @@ extern void init_xform(){
     xform->parabola_height=RANDOMXFORM;
     xform->parabola_width=RANDOMXFORM;
     
+    xform->bent2_x=RANDOMXFORM;
+    xform->bent2_y=RANDOMXFORM;
     
+    xform->bipolar_shift=RANDOMXFORM;
     
+    xform->cell_size=RANDOMXFORM;
+    
+    xform->cpow_r=RANDOMXFORM;
+    xform->cpow_i=RANDOMXFORM;
+    xform->cpow_power=RANDOMXFORM;
+    
+    xform->curve_xamp=RANDOMXFORM;
+    xform->curve_yamp=RANDOMXFORM;
+    
+    xform->escher_beta = RANDOMXFORM;
+    xform->lazysusan_space = RANDOMXFORM;
+    xform->lazysusan_twist = RANDOMXFORM;
+    xform->lazysusan_spin = RANDOMXFORM;
+    xform->lazysusan_x = RANDOMXFORM;
+    xform->lazysusan_y = RANDOMXFORM;
+    xform->modulus_x = RANDOMXFORM;
+    xform->modulus_y = RANDOMXFORM;
+    xform->oscope_separation = RANDOMXFORM;
+    xform->oscope_frequency = M_PI;
+    xform->oscope_amplitude = RANDOMXFORM;
+    xform->oscope_damping = RANDOMXFORM;
+    xform->popcorn2_c = RANDOMXFORM;
+    xform->popcorn2_x = RANDOMXFORM;
+    xform->popcorn2_y = RANDOMXFORM;
+    xform->separation_x = RANDOMXFORM;
+    xform->separation_xinside = RANDOMXFORM;
+    xform->separation_y = RANDOMXFORM;
+    xform->separation_yinside = RANDOMXFORM;
+    xform->split_xsize = RANDOMXFORM;
+    xform->split_ysize = RANDOMXFORM;
+    xform->splits_x = RANDOMXFORM;
+    xform->splits_y = RANDOMXFORM;
+    xform->stripes_space = RANDOMXFORM;
+    xform->stripes_warp = RANDOMXFORM;
+    xform->wedge_angle = RANDOMXFORM;
+    xform->wedge_hole = RANDOMXFORM;
+    xform->wedge_count = RANDOMXFORM;
+    xform->wedge_swirl = RANDOMXFORM;
+    xform->wedge_sph_angle = RANDOMXFORM;
+    xform->wedge_sph_hole = RANDOMXFORM;
+    xform->wedge_sph_count = RANDOMXFORM;
+    xform->wedge_sph_swirl = RANDOMXFORM;
+    
+    xform->wedge_julia_power = RANDOMXFORM;
+    xform->wedge_julia_dist = RANDOMXFORM;
+    xform->wedge_julia_count = RANDOMXFORM;
+    xform->wedge_julia_angle = RANDOMXFORM;
+    xform->wedgeJulia_cf = RANDOMXFORM;
+    xform->wedgeJulia_cn = RANDOMXFORM;
+    xform->wedgeJulia_rN = RANDOMXFORM;
+    xform->whorl_inside = RANDOMXFORM;
+    xform->whorl_outside = RANDOMXFORM;
+    
+    xform->waves2_scalex = RANDOMXFORM;     
+    xform->waves2_scaley = RANDOMXFORM;     
+    xform->waves2_freqx = RANDOMXFORM;      
+    xform->waves2_freqy = RANDOMXFORM;  
+    
+    xform->auger_freq = RANDOMXFORM;
+    xform->auger_weight = RANDOMXFORM;
+    xform->auger_sym = RANDOMXFORM;
+    xform->auger_scale = RANDOMXFORM;     
+    
+    xform->flux_spread = RANDOMXFORM;
+    
+    xform->julian_power = RANDOMXFORM;
+    xform->julian_dist = RANDOMXFORM;
+    xform->julian_rN = RANDOMXFORM;
+    xform->julian_cn = RANDOMXFORM;
+    xform->juliascope_power = RANDOMXFORM;
+    xform->juliascope_dist = RANDOMXFORM;
+    xform->juliascope_rN = RANDOMXFORM;
+    xform->juliascope_cn = RANDOMXFORM;
+    xform->radialBlur_spinvar = RANDOMXFORM;
+    xform->radialBlur_zoomvar = RANDOMXFORM;
+    xform->pie_slices = RANDOMXFORM;
+    xform->pie_rotation = RANDOMXFORM;
+    xform->pie_thickness = RANDOMXFORM;
+    xform->ngon_sides = RANDOMXFORM;
+    xform->ngon_power = RANDOMXFORM;
+    xform->ngon_circle = RANDOMXFORM;
+    xform->ngon_corners = RANDOMXFORM;
+    xform->curl_c1 = RANDOMXFORM;
+    xform->curl_c2 = RANDOMXFORM;
+    xform->rectangles_x = RANDOMXFORM;
+    xform->rectangles_y = RANDOMXFORM;
+    xform->amw_amp = RANDOMXFORM;
+    xform->super_shape_rnd = RANDOMXFORM;
+    xform->super_shape_m = RANDOMXFORM;
+    xform->super_shape_n1 = RANDOMXFORM;
+    xform->super_shape_n2 = RANDOMXFORM;
+    xform->super_shape_n3 = RANDOMXFORM;
+    xform->super_shape_holes = RANDOMXFORM;
+    xform->conic_eccentricity = RANDOMXFORM;
 }
 
 //linear
@@ -431,6 +531,189 @@ extern int v24(coords *c,
     return 1;
 }
 
+//rings2
+extern int v25(coords *c,
+               F_params *fp,
+               V_params *vp){
+    double theta=atan2(c->x,c->y);
+    double r=R(c);
+    double dx=xform->rings2_val*xform->rings2_val+EPS;
+	r += -2.0*dx*(int)((r+dx)/(2.0*dx)) + r * (1.0-dx);
+	
+	c->x=sin(theta)*r;
+	c->y=cos(theta)*r;
+	return 1;
+}
+
+//eyefish
+extern int v26(coords *c,
+               F_params *fp,
+               V_params *vp){
+	double r= 2.0 / (R(c)+1.0);
+	
+	c->x = r*c->x;
+	c->y = r*c->y;
+	return 1;
+}
+
+//bubble
+extern int v27(coords *c,
+               F_params *fp,
+               V_params *vp){
+    //currently use the eyefish
+    double r= 4.0 / (R(c)+4.0);
+	
+	c->x = r*c->x;
+	c->y = r*c->y;
+	return 1;
+}
+
+//cylinder
+extern int v28(coords *c,
+               F_params *fp,
+               V_params *vp){
+	c->x=sin(c->x);
+	c->y=c->y;
+	
+	return 1;
+}
+
+//perspective
+extern int v29(coords *c,
+               F_params *fp,
+               V_params *vp){
+	double t = 1.0 / (xform->perspective_dist - c->y * xform->persp_vsin);
+	
+	c->x=xform->perspective_dist * c->x * t;
+	c->y=xform->persp_vfcos * c->y * t;
+	return 1;
+}
+
+//noise
+extern int v30(coords *c,
+               F_params *fp,
+               V_params *vp){
+	double tmpr, sinr, cosr, r;
+	tmpr = Uniform_Random * 2 * M_PI;
+	sinr=sin(tmpr);
+	cosr=cos(tmpr);
+	r=Uniform_Random;
+	
+	c->x=c->x*r*cosr;
+	c->y=c->y*r*sinr;
+	return 1;
+}
+
+//JuliaN
+extern int v31(coords *c,
+               F_params *fp,
+               V_params *vp){
+	int t_rnd = trunc((xform->julian_rN)*Uniform_Random);
+    double theta=atan2(c->x, c->y);
+    double tempr=(t_rnd*2*M_PI+theta)/xform->julian_power;
+    double r=pow(R(c), xform->julian_power/xform->julian_dist);
+    double sina=sin(tempr);
+    double cosa=cos(tempr);
+    
+    c->x=r*cosa;
+    c->y=r*sina;
+	return 1;
+}
+
+//JuliaScope
+extern int v32(coords *c,
+               F_params *fp,
+               V_params *vp){
+    int t_rnd = trunc((xform->juliascope_rN) * Uniform_Random);
+    
+    double tmpr, r;
+    double sina, cosa;
+    
+    if ((t_rnd & 1) == 0)
+        tmpr = (2 * M_PI * t_rnd + RANDOMXFORM*atan2(c->x, c->y)) / xform->juliascope_power;
+    else
+        tmpr = (2 * M_PI * t_rnd - RANDOMXFORM*atan2(c->x, c->y)) / xform->juliascope_power;
+    
+    sincos(tmpr,&sina,&cosa);
+    
+    r = pow(R(c), xform->juliascope_dist/xform->juliascope_power);
+    
+    c->x=r*cosa;
+    c->x=r*sina;
+    return 1;
+}
+
+//Blur
+extern int v33(coords *c,
+               F_params *fp,
+               V_params *vp){
+    double tmpr, sinr, cosr, r;
+    
+    tmpr = Uniform_Random * 2 * M_PI;
+    sincos(tmpr,&sinr,&cosr);
+    r = Uniform_Random;
+    
+    c->x=r*cosr;
+    c->y=r*sinr;
+    return 1;
+
+}
+
+//gaussian
+extern int v34(coords *c,
+               F_params *fp,
+               V_params *vp){
+    double ang, r, sina, cosa;
+    
+    ang =Uniform_Random * 2 * M_PI;
+    sincos(ang,&sina,&cosa);
+    
+    r = Uniform_Random+Uniform_Random+Uniform_Random+Uniform_Random - 2.0 ;
+    
+    c->x=r*cosa;
+    c->y=r*sina;
+    return 1;
+}
+
+//radial blur
+extern int v35(coords *c,
+               F_params *fp,
+               V_params *vp){
+    double rndG, ra, rz, tmpa, sa, ca;
+    
+    /* Get pseudo-gaussian */
+    rndG = Uniform_Random+Uniform_Random+Uniform_Random+Uniform_Random - 2.0 ;
+    
+    /* Calculate angle & zoom */
+    ra = R(c);
+    tmpa = atan2(c->x, c->y) + xform->radialBlur_spinvar*rndG;
+    sincos(tmpa,&sa,&ca);
+    rz = xform->radialBlur_zoomvar * rndG - 1;
+    
+    c->x= ra*ca+rz*c->x;
+    c->y= ra*sa+rz*c->y;
+    return 1;
+}
+
+//pie
+extern int v36(coords *c,
+               F_params *fp,
+               V_params *vp){
+    double a, r, sa, ca;
+    int sl;
+    
+    sl = (int) (Uniform_Random * xform->pie_slices + 0.5);
+    a = xform->pie_rotation +
+    2.0 * M_PI * (sl + Uniform_Random* xform->pie_thickness) / xform->pie_slices;
+    r = RANDOMXFORM;
+    sincos(a,&sa,&ca);
+    
+    c->x=r*ca;
+    c->y=r*sa;
+    return 1;
+}
+
+
 
 
 //public functions (in the header)
@@ -446,7 +729,10 @@ extern int init_variations(){
                               &v5, &v6, &v7, &v8, &v9,
                               &v10,&v11,&v12,&v13,&v14,
                               &v15,&v16,&v17,&v18,&v19,
-                              &v20,&v21,&v22,&v23,&v24};
+                              &v20,&v21,&v22,&v23,&v24,
+                              &v25,&v26,&v27,&v28,&v29,
+                              &v30,&v31,&v32,&v33,&v34,
+                              &v35,&v36};
   V_params vp;
   //try and load variations
   /*
@@ -469,59 +755,59 @@ extern int init_variations(){
     variations7 = malloc(sizeof(V_func) * nv);
     variations8 = malloc(sizeof(V_func) * nv);
   for(j=0; j<nv; j++){
-    variations[j].v=v[arc4random()%25];
+    variations[j].v=v[arc4random()%NUMVAR];
     variations[j].use_fp = 0;
     variations[j].use_vp = 0;
     variations[j].vp = vp;
   }
 
     for(j=0; j<nv; j++){
-        variations1[j].v=v[arc4random()%25];
+        variations1[j].v=v[arc4random()%NUMVAR];
         variations1[j].use_fp = 0;
         variations1[j].use_vp = 0;
         variations1[j].vp = vp;
     }
 
     for(j=0; j<nv; j++){
-        variations2[j].v=v[arc4random()%25];
+        variations2[j].v=v[arc4random()%NUMVAR];
         variations2[j].use_fp = 0;
         variations2[j].use_vp = 0;
         variations2[j].vp = vp;
     }
 
     for(j=0; j<nv; j++){
-        variations3[j].v=v[arc4random()%25];
+        variations3[j].v=v[arc4random()%NUMVAR];
         variations3[j].use_fp = 0;
         variations3[j].use_vp = 0;
         variations3[j].vp = vp;
     }
 
     for(j=0; j<nv; j++){
-        variations4[j].v=v[arc4random()%25];
+        variations4[j].v=v[arc4random()%NUMVAR];
         variations4[j].use_fp = 0;
         variations4[j].use_vp = 0;
         variations4[j].vp = vp;
     }
     for(j=0; j<nv; j++){
-        variations5[j].v=v[arc4random()%25];
+        variations5[j].v=v[arc4random()%NUMVAR];
         variations5[j].use_fp = 0;
         variations5[j].use_vp = 0;
         variations5[j].vp = vp;
     }
     for(j=0; j<nv; j++){
-        variations6[j].v=v[arc4random()%25];
+        variations6[j].v=v[arc4random()%NUMVAR];
         variations6[j].use_fp = 0;
         variations6[j].use_vp = 0;
         variations6[j].vp = vp;
     }
     for(j=0; j<nv; j++){
-        variations7[j].v=v[arc4random()%25];
+        variations7[j].v=v[arc4random()%NUMVAR];
         variations7[j].use_fp = 0;
         variations7[j].use_vp = 0;
         variations7[j].vp = vp;
     }
     for(j=0; j<nv; j++){
-        variations8[j].v=v[arc4random()%25];
+        variations8[j].v=v[arc4random()%NUMVAR];
         variations8[j].use_fp = 0;
         variations8[j].use_vp = 0;
         variations8[j].vp = vp;
@@ -529,7 +815,7 @@ extern int init_variations(){
 
   //final transformation
   final = malloc(sizeof(V_func));
-  final->v=v[arc4random()%25];
+  final->v=v[arc4random()%NUMVAR];
   final->use_fp = 0;
   final->use_vp = 0;
   //final->vp will just contain some random bit pattern
