@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58853BDD15593CA800EBB2F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58853BDC15593CA800EBB2F3 /* UIKit.framework */; };
+		58853BDF15593CA800EBB2F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58853BDE15593CA800EBB2F3 /* Foundation.framework */; };
+		58853BE115593CA800EBB2F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58853BE015593CA800EBB2F3 /* CoreGraphics.framework */; };
+		58853BE715593CA800EBB2F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58853BE515593CA800EBB2F3 /* InfoPlist.strings */; };
+		58853BE915593CA800EBB2F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58853BE815593CA800EBB2F3 /* main.m */; };
+		58853BED15593CA800EBB2F3 /* VSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58853BEC15593CA800EBB2F3 /* VSAppDelegate.m */; };
+		58853BF015593CA800EBB2F3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58853BEE15593CA800EBB2F3 /* MainStoryboard.storyboard */; };
+		58853BF315593CA800EBB2F3 /* VSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58853BF215593CA800EBB2F3 /* VSViewController.m */; };
+		58853BFB15593FD300EBB2F3 /* DateAndTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58853BFA15593FD300EBB2F3 /* DateAndTimeViewController.m */; };
+		58853BFE155942EE00EBB2F3 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58853BFD155942EE00EBB2F3 /* ListViewController.m */; };
+		58853C041559433D00EBB2F3 /* ListEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58853C031559433D00EBB2F3 /* ListEditViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58853BD815593CA800EBB2F3 /* StoryboardSample2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardSample2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58853BDC15593CA800EBB2F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		58853BDE15593CA800EBB2F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		58853BE015593CA800EBB2F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		58853BE415593CA800EBB2F3 /* StoryboardSample2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StoryboardSample2-Info.plist"; sourceTree = "<group>"; };
+		58853BE615593CA800EBB2F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		58853BE815593CA800EBB2F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58853BEA15593CA800EBB2F3 /* StoryboardSample2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StoryboardSample2-Prefix.pch"; sourceTree = "<group>"; };
+		58853BEB15593CA800EBB2F3 /* VSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSAppDelegate.h; sourceTree = "<group>"; };
+		58853BEC15593CA800EBB2F3 /* VSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSAppDelegate.m; sourceTree = "<group>"; };
+		58853BEF15593CA800EBB2F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		58853BF115593CA800EBB2F3 /* VSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSViewController.h; sourceTree = "<group>"; };
+		58853BF215593CA800EBB2F3 /* VSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSViewController.m; sourceTree = "<group>"; };
+		58853BF915593FD300EBB2F3 /* DateAndTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateAndTimeViewController.h; sourceTree = "<group>"; };
+		58853BFA15593FD300EBB2F3 /* DateAndTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateAndTimeViewController.m; sourceTree = "<group>"; };
+		58853BFC155942EE00EBB2F3 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		58853BFD155942EE00EBB2F3 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		58853C021559433D00EBB2F3 /* ListEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListEditViewController.h; sourceTree = "<group>"; };
+		58853C031559433D00EBB2F3 /* ListEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListEditViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58853BD515593CA800EBB2F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58853BDD15593CA800EBB2F3 /* UIKit.framework in Frameworks */,
+				58853BDF15593CA800EBB2F3 /* Foundation.framework in Frameworks */,
+				58853BE115593CA800EBB2F3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58853BCD15593CA800EBB2F3 = {
+			isa = PBXGroup;
+			children = (
+				58853BE215593CA800EBB2F3 /* StoryboardSample2 */,
+				58853BDB15593CA800EBB2F3 /* Frameworks */,
+				58853BD915593CA800EBB2F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58853BD915593CA800EBB2F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58853BD815593CA800EBB2F3 /* StoryboardSample2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58853BDB15593CA800EBB2F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58853BDC15593CA800EBB2F3 /* UIKit.framework */,
+				58853BDE15593CA800EBB2F3 /* Foundation.framework */,
+				58853BE015593CA800EBB2F3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58853BE215593CA800EBB2F3 /* StoryboardSample2 */ = {
+			isa = PBXGroup;
+			children = (
+				58853C021559433D00EBB2F3 /* ListEditViewController.h */,
+				58853C031559433D00EBB2F3 /* ListEditViewController.m */,
+				58853BEB15593CA800EBB2F3 /* VSAppDelegate.h */,
+				58853BEC15593CA800EBB2F3 /* VSAppDelegate.m */,
+				58853BEE15593CA800EBB2F3 /* MainStoryboard.storyboard */,
+				58853BFC155942EE00EBB2F3 /* ListViewController.h */,
+				58853BFD155942EE00EBB2F3 /* ListViewController.m */,
+				58853BF915593FD300EBB2F3 /* DateAndTimeViewController.h */,
+				58853BFA15593FD300EBB2F3 /* DateAndTimeViewController.m */,
+				58853BF115593CA800EBB2F3 /* VSViewController.h */,
+				58853BF215593CA800EBB2F3 /* VSViewController.m */,
+				58853BE315593CA800EBB2F3 /* Supporting Files */,
+			);
+			path = StoryboardSample2;
+			sourceTree = "<group>";
+		};
+		58853BE315593CA800EBB2F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58853BE415593CA800EBB2F3 /* StoryboardSample2-Info.plist */,
+				58853BE515593CA800EBB2F3 /* InfoPlist.strings */,
+				58853BE815593CA800EBB2F3 /* main.m */,
+				58853BEA15593CA800EBB2F3 /* StoryboardSample2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58853BD715593CA800EBB2F3 /* StoryboardSample2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58853BF615593CA800EBB2F3 /* Build configuration list for PBXNativeTarget "StoryboardSample2" */;
+			buildPhases = (
+				58853BD415593CA800EBB2F3 /* Sources */,
+				58853BD515593CA800EBB2F3 /* Frameworks */,
+				58853BD615593CA800EBB2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StoryboardSample2;
+			productName = StoryboardSample2;
+			productReference = 58853BD815593CA800EBB2F3 /* StoryboardSample2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58853BCF15593CA800EBB2F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 58853BD215593CA800EBB2F3 /* Build configuration list for PBXProject "StoryboardSample2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 58853BCD15593CA800EBB2F3;
+			productRefGroup = 58853BD915593CA800EBB2F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58853BD715593CA800EBB2F3 /* StoryboardSample2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58853BD615593CA800EBB2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58853BE715593CA800EBB2F3 /* InfoPlist.strings in Resources */,
+				58853BF015593CA800EBB2F3 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58853BD415593CA800EBB2F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58853BE915593CA800EBB2F3 /* main.m in Sources */,
+				58853BED15593CA800EBB2F3 /* VSAppDelegate.m in Sources */,
+				58853BF315593CA800EBB2F3 /* VSViewController.m in Sources */,
+				58853BFB15593FD300EBB2F3 /* DateAndTimeViewController.m in Sources */,
+				58853BFE155942EE00EBB2F3 /* ListViewController.m in Sources */,
+				58853C041559433D00EBB2F3 /* ListEditViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58853BE515593CA800EBB2F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58853BE615593CA800EBB2F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		58853BEE15593CA800EBB2F3 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58853BEF15593CA800EBB2F3 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58853BF415593CA800EBB2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58853BF515593CA800EBB2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58853BF715593CA800EBB2F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardSample2/StoryboardSample2-Prefix.pch";
+				INFOPLIST_FILE = "StoryboardSample2/StoryboardSample2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		58853BF815593CA800EBB2F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StoryboardSample2/StoryboardSample2-Prefix.pch";
+				INFOPLIST_FILE = "StoryboardSample2/StoryboardSample2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58853BD215593CA800EBB2F3 /* Build configuration list for PBXProject "StoryboardSample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58853BF415593CA800EBB2F3 /* Debug */,
+				58853BF515593CA800EBB2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58853BF615593CA800EBB2F3 /* Build configuration list for PBXNativeTarget "StoryboardSample2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58853BF715593CA800EBB2F3 /* Debug */,
+				58853BF815593CA800EBB2F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58853BCF15593CA800EBB2F3 /* Project object */;
+}
